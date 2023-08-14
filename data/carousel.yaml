@@ -1,0 +1,9 @@
+images: 
+  - image: /images/approved_comment_check_roboto.png
+    content_html: "1"
+  - image: /images/add_new_project_user_roboto.png
+    content_html: "2"
+  - image: /images/approved_comment_check_roboto.png
+    content_html: "3"
+  - image: /images/add_public_key_git.jpg.png
+    content_html: "4"
