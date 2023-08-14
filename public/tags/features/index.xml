@@ -1,0 +1,169 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ferris Labs – features</title>
+    <link>/tags/features/</link>
+    <description>Recent content in features on Ferris Labs</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/tags/features/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Features &amp; Benefits</title>
+      <link>/docs/overview/ferris_executor_benefits_features/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/overview/ferris_executor_benefits_features/</guid>
+      <description>
+        
+        
+        &lt;p&gt;&lt;strong&gt;FerrisFX&lt;/strong&gt; is a platform for building highly scalable, cross-network  sync or async microservices and agents.&lt;/p&gt;
+&lt;p&gt;The unique low learning curve approach significantly reduces the cost of deploying enterprise wide process and integration pipelines across disparate systems at a speed.  While at the same time creating a platform with practically unbound access and ease of integration.&lt;/p&gt;
+&lt;p&gt;FX is a ground-up rethink of how both sync and async microservices are built in multi-cloud, highly volatile and fragmented software environments.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;On FX you are effectively writing large applications by connecting “blocks” of code (Services) through Events.&lt;/strong&gt; An approach that is highly intuitive and in line with iterative agile practices.&lt;/p&gt;
+&lt;p&gt;The following is a brief review of some of the benefits and features of FerrisFX. Upcoming features are shown in italics.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;Quality&lt;/th&gt;
+&lt;th&gt;Description&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Low Learning Curve&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Developers can practically learn within an hour how to work with FX.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Highly Scalable&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Built from ground-up for scalability. The event messaging core is based on an Apache Kafka backbone we can transmit MILLIONs of jobs per day to any number of Services without break.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Resource Efficient&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;FX Microservices are deployed in real time as Events comes in. There are not 100s of microservice containers running on your platform. Just 3 components. The Ferris Manager UI, The Event Router and any number Executors.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Plug into anything. Practically Limitless Integrations&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Leverage the whole universe of Library capabilites of Python ( Java, DOTNET or GoLang coming soon) , no need to depend solely on paid pre-packaged modules based on a strict structure and complicated build procedures and vendor lock-in. No-Code or Low-Code take your pick.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Combined Support for Sync and Async Microservices&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;Manage both your Async and Sync Service Mesh in a single interface without any expensive and cumbersome 3rd party system.  Reduce the complexity of your infrastructure and the number of components.&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Fully Containerised and Easy to Deploy&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;Pre-packaged Kubernetes Templates with minimal customisation requirements fit straight into your enterprise Kubernetes(and if you dont have one we will build you one). Run in 1 command and Scale as you wish&lt;/em&gt;.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;All Ops Data in 1 Secure place&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;We record all events, logs, alerts in Kafka and store them in daily index within Elasticsearch for easy search and loading it into other systems such as Splunk, DataDog, LogTrail etc. A single scalable fault tolerant system to transport events and operational data.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Monitor Performance&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;All Service Executions are continuously tracked and recorded by FX allowing you to easily identify bottlenecks in your processing. Execution details can be viewed on the UI or within Kibana/Elasticsearch.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Enterprise Friendly User and Project Management&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;FX can be easily plugged into your identity infrastructure whether OIDC or AD or SAML we support them all. Packages are organised by Projects enabling users to have specific roles and simplify oversight and governance of your platform. Further enhanced by tagging support promoting an enterprise wide shared semantics and Taxonomy of packages.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Structured Service Documentation&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;Provide a readme.md file with your package to document it for users.  Provide an OpenAPI document to automatically expose the end point and document it for users.&lt;/em&gt; &lt;em&gt;Provide a manifest JSON file for describing package.&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Developer Friendly GIT integration&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Fits just straight into existing flow. Push to git to activate code. No more, No Less.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Simple Standard and Powerful Event Format&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Based on Cloud Events our event format is Simple JSON which developer already know how to work with. If you know how to read JSON you can build a Microservice.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Simple Easy to understand and use conventions&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;A Microservice consists of a set of scripts run in sequence, receives events as JSON and sends events as JSON. Use a config.json to store configs, use a secrets.json to store secrets. Store files in /tmp. You can use any Python libraries and also deploy your won packages with each service.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Selective Feature Support&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Our &amp;lsquo;Everything is Optional&amp;rsquo; approach to the convetions support by services means that developers can incrementally improve the quality of their code as they get more familiar with the system. A base service is just a single script and then they can build up to support configurations, UI, reusable packages,  published interface packages or custom image execution.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Support for Enterprise Specific Library Distributions&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Package Enterprise Specific Libraries into the base executor for use by all executors within the enterprise. Saving Huge amounts of development time.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Real Time Code Updates&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Our near real time deploy means code changes are immediately active.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Run AB Testing with Ease&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Plug different code versions to same event to measure differences.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;RUN Anything&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;Our unique RUN ANYTHING architecture furthers breaks boundaries of running polyglot container systems. Simply tell the system on which image a code is to execute.&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Activate or Deactivate Services in Realtime&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Services can be activated when you need them.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Instant Scaling&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Just increase the number of Router or Executor replicas to process faster (provided your underlying services can support it)&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;View Logs in Realtime&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;View the Logs of any executor in Realtime directly on the Management UI.&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;View Event Dependencies Easily&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Have an error? Trace easily the events which led to the Error with all the parameters used to run the event flow.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;UI Support for Microservices&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Drop in a metadata.json file to auto generate UIs for entering parameters for a specific package.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Easy Aggregated Logging&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;All services logs are aggregated and searchable and viewable in realtime. Developers can log easily.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Adaptive Event Schema&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;FX is continuously scanning the incoming events to populate the event catalog and their schema. Making it easier for developers to write services which react to the platform events. Continuously updating you on the Events within your platform.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Parallel Event Processing and Flows&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;The same Event can be sent to multiple services for processing. Enabling multiple flows to be triggered.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Anonymous and Published Interfaces&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;Services can easily standardise and publish their interfaces making them available in the &amp;lsquo;No-Code&amp;rsquo; flows.&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Event Mapping&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;Easily map parameters of one event to another event. Allowing you to easily link event flows together.&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Event Tagging&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Tag events. Enabling you to organise event groups by domain.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Execution Prioritisation and Cancellation&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;em&gt;Granular queue management to prioritise or cancel specific executions if there is a backlog.&lt;/em&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;Modular Easily Extendible UI&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;Add modular custom UIs to the management interface using FX extensions to the Flask App Builder for creating a custom Management UI.&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>
