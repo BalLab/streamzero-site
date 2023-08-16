@@ -409,3 +409,16 @@ footer {
 .typography-text.inverted {
     color: #fff;
 }
+
+/* coloring of the H1 */
+h1 {
+	background: -webkit-linear-gradient(#AC72F0, #63D0FE);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+
+.home_title {
+	background: -webkit-linear-gradient(#AC72F0, #63D0FE);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
