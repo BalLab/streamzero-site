@@ -15,7 +15,7 @@ This is us - humans - using StreamZero on a day to day basis. And in this sectio
 
 > To get the the Users page, navigate to: Security > List Users
 
-{{< blocks/screenshot color="white" image="/images/list_users_page.png">}} 
+{{< blocks/screenshot color="white" image="/streamzero/images/security/list_users_page.png">}} 
 
 *Example: List of StreamZero Users*
 
@@ -36,7 +36,7 @@ Most often though, adding new Users is done by integrating StreamZero with the c
 
 > Click on the plus sign ![Add User](/images/add_icon.png) to add a new user.
 
-{{< blocks/screenshot color="white" image="/images/add_user_page.png">}} 
+{{< blocks/screenshot color="white" image="/streamzero/images/security/add_user_page.png">}} 
 
 *Example: Adding a new StreamZero Users*
 
@@ -62,7 +62,7 @@ Most often though, adding new Users is done by integrating StreamZero with the c
 
 >  Click on the spyglass icon ![Add User](/images/view_icon.png) in front of the user you want to look at.
 
-{{< blocks/screenshot color="white" image="/images/view_user_page.png">}} 
+{{< blocks/screenshot color="white" image="/streamzero/images/security/view_user_page.png">}} 
 
 *Example: View only List of StreamZero Users*
 

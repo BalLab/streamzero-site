@@ -14,7 +14,7 @@ Another script which has the ability to generate  UIs will be added to the packa
 1. Click on *Executions -> Packages* to open the list of packages
 2. Click on the edit icon to open the package/execution details
 
-{{< blocks/screenshot color="white" image="/images/edit_package_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/edit_package_roboto.png">}}
 
 3. Click on "*+Add More Scripts"* 
 
@@ -22,7 +22,7 @@ Another script which has the ability to generate  UIs will be added to the packa
 
 5. Click on *"Save"*
 
-{{< blocks/screenshot color="white" image="/images/add_parameters_json_script_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/add_parameters_json_script_roboto.png">}}
 
 **Note that the "parameters.json" file describes which parameters a user can input while executing the package. These parameters can be adapted to any use case and script and can for example replace command line parameters if the script in question supports such parameters.**
 
@@ -140,7 +140,7 @@ The *parameters.json* file contains a JSON definition of fields that will be ren
 
 - Click on *"Run"* to display the created/built UI
 
-{{< blocks/screenshot color="white" image="/images/run_UI_package_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/run_UI_package_roboto.png">}}
 
 The parameters from the "parameters.json" test script will be rendered and displayed.
 
@@ -151,16 +151,16 @@ The parameters from the "parameters.json" test script will be rendered and displ
 
 **Note that these are test parameters with dummy text**
 
-{{< blocks/screenshot color="white" image="/images/run_parameters_UI_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/run_parameters_UI_roboto.png">}}
 
 - Click on the "magnifying glass" icon to check the details of the execution/run
 
 
-{{< blocks/screenshot color="white" image="/images/click_loupe_parameters_run.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/click_loupe_parameters_run.png">}}
 
 On the next screenshot it is clearly displayed that the run has been completed.
 
-{{< blocks/screenshot color="white" image="/images/parameters_run_completed.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/parameters_run_completed.png">}}
 
 **The importance of saved runs:**
 

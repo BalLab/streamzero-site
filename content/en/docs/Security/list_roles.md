@@ -15,7 +15,7 @@ Roles represent a collection of permissions or rights that can be performed with
 
 > To get the the Users page, navigate to: Security > List Roles
 
-{{< blocks/screenshot color="white" image="/images/list_roles_page.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/security/list_roles_page.png">}}
 
 *Example: List of StreamZero Roles*
 
@@ -39,7 +39,7 @@ Often times, adding new Roles is done by integrating StreamZero with the corpora
 
 > Click on the plus sign ![Add Role](/images/add_icon.png) to add a new user.
 
-{{< blocks/screenshot color="white" image="/images/add_role_page.png">}} 
+{{< blocks/screenshot color="white" image="/streamzero/images/security/add_role_page.png">}} 
 
 *Example: Adding a new Role and Permissions*
 

@@ -87,14 +87,14 @@ Note that the package creation was presented in another submenu of the User Guid
 
 2. Click on Add to create a new package
 
-{{< blocks/screenshot color="white" image="/images/create_package_secrets.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/create_package_secrets.png">}}
 
 3. Name the package
 4. Click on choose file and add the python scrypt (test_secrets.py)
 5. Click on Add more scripts and click on choose file to add the JSON script (secrets.json)
 6. Click on Save to save the package
 
-{{< blocks/screenshot color="white" image="/images/save_package_secrets.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/save_package_secrets.png">}}
 
 ##### test_secrets.py script
 

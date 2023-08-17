@@ -43,7 +43,7 @@ The solution included:
 
 
 ##### Example Use Case Agent Cascade
-{{< blocks/screenshot color="white" image="/images/uc_001_2021.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/solutions/uc_001_2021.png">}}
 
 <!-- 5 Stakeholders -->
 

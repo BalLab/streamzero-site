@@ -13,17 +13,17 @@ This subcategory explains the creation of new projects and users withtin these p
 1. Click on *Projects* in the menu on the left side to open dropdown and then on List Projects
 2. Click on *"+Add"*
 
-{{< blocks/screenshot color="white" image="/images/list_projects_add_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_projects_add_roboto.png">}}
 
 
 
 1. Name the new project
 2. Save
 
-{{< blocks/screenshot color="white" image="/images/create_project_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/create_project_roboto.png">}}
 
 
-{{< blocks/screenshot color="white" image="/images/list_projects_created_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_projects_created_roboto.png">}}
 
 
 
@@ -42,12 +42,12 @@ Since the Platform Administrator created the Project, he is automatically assign
 1. Click on the magnifying glass to open Project details page
 
 
-{{< blocks/screenshot color="white" image="/images/list_projects_loupe_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_projects_loupe_roboto.png">}}
 
 
 2. Click on *"+Add"* to add a new user to the project
 
-{{< blocks/screenshot color="white" image="/images/click_add_new_user_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/click_add_new_user_roboto.png">}}
 
 
 
@@ -55,12 +55,12 @@ Since the Platform Administrator created the Project, he is automatically assign
 4. Choose a user role from dropdown (Owner; Admin; User)
 5. Click Save
 
-{{< blocks/screenshot color="white" image="/images/add_new_project_user_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/add_new_project_user_roboto.png">}}
 
 
 - Check the user has been created
 
-{{< blocks/screenshot color="white" image="/images/check_all_users_new.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/check_all_users_new.png">}}
 
 
 
@@ -69,12 +69,12 @@ Since new users were created, no package(s) are yet assigned to the project. A p
 1. Click on *Executions* to open dropdown and then *Packages* in the menu on the left
 2. Click on edit
 
-{{< blocks/screenshot color="white" image="/images/edit_package_to_add_project_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/edit_package_to_add_project_roboto.png">}}
 
 3. Choose a project from dropdown
 4. Click Save
 
-{{< blocks/screenshot color="white" image="/images/added_project_to_package_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/added_project_to_package_roboto.png">}}
 
 Once that a project was assigned to a package, the users created within that project will be able to perform their chores.
 
@@ -83,13 +83,13 @@ Once that a project was assigned to a package, the users created within that pro
 1. Log in as *"Project Owner"*
 2. Click on *Projects* to open dropdown and then List Projects
 
-{{< blocks/screenshot color="white" image="/images/list_projects_as_projectowner_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_projects_as_projectowner_roboto.png">}}
 
 As defined above, a Project Owner can add new projects, view, edit and delete the projects he belongs to.
 
 3. Click on *Executions* to open dropdown and then on *Packages*
 
-{{< blocks/screenshot color="white" image="/images/view_packages_as_project_owner.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/view_packages_as_project_owner.png">}}
 
 As Project Owner, one can add new packages, view, edit, delete and trigger manual runs and delete the packages within the projects the user belongs to.
 
@@ -98,13 +98,13 @@ As Project Owner, one can add new packages, view, edit, delete and trigger manua
 1. Log in as *"Project Admin"*
 2. Click on *Projects* to open dropdown and then *List Projects*
 
-{{< blocks/screenshot color="white" image="/images/list_projects_as_projectadmin_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_projects_as_projectadmin_roboto.png">}}
 
 As defined above, a Project Admin can add new projects, view and edit the projects he belongs to but can not delete anything.
 
 3. Click on *Executions* to open dropdown and then on *Packages*
 
-{{< blocks/screenshot color="white" image="/images/view_packages_as_projectadmin_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/view_packages_as_projectadmin_roboto.png">}}
 
 As Project Admin, one can add new packages, view, edit and trigger manually runs within the projects the user belongs to. The Project Admin can not delete the packages, runs or related elements.
 
@@ -113,13 +113,13 @@ As Project Admin, one can add new packages, view, edit and trigger manually runs
 1. Log in as "Project User"
 2. Click on *Projects* to open dropdwon and then *List Projects*
 
-{{< blocks/screenshot color="white" image="/images/list_projects_as_projectuser_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_projects_as_projectuser_roboto.png">}}
 
 As defined above, a Project User can only view the projects he belongs to. He can neither edit, nore delete anything. 
 
 3. Click on *Executions* to open dropdown and then on *Packages*.
 
-{{< blocks/screenshot color="white" image="/images/view_packages_as_projectuser_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/view_packages_as_projectuser_roboto.png">}}
 
 As Project User, one can view packages and trigger manually runs within the projects the user belongs to. The Project User can not delete or edit packages, runs or related elements.
 

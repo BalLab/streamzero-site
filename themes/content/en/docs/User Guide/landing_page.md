@@ -52,4 +52,4 @@ In this specific use case the insights and analytics of the StreamZero FX Data P
   - Package (name)
   - Number of exections
 
-{{< blocks/screenshot color="white" image="/images/dashboard_landing_page.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/dashboard_landing_page.png">}}

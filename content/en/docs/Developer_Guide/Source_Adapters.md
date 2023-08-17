@@ -224,11 +224,11 @@ A pre-requisite is to ensure that EventBridge is sending Events to Ferris. Pleas
 
 Create a bucket and switch to the Properties Tab of the UI
 
-{{< blocks/screenshot color="white" image="/images/image-20220305125600033.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/image-20220305125600033.png">}}
 
 Scroll to the bottom and turn on Event Bridge Notfications by clicking on the Edit button below the section Amazon EventBridge
 
-{{< blocks/screenshot color="white" image="/images/image-20220305125800254.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/image-20220305125800254.png">}}
 
 
 
@@ -240,18 +240,18 @@ To be notified on changes to a Git Hub Repo please follow the steps below.
 
 Click on the 'Settings' icon for the repo
 
-{{< blocks/screenshot color="white" image="/images/image-20220305123206740.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/image-20220305123206740.png">}}
 
 
 
 Select the Webhooks menu on the left of the 'Settings' page. Then click on the 'Add webhook' button.
 
-{{< blocks/screenshot color="white" image="/images/image-20220305123425675.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/image-20220305123425675.png">}}
 
 
 
 Add the URL of your edge adapter end point. And ensure the content type is application/json. Finally add the api token generated on the StreamZero Management UI. Further in the page you may select what event types should be sent. If unsure please maintain the default settings.
 
-{{< blocks/screenshot color="white" image="/images/image-20220305123919206.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/image-20220305123919206.png">}}
 
 Test your integration by pushing an update to the repository.

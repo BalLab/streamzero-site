@@ -17,12 +17,12 @@ As a generic base module "taggability" can easily be included in any model, use 
 1. Click on Taxonomies in the left menu to open dropdown and then on Tags
 2. Click Add to create a tag
 
-{{< blocks/screenshot color="white" image="/images/taxonomies_tags_add_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/taxonomies_tags_add_roboto.png">}}
 
 1. Name Tag
 2. Save
 
-{{< blocks/screenshot color="white" image="/images/create_tag_save_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/create_tag_save_roboto.png">}}
 
 - Check created Tag(s)
 
@@ -33,17 +33,17 @@ As a generic base module "taggability" can easily be included in any model, use 
 5. Click on *Event Types* to see in which event type the same tag is uses (in this example no event type is associated with the tag just created)
 6. Click on the Edit icon (List tags page) to edit/rename a tag
 
-{{< blocks/screenshot color="white" image="/images/tag_list_click_loupe_details_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/tag_list_click_loupe_details_roboto.png">}}
 
-{{< blocks/screenshot color="white" image="/images/show_tag_details_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/show_tag_details_roboto.png">}}
 
-{{< blocks/screenshot color="white" image="/images/list_tag_packages_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_tag_packages_roboto.png">}}
 
-{{< blocks/screenshot color="white" image="/images/list_workflows_tag_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_workflows_tag_roboto.png">}}
 
-{{< blocks/screenshot color="white" image="/images/list_event_types_tag_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_event_types_tag_roboto.png">}}
 
-{{< blocks/screenshot color="white" image="/images/list_tags_edit_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_tags_edit_roboto.png">}}
 
 ## Search Tag
 
@@ -60,8 +60,8 @@ As a generic base module "taggability" can easily be included in any model, use 
 4. Insert tag "Name"
 5. Hit the Search button
 
-{{< blocks/screenshot color="white" image="/images/search_tag_filter_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/search_tag_filter_roboto.png">}}
 
 - Check search results
 
-{{< blocks/screenshot color="white" image="/images/search_results_new.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/search_results_new.png">}}

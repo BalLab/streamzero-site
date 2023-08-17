@@ -15,7 +15,7 @@ This is us - humans - using StreamZero on a day to day basis. And in this sectio
 
 > To get the the Users page, navigate to: Security > List Roles
 
-{{< blocks/screenshot color="white" image="/images/list_users_page.png">}} 
+{{< blocks/screenshot color="white" image="/streamzero/images/security/list_users_page.png">}} 
 
 *Example: List of StreamZero Users*
 

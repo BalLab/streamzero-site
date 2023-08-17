@@ -40,7 +40,7 @@ Save the file [FerrisRootCA](https://raw.githubusercontent.com/Ferris-Labs/platf
 
 
 
-{{< blocks/screenshot color="white" image="/images/import-FerrisRootCA.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/import-FerrisRootCA.png">}}
 
 ## Request Platform Access
 If you are 

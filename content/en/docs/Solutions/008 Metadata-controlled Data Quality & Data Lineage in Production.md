@@ -28,7 +28,7 @@ The use case is applicable to any industry dealing with large volumes of data if
 The approach is based on few shot manual learning, when the expert creates a few dozens of examples with real-life data. Later on from these examples the model learns strategies to identify and correct data quality errors.
 
 ##### Example Use Case Agent Cascade
-{{< blocks/screenshot color="white" image="/images/uc_008_2021.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/solutions/uc_008_2021.jpeg">}}
 
 ### Stakeholders
 - Domain experts

@@ -28,7 +28,7 @@ This Use Case defines how to create and run a new package.
 2. Click on *Packages*
 3. Click on *+Add* to create a package
 
-{{< blocks/screenshot color="white" image="/images/executions_packages_add_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/executions_packages_add_roboto.png">}}
 
 ## Create Package
 
@@ -47,7 +47,7 @@ This Use Case defines how to create and run a new package.
 | 11. Save                      | 11. Click Save to save packages                              |
 | *Supported File upload Types* | 4 different file types are supported: <br />**1. ".py file"** -> A PY file is a program file or script written in Python, an interpreted object-oriented programming language. <br />**2. ".json file"** -> A JSON file is a file that stores simple data structures and objects in JavaScript Object Notation (JSON) format, which is a standard data interchange format. <br />**3. ".sql file"** -> A (SQL) file with .sql extension is a Structured Query Language (SQL) file that contains code to work with relational databases. <br />**4. ".csv file"** -> A CSV (comma-separated values) file is a text file that has a specific format which allows data to be saved in a table structured format. |
 
-{{< blocks/screenshot color="white" image="/images/create_package_with_configs_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/create_package_with_configs_roboto.png">}}
 
 ##### config.json script
 
@@ -81,42 +81,42 @@ The created package should be triggered every 20 minutes of every hour but can a
 
 - Click on the magnifying glass icon to open the package's details page
 
-{{< blocks/screenshot color="white" image="/images/click_loupe_package_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/click_loupe_package_roboto.png">}}
 
 1. Check details page
 2. Click on "Show Trigger Event"
 
-{{< blocks/screenshot color="white" image="/images/package_details_show_trigger_event_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/package_details_show_trigger_event_roboto.png">}}
 
 1. Check the triggered event details
 2. Close
 
-{{< blocks/screenshot color="white" image="/images/triggered_event_details_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/triggered_event_details_roboto.png">}}
 
 ## Package Executions / Runs
 
 - Click on the "Run" button down the page to run the package manually
 
-{{< blocks/screenshot color="white" image="/images/run_button_manual_package.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/run_button_manual_package.png">}}
 
 It will automatically transfer you to the "List Package Executions" tab
 
 1. Check runs/package executions to see if you manually triggered execution was processed
 2. Click on the magnifying glass icon of your latest manually triggered run to open details page of the exectuion
 
-{{< blocks/screenshot color="white" image="/images/manual_run_check_loupe_details_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/manual_run_check_loupe_details_roboto.png">}}
 
 1. Check the details "Show Package Execution" of the run/exection
 2. Click on "List Steps" tab to see the steps of the execution
 
-{{< blocks/screenshot color="white" image="/images/exection_manual_run_details_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/exection_manual_run_details_roboto.png">}}
 
 1. Check the steps of the run and status (completed; pending; unprocessed; failed)
 2. Click on "Show Results" to verify the script for failed executions
 
-{{< blocks/screenshot color="white" image="/images/manual_run_list_steps_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/manual_run_list_steps_roboto.png">}}
 
-{{< blocks/screenshot color="white" image="/images/script_manual_run_execution.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/script_manual_run_execution.png">}}
 
 - Close window
 
@@ -127,18 +127,18 @@ It will automatically transfer you to the "List Package Executions" tab
 1. Go back to the "List Package Executions" tab 
 2. Click on the edit icon to open make the run/execution editable
 
-{{< blocks/screenshot color="white" image="/images/list_package_executions_edit_manual_run_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_package_executions_edit_manual_run_roboto.png">}}
 
 1. Name the execution/run
 2. Describe the execution/run
 3. Click "Saved" check box
 4. Save
 
-{{< blocks/screenshot color="white" image="/images/save_execution_run_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/save_execution_run_roboto.png">}}
 
 1. Click on Executions to open dropdown
 2. Click on Saved Executions to check the saved run
 
-{{< blocks/screenshot color="white" image="/images/check_saved_run_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/check_saved_run_roboto.png">}}
 
 **In the next section "UI Generator", the importance of the saved run will be showcased**.

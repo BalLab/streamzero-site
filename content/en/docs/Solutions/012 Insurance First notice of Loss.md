@@ -29,7 +29,7 @@ The solution included:
 - Curation model to extend "fast track" rules within knowledge graph
 
 ##### Example Use Case Agent Cascade
-{{< blocks/screenshot color="white" image="/images/uc_012_2021.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/solutions/uc_012_2021.png">}}
 
 ### Stakeholders
 - Head of Operations / Claims Handling

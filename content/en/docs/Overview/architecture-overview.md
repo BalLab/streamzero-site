@@ -24,7 +24,7 @@ A Service can respond to multiple Event types, and a single Event Type may trigg
 
 You are not required to think in terms of pre-defined DAGS and can rapidly and iteratively build, test and deploy your applications. 
 
-{{< blocks/screenshot color="white" image="/images/list_projects_add_roboto.png">}}
+{{< blocks/screenshot color="white" image="/streamzero/images/user_guide/list_projects_add_roboto.png">}}
 
 
 ### Services
