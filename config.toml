@@ -237,8 +237,8 @@ enable = false
 [menu]
 [[menu.main]]
   identifier = 'product'
-  name = 'PRODUCT'
-  url = '/product/'
+  name = 'PRODUCTS'
+  url = '/products/'
   weight = 1
   [menu.main.params]
     class = 'highlight-menu-item'

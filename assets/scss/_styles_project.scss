@@ -10,6 +10,12 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'DM-Sans';
+	src: url('/fonts/dm-sans/DMSans-ExtraBold.ttf');
+	font-weight: bold;
+	font-style: bold;
+}
 
 .home_title {
     font-family: 'gilmer-bold';
@@ -117,7 +123,6 @@ footer {
    filter: hue-rotate(40deg) saturate(0.5) brightness(390%) saturate(4); 
  }
 
-
 .integration-card {
 	background: #fff;
 	border: 1px solid $border-color;
@@ -174,7 +179,6 @@ footer {
 	}
 }
 
-
 .flex-container {
 	display: flex;
 	flex-flow: row wrap;
@@ -212,7 +216,6 @@ footer {
 	}
 }
 
-
 .integration-card {
     background: #fff;
     border: 1px solid #dee2e6;
@@ -220,9 +223,7 @@ footer {
     margin-bottom: 2rem;
 }
 
-
 .tab-number {
-
 	display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -251,8 +252,6 @@ footer {
     font-weight: 400;
 	background-color: #dee2e6;
 }
-
-
 
 footer {
 	min-height: unset;
@@ -283,9 +282,6 @@ footer {
 	}
 }
 
-
-
-
 .footer-component .legal-links {
 	.typography-text {
 		color: #c2c1c7;
@@ -315,7 +311,6 @@ footer {
 }
 
 // Footer
-
 .footer-component {
 	background-color: #1b1a21;
 	.social-links {
@@ -379,7 +374,6 @@ footer {
     text-transform: uppercase;
 }
 
-
 .section-container {
     content-visibility: auto;
     position: relative;
@@ -410,19 +404,33 @@ footer {
     color: #fff;
 }
 
-/* coloring of the H1 */
-h1 {
-	background: -webkit-linear-gradient(#AC72F0, #63D0FE);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-  }
-
-.home_title {
-	background: -webkit-linear-gradient(#AC72F0, #63D0FE);
-	-webkit-background-clip: text;
-	-webkit-text-fill-color: transparent;
-  }
-
 .navbar-bg-onscroll {
 	background: #1c1c1c !important;
+}
+
+/* coloring of the H1 */
+.a1 {
+	background: -webkit-linear-gradient(#AC72F0, #63D0FE);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+
+.ahome_title {
+	background: -webkit-linear-gradient(#AC72F0, #63D0FE);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  }
+
+  .display-5 {
+	font-size: 1.5rem;
+	font-weight: 300;
+	line-height: 1.2;
+	color: #929396;
+}
+
+.demo_title {
+    font-family: 'dm-sans';
+    font-size: 50px;
+    line-height: 60px;
+	color: #fff;
 }

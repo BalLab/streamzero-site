@@ -20235,6 +20235,12 @@ body:lang(ar) {
   font-weight: normal;
   font-style: normal; }
 
+@font-face {
+  font-family: 'DM-Sans';
+  src: url("/fonts/dm-sans/DMSans-ExtraBold.ttf");
+  font-weight: bold;
+  font-style: bold; }
+
 .home_title {
   font-family: 'gilmer-bold';
   font-size: 50px;
@@ -20524,15 +20530,30 @@ footer {
 .typography-text.inverted {
   color: #fff; }
 
+.navbar-bg-onscroll {
+  background: #1c1c1c !important; }
+
 /* coloring of the H1 */
-h1 {
+.a1 {
   background: -webkit-linear-gradient(#AC72F0, #63D0FE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
-.home_title {
+.ahome_title {
   background: -webkit-linear-gradient(#AC72F0, #63D0FE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
+
+.display-5 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  line-height: 1.2;
+  color: #929396; }
+
+.demo_title {
+  font-family: 'dm-sans';
+  font-size: 50px;
+  line-height: 60px;
+  color: #fff; }
 
 /*# sourceMappingURL=main.css.map */
