@@ -297,13 +297,13 @@ enable = false
     [menu.main.params]
       class = 'highlight-menu-item'
 
-#[[menu.main]]
-#  identifier = 'solutions'
-#  name = 'CASE STUDIES'
-#  url = '/solutions/'
-#  weight = 3
-#  [menu.main.params]
-#    class = 'highlight-menu-item'
+[[menu.main]]
+  identifier = 'solutions'
+  name = 'CASE STUDIES'
+  url = '/solutions/'
+  weight = 3
+  [menu.main.params]
+    class = 'highlight-menu-item'
 
 [[menu.main]]
   identifier = 'learn'
@@ -341,13 +341,13 @@ enable = false
 #    parent = "learn"
 #    weight = 4
 
-#[[menu.main]]
-# identifier = 'blog'
-#  name = 'BLOG'
-#  url = '/blog/'
-#  weight = 5
-#  [menu.main.params]
-#    class = 'highlight-menu-item'
+[[menu.main]]
+  identifier = 'blog'
+  name = 'BLOG'
+  url = '/blog/'
+  weight = 5
+  [menu.main.params]
+    class = 'highlight-menu-item'
 
 [[menu.main]]
   identifier = 'company'
