@@ -434,3 +434,13 @@ footer {
     line-height: 60px;
 	color: #fff;
 }
+
+.navbar.navbar-bg-onscroll, .navbar:not(.td-navbar-cover) {
+    background: #262626!important;
+}
+
+@media (max-width: 991px) {
+	.navbar {
+		background: #262626!important;
+	}
+}
