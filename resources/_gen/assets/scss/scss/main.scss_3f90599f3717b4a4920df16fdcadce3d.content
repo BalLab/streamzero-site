@@ -20497,7 +20497,7 @@ footer {
   font-weight: 900; }
 
 .footer-component .footer-links .footer-column .footer-item .footer-link .footer-pill-wrapper .footer-pill {
-  background: #E11439;
+  background: #b81414;
   border-radius: 4px;
   color: #fff;
   font-size: 12px;
@@ -20555,5 +20555,12 @@ footer {
   font-size: 50px;
   line-height: 60px;
   color: #fff; }
+
+.navbar.navbar-bg-onscroll, .navbar:not(.td-navbar-cover) {
+  background: #262626 !important; }
+
+@media (max-width: 991px) {
+  .navbar {
+    background: #262626 !important; } }
 
 /*# sourceMappingURL=main.css.map */
