@@ -20563,4 +20563,7 @@ footer {
   .navbar {
     background: #262626 !important; } }
 
+.text-red {
+  color: #E11439 !important; }
+
 /*# sourceMappingURL=main.css.map */
