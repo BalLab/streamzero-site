@@ -40,7 +40,9 @@
       <div class="col-12">
         <div class="text-left" >
           {{ with .Get "title" }}<h1 class="display-1 mt-0 mt-md-5 pb-4 home_title {{ $title_text_color_class }}">{{ $title := . }}{{ with $logo_image }}{{ $logo_image_resized := (.Fit (printf "70x70 %s" $logo_anchor)) }}<img class="td-cover-logo" src="{{ $logo_image_resized.RelPermalink }}" alt="{{ $title | html }} Logo">{{ end }}{{ $title | html }}</h1>{{ end }}
-          {{ with .Get "subtitle" }}<p class="display-5   mb-0">{{ . | html }}</p>{{ end }}
+          <div class="col-md-6">
+            {{ with .Get "subtitle" }}<p class="display-5   mb-0 text-white">{{ . | html }}</p>{{ end }}
+          </div>
           <div class="pt-3 lead">
             {{ if eq .Page.File.Ext "md" }}
                 {{ .Inner | markdownify }}
@@ -53,7 +55,7 @@
     </div>
   </div>
   {{ if $byline }}
-  <div class="byline {{ $byline_text_color_class }}">
+  <div class="byline {{ $byline_text_color_class }} col-md-4">
     <small>{{ $byline }}</small>
   </div>
   {{ end }}
