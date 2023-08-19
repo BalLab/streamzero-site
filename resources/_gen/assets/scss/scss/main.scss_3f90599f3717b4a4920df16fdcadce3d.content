@@ -20352,9 +20352,12 @@ footer {
   margin-bottom: 1rem; }
 
 .navbar-expand .navbar-nav .dropdown-menu .nav-link {
-  color: #333; }
+  color: rgba(255, 255, 255, 0.75); }
   .navbar-expand .navbar-nav .dropdown-menu .nav-link:not(.active) {
     color: #333; }
+
+.dropdown-menu {
+  background-color: #262626; }
 
 .flex-container {
   display: flex;
