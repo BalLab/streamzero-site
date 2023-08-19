@@ -172,10 +172,13 @@ footer {
     margin-bottom: 1rem;
 }
 
-.navbar-expand .navbar-nav .dropdown-menu .nav-link {
-	color: #333;
-	&:not(.active) {
-		color: #333;
+.navbar-expand .navbar-nav .dropdown-menu {
+	background-color: #262626;
+	.nav-link {
+		color: rgba(255,255,255,.75);
+		&:not(.active) {
+			color: #333;
+		}
 	}
 }
 
