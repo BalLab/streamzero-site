@@ -53,7 +53,7 @@
 	&lt;a class=&#34;btn btn-lg btn-primary mr-3 mb-4&#34; href=&#34;/docs/&#34;&gt;
 		Learn More &lt;i class=&#34;fas fa-arrow-alt-circle-right ml-2&#34;&gt;&lt;/i&gt;
 	&lt;/a&gt;
-	&lt;a class=&#34;btn btn-lg btn-secondary mr-3 mb-4&#34; href=&#34;https://github.com/Ferris-Labs&#34;&gt;
+	&lt;a class=&#34;btn btn-lg btn-secondary mr-3 mb-4&#34; href=&#34;https://github.com/gridmine&#34;&gt;
 		Download &lt;i class=&#34;fab fa-github ml-2 &#34;&gt;&lt;/i&gt;
 	&lt;/a&gt;
 	&lt;p class=&#34;lead mt-5&#34;&gt;The Platform for the fasted and simplest way to building your micro-integrations for events and services.&lt;/p&gt;
@@ -246,7 +246,7 @@
 
     
   &lt;/p&gt;
-  &lt;p&gt;&lt;a href=&#34;https://ferrislabs.net/about&#34;&gt;Read more …&lt;/a&gt;&lt;/p&gt;
+  &lt;p&gt;&lt;a href=&#34;https://gridmine.com/about&#34;&gt;Read more …&lt;/a&gt;&lt;/p&gt;
 &lt;/div&gt;
 
 
@@ -263,7 +263,7 @@
   &lt;/h4&gt;
   &lt;p class=&#34;mb-0&#34;&gt;
     
-      &lt;p&gt;We do a &lt;a href=&#34;https://github.com/google/ferrislabs/pulls&#34;&gt;Pull Request&lt;/a&gt; contributions workflow on &lt;strong&gt;GitHub&lt;/strong&gt;. New users are always welcome!&lt;/p&gt;
+      &lt;p&gt;We do a &lt;a href=&#34;https://github.com/google/gridmine/pulls&#34;&gt;Pull Request&lt;/a&gt; contributions workflow on &lt;strong&gt;GitHub&lt;/strong&gt;. New users are always welcome!&lt;/p&gt;
 
     
   &lt;/p&gt;

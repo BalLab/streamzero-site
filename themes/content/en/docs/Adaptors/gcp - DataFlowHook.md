@@ -35,7 +35,7 @@ Import the module into your execution package file and instantiate it with your 
 TBD
 ```
 
-Please refer to FerrisLabs DX Samples on GitHub **TBD** for further usage and integration samples.
+Please refer to gridmine DX Samples on GitHub **TBD** for further usage and integration samples.
 
 ### 
 

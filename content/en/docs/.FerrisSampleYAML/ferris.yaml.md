@@ -55,4 +55,4 @@ connection-parameters:
     aws-region: 
 ```
 
-Please refer to FerrisLabs [DX Samples](https://github.com/Ferris-Labs/dx_samples "DX Samples") on GitHub for further usage and integration samples.
+Please refer to gridmine [DX Samples](https://github.com/gridmine/dx_samples "DX Samples") on GitHub for further usage and integration samples.

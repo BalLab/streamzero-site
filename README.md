@@ -9,7 +9,7 @@
 1. Make your own local working copy of your new repo using git clone:
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/Ferris-Labs/site-draft.git
+git clone --recurse-submodules --depth 1 https://github.com/gridmine/site-draft.git
 ```
 2. Change to the site-draft directory
 ```bash
@@ -103,7 +103,7 @@ A simple way to get started is to use this project as a template, which gives yo
 3. Make your own local working copy of your new repo using git clone:
 
 ```bash
-git clone --recurse-submodules --depth 1 https://github.com/Ferris-Labs/site-draft.git
+git clone --recurse-submodules --depth 1 https://github.com/gridmine/site-draft.git
 ```
 
 You can now edit your own versions of the site’s source files.

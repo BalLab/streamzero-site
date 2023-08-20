@@ -25,7 +25,7 @@ description: >-
   
 # Accessing the cluster
 
-Follow the connectivity [intructions](https://github.com/Ferris-Labs/platform-docs/wiki/Ferris-Connect-Quickstart)
+Follow the connectivity [intructions](https://github.com/gridmine/platform-docs/wiki/Ferris-Connect-Quickstart)
 
 # Deploying your application inside the cluster
 ## Prerequisites
@@ -67,14 +67,14 @@ Two methods of deployment are made available to the developers
 1. In your browser navigate to argocd.ferris.ai
 2. Create new application and give it a name
 3. Project: `ferris` / `app`
-4. Repository url:  `git@github.com:Ferris-Labs/ferris-app.git`
+4. Repository url:  `git@github.com:gridmine/ferris-app.git`
 5. Path: `ferris-helm-chart`
 6. Cluster: `https://kubernetes.default.svc`
 7. Namespace: `ferris` / `app`
 8. Customise the chart values 
 
 ### Using manifests:
-To get you started we are providing basic Kubernetes resource [manifests templates](https://github.com/Ferris-Labs/platform-docs/tree/master/manifests-tmpl)
+To get you started we are providing basic Kubernetes resource [manifests templates](https://github.com/gridmine/platform-docs/tree/master/manifests-tmpl)
 
 Legend:
 - configmap.yaml: Use this to define your non-sensitive environmental key:value variable pairs
@@ -86,11 +86,11 @@ Legend:
 *Note there will be times where you won't have to make use of all the available resource manifests, you may just remove the entire resource definition or comment out the specification not required.* 
 
 *For example:*  
-*If you are deploying an API in most cases you don't want the users trying to reach your routes directly (external communication) - in that case you can omit the ingress resource all-together. The application communicating with your API will still be able to connect via the service resource (internal/cluster communication) by referencing the [service name and port](https://github.com/Ferris-Labs/platform-docs/wiki/02.-Development-Quickstart#cluster-communication)*  
+*If you are deploying an API in most cases you don't want the users trying to reach your routes directly (external communication) - in that case you can omit the ingress resource all-together. The application communicating with your API will still be able to connect via the service resource (internal/cluster communication) by referencing the [service name and port](https://github.com/gridmine/platform-docs/wiki/02.-Development-Quickstart#cluster-communication)*  
     
 *Other times you may requires some additional specifications, check out some official Kubernetes docs or contact the StreamZero Ops team*
 
-[Example](https://github.com/Ferris-Labs/platform-docs/tree/master/ferris-example) of a configured app based on the templates
+[Example](https://github.com/gridmine/platform-docs/tree/master/ferris-example) of a configured app based on the templates
 
 Guidelines:
 1. Download the templates locally 
@@ -101,7 +101,7 @@ Guidelines:
 6. Create new application and give it a name
 7. Project: `ferris` / `app`
 8. Sync Policy: `Manual` / `Automatic`
-9. Repository url:  `git@github.com:Ferris-Labs/ferris-app.git` / `Your specific manifests repo will be made available by the StreamZero Ops team`
+9. Repository url:  `git@github.com:gridmine/ferris-app.git` / `Your specific manifests repo will be made available by the StreamZero Ops team`
 10. Revision: `Your development branch`
 11. Path: `The manifests directory you created for your application`
 12. Cluster: `https://kubernetes.default.svc`
@@ -153,7 +153,7 @@ SSL redirection will be enabled by default when using ferris-helm-chart to deplo
 To disable set  
 `ingress.annotations.nginx.ingress.kubernetes.io/ssl-redirect: false`
 
-*For more details on the chart check [ferris-helm-chart](https://github.com/Integration-Alpha/ferris-argon/tree/ferris-labs-ferris/ferris-helm-chart#version-120)*
+*For more details on the chart check [ferris-helm-chart](https://github.com/Integration-Alpha/ferris-argon/tree/gridmine-ferris/ferris-helm-chart#version-120)*
 
 ## OAuth implementation
 
@@ -181,11 +181,11 @@ OAuth will be enabled by default when using ferris-helm-chart to deploy your app
 To disable set  
 `ingress.oauthEnabled: false`  
 
-*For more details on the chart check [ferris-helm-chart](https://github.com/Integration-Alpha/ferris-argon/tree/ferris-labs-ferris/ferris-helm-chart#version-120)*
+*For more details on the chart check [ferris-helm-chart](https://github.com/Integration-Alpha/ferris-argon/tree/gridmine-ferris/ferris-helm-chart#version-120)*
 
 ## Public access
 
-As [stated](https://github.com/Ferris-Labs/platform-docs/wiki/01.-Ferris-Connect-Quickstart#import--trust-ferrisrootca), all StreamZero platforms start-off as fully private clusters with no public endpoints and the only method of access being the OpenVPN server.  
+As [stated](https://github.com/gridmine/platform-docs/wiki/01.-Ferris-Connect-Quickstart#import--trust-ferrisrootca), all StreamZero platforms start-off as fully private clusters with no public endpoints and the only method of access being the OpenVPN server.  
 In some cases clients will want to build apps for wider audiences, or developers will be required to receive callbacks or other forms of communication from external APIs and services - with an on-demand approach the StreamZero Ops team will provide a public load balancer for those types of requests. 
 
 ### Make your app public

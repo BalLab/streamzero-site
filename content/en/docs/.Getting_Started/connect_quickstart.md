@@ -19,9 +19,9 @@ OpenVPN servers and profiles per environment:
 
 | PROJECT        | ENV  | OPENVPN                                      | CONTACT                                                      |
 | :------------- | :--- | :------------------------------------------- | :----------------------------------------------------------- |
-| fl-ferris-demo | DEMO | [fl-ferris-demo-vpn](https://34.133.137.127) | [StreamZero Info](mailto:info@ferrislabs.net?subject=fl-ferris-demo-vpn%20Credentials%20Request) |
-| ia-ferris-demo | DEMO | [ia-ferris-demo-vpn](https://35.193.224.161) | [StreamZero Info](mailto:info@ferrislabs.net?subject=fl-ferris-demo-vpn%20Credentials%20Request) |
-|ferris-dev        |DEV|[ferris-dev-vpn](https://34.136.49.29)           |[StreamZero Info](mailto:info@ferrislabs.net?subject=fl-ferris-demo-vpn%20Credentials%20Request)|
+| fl-ferris-demo | DEMO | [fl-ferris-demo-vpn](https://34.133.137.127) | [StreamZero Info](mailto:info@gridmine.com?subject=fl-ferris-demo-vpn%20Credentials%20Request) |
+| ia-ferris-demo | DEMO | [ia-ferris-demo-vpn](https://35.193.224.161) | [StreamZero Info](mailto:info@gridmine.com?subject=fl-ferris-demo-vpn%20Credentials%20Request) |
+|ferris-dev        |DEV|[ferris-dev-vpn](https://34.136.49.29)           |[StreamZero Info](mailto:info@gridmine.com?subject=fl-ferris-demo-vpn%20Credentials%20Request)|
 
 
 ## Import & Trust FerrisRootCA 
@@ -36,7 +36,7 @@ Below you can find a visual example on how to import the FerrisRootCA on a Mac s
 
 *Note: The file shared is the FerrisRootCA public key; The private key is only available to selected individuals and never shared publicly or un-encrypted.*
 
-Save the file [FerrisRootCA](https://raw.githubusercontent.com/Ferris-Labs/platform-docs/master/wiki-resources/certificates/FerrisRootCA.crt)  locally and follow the visual instructions.  
+Save the file [FerrisRootCA](https://raw.githubusercontent.com/gridmine/platform-docs/master/wiki-resources/certificates/FerrisRootCA.crt)  locally and follow the visual instructions.  
 
 
 

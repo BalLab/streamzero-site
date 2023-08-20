@@ -41,7 +41,7 @@ import boto3
 from aws_session import session
 ```
 
-Please refer to FerrisLabs DX Samples on GitHub [AWS Integration](https://github.com/Ferris-Labs/dx_samples/tree/main/integration_aws) for further usage and integration samples.
+Please refer to gridmine DX Samples on GitHub [AWS Integration](https://github.com/gridmine/dx_samples/tree/main/integration_aws) for further usage and integration samples.
 
 ### PIP Requirements
 
