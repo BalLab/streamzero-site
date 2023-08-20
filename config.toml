@@ -271,39 +271,39 @@ enable = false
       class = 'highlight-menu-item'
 
 
-[[menu.main]]
-  identifier = 'integrations'
-  name = 'INTEGRATIONS'
-  url = '/integrations/'
-  weight = 2
-  [menu.main.params]
-    class = 'highlight-menu-item'
+#[[menu.main]]
+#  identifier = 'integrations'
+#  name = 'INTEGRATIONS'
+#  url = '/integrations/'
+#  weight = 2
+#  [menu.main.params]
+#    class = 'highlight-menu-item'
 
-[[menu.main]]
-    identifier = "integrations_databases"
-    name = "DATABASES"
-    url = "/integrations/databases/"
-    parent = "integrations"
-    weight = 1
-    [menu.main.params]
-      class = 'highlight-menu-item'
+#[[menu.main]]
+#    identifier = "integrations_databases"
+#    name = "DATABASES"
+#    url = "/integrations/databases/"
+#    parent = "integrations"
+#    weight = 1
+#    [menu.main.params]
+#      class = 'highlight-menu-item'
 
-[[menu.main]]
-    identifier = "integrations_notifications"
-    name = "NOTIFICATIONS"
-    url = "/integrations/notifications/"
-    parent = "integrations"
-    weight = 2
-    [menu.main.params]
-      class = 'highlight-menu-item'
+#[[menu.main]]
+#    identifier = "integrations_notifications"
+#    name = "NOTIFICATIONS"
+#    url = "/integrations/notifications/"
+#    parent = "integrations"
+#    weight = 2
+#    [menu.main.params]
+#      class = 'highlight-menu-item'
 
-[[menu.main]]
-  identifier = 'solutions'
-  name = 'CASE STUDIES'
-  url = '/solutions/'
-  weight = 3
-  [menu.main.params]
-    class = 'highlight-menu-item'
+#[[menu.main]]
+#  identifier = 'solutions'
+#  name = 'CASE STUDIES'
+#  url = '/solutions/'
+#  weight = 3
+#  [menu.main.params]
+#    class = 'highlight-menu-item'
 
 [[menu.main]]
   identifier = 'learn'
@@ -341,53 +341,53 @@ enable = false
 #    parent = "learn"
 #    weight = 4
 
-[[menu.main]]
-  identifier = 'blog'
-  name = 'BLOG'
-  url = '/blog/'
-  weight = 5
-  [menu.main.params]
-    class = 'highlight-menu-item'
+#[[menu.main]]
+#  identifier = 'blog'
+#  name = 'BLOG'
+#  url = '/blog/'
+#  weight = 5
+#  [menu.main.params]
+#    class = 'highlight-menu-item'
 
-[[menu.main]]
-  identifier = 'company'
-  name = 'COMPANY'
-  url = '/about/'
-  weight = 6
-  [menu.main.params]
-    class = 'highlight-menu-item'
+#[[menu.main]]
+#  identifier = 'company'
+#  name = 'COMPANY'
+#  url = '/about/'
+#  weight = 6
+#  [menu.main.params]
+#    class = 'highlight-menu-item'
 
-[[menu.main]]
-    identifier = "company_about"
-    name = "ABOUT US"
-    url = "/about/"
-    parent = "company"
-    weight = 1
+#[[menu.main]]
+#    identifier = "company_about"
+#    name = "ABOUT US"
+#    url = "/about/"
+#    parent = "company"
+#    weight = 1
 
-[[menu.main]]
-    identifier = "company_contact"
-    name = "CONTACT US"
-    url = "/contact/"
-    parent = "company"
-    weight = 2
+#[[menu.main]]
+#    identifier = "company_contact"
+#    name = "CONTACT US"
+#    url = "/contact/"
+#    parent = "company"
+#    weight = 2
 
-[[menu.main]]
-    identifier = "company_careers"
-    name = "CAREERS"
-    url = "/jobs/"
-    parent = "company"
-    weight = 3
+#[[menu.main]]
+#    identifier = "company_careers"
+#    name = "CAREERS"
+#    url = "/jobs/"
+#    parent = "company"
+#    weight = 3
 
-[[menu.main]]
-    identifier = "company_partners"
-    name = "PARTNERS"
-    url = "/partners/"
-    parent = "company"
-    weight = 4
+#[[menu.main]]
+#    identifier = "company_partners"
+#    name = "PARTNERS"
+#    url = "/partners/"
+#    parent = "company"
+#    weight = 4
 
-[[menu.main]]
-    identifier = "support_professional_services"
-    name = "PRICING"
-    url = "/SUPPORT/"
-    parent = "company"
-    weight = 5
+#[[menu.main]]
+#    identifier = "support_professional_services"
+#    name = "PRICING"
+#    url = "/SUPPORT/"
+#    parent = "company"
+#    weight = 5
