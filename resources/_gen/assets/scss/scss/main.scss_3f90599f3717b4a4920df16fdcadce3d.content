@@ -20569,4 +20569,9 @@ footer {
 .text-red {
   color: #E11439 !important; }
 
+.bottom-right {
+  position: absolute;
+  bottom: 8px;
+  right: 16px; }
+
 /*# sourceMappingURL=main.css.map */
