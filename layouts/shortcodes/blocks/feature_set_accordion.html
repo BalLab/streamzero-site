@@ -9,12 +9,9 @@
 
 {{ range $data  }}
     {{ range . }}
-
-
             <div class="row">
-
                 <div class="col">
-                    <h1 class="text-center home_title mb-5">{{ .name}}</h1>
+                    <p class="text-align-left home_title_small">{{ .name}}</p>
                     <p class="lead">{{ .description}}</p>
                 </div>
 
@@ -41,7 +38,9 @@
                         {{ end }}
                     </div>
                 </div>
-
+            </div>
+            <div class="row">
+                <hr>
             </div>
     {{ end }}
 {{ end }}
