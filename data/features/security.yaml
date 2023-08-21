@@ -1,7 +1,0 @@
-features:
-- name: amazon athena
-  description: Amazon Athena is a serverless, interactive query service to query data and analyze big data in Amazon S3 using standard SQL. 
-- name: amazon redshift
-  description: Amazon Redshift is a data warehouse product which forms part of the larger cloud-computing platform Amazon Web Services. It is built on top of technology from the massive parallel processing data warehouse company ParAccel, to handle large scale data sets and database migrations.
-- name: apache drill
-  description: Apache Drill is an open-source software framework that supports data-intensive distributed applications for interactive analysis of large-scale datasets.

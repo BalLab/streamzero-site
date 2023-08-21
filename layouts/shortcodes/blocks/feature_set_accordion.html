@@ -7,7 +7,7 @@
 {{ $data := index site.Data.features $feature_set }}
 
 <div id="accordion" class="accordion">
-{{ range $data }}
+{{ range $data  }}
     {{ range . }}
     <div class="card">
         <div class="card-header" id="heading_{{ $feature_set }}_{{ anchorize .name }}">

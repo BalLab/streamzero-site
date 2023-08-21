@@ -1,7 +1,0 @@
-features:
-- name: Powered by Kubernetes
-  description: All platform infrastructure runs on Kubernetes. Giving you the possibility to scale on demand. Each layer of the stack is designed to scale indpendently of the others. 
-- name: Run Millions of Executions
-  description: Events are transported through Kafka and profit from the resilience of Kafka - Enabling event and execution throughputs of Millions of executions per day day in and day out. If the underlying infrastructure can support it.
-- name: Easily Scalable Executors
-  description: Executors run in easily scalable clusters which are further subdivided by priority lanes.
