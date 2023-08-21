@@ -10,16 +10,16 @@
 {{ range $data }}
     {{ range . }}
     <div class="card">
-        <div class="card-header" id="heading_{{ $feature_set }}_{{ .name | base64Encode }}">
+        <div class="card-header" id="heading_{{ $feature_set }}_{{ anchorize .name }}">
             <h4 class="mb-0">
-                <button class="btn btn-link collapsed lead" data-toggle="collapse" data-target="#{{ $feature_set }}_{{ .id }}"
-                    aria-expanded="false" aria-controls="{{ $feature_set }}_{{ .name | base64Encode }}">
+                <button class="btn btn-link collapsed lead" data-toggle="collapse" data-target="#{{ $feature_set }}_{{ anchorize .name  }}"
+                    aria-expanded="false" aria-controls="{{ $feature_set }}_{{ anchorize .name  }}">
                     {{ .name }}
                 </button>
             </h4>
         </div>
 
-        <div id="{{ $feature_set }}_{{ .name | base64Encode }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+        <div id="{{ $feature_set }}_{{ anchorize .name  }}" class="collapse" aria-labelledby="heading_{{ $feature_set }}_{{ anchorize .name  }}" data-parent="#accordion">
             <div class="card-body lead">
                 {{ .description }}
             </div>
