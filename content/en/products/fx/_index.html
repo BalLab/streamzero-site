@@ -115,9 +115,9 @@ banner_image="/images/temp/featured-background_5.jpg"
 
 
 <!-- White block with Triangle down -->
-{{< blocks/lead color="white" >}}
+{{< blocks/lead color="red" >}}
    <row>
-	   <div class="container red">
+	   <div class="container">
 		<h1 class="text-center home_title">Feature Rich ..</h1>
  			<p class="text-center lead_big">
                 .. yet designed for everyday usability. Our platforms are designed to serve as Enterprise Development Platforms with multiple teams and divergent use cases. Role based authentication, multi-project support, secrets management, aggregated logging, programmatic retries, automated and programatic re-prioritization, cross-network eventing, execution log archiving ... all features engineered based on decades of project experience.
@@ -125,6 +125,35 @@ banner_image="/images/temp/featured-background_5.jpg"
 	   </div>
    </row>
 {{< /blocks/lead >}}
+
+<!-- Accordion -->
+{{< blocks/section color="white" >}}
+	<div class="col">
+
+		<div class="row">
+			<div class="col-sm-12 col-md-6 text-left">
+				<h1 class="text-center home_title mb-5">Highly Scalable</h1>
+			</div>
+		</div>
+ 		
+		<div class="row">
+
+			<div class="col-sm-12 col-md-6">
+				<p class="lead">StreamZero's products have been built from the ground up for large transaction volumes. The scalability is inherited from the underlying platforms of Kafka and Kubernetes.</p>
+				<p class="lead">Building on top of this robust infrastructure we have engineered features such as execution reprioritization based on real world experience.</p>
+			</div>
+
+			<div class="col-sm-12 col-md-6">
+				<!-- Accordion -->
+				{{< blocks/feature_set_accordion color="white" feature_set="security">}}
+			</div>
+		</div>
+	</div>
+{{< /blocks/section >}}
+
+
+
+
 
 
 <!-- Accordion -->
@@ -142,62 +171,14 @@ banner_image="/images/temp/featured-background_5.jpg"
 				<p class="lead">StreamZero's products have been built from the ground up for large transaction volumes. The scalability is inherited from the underlying platforms of Kafka and Kubernetes.</p>
 				<p class="lead">Building on top of this robust infrastructure we have engineered features such as execution reprioritization based on real world experience.</p>
 			</div>
+
 			<div class="col-sm-12 col-md-6">
-				<div id="accordion" class="accordion">
-					<div class="card">
-						<div class="card-header" id="headingOne">
-							<h4 class="mb-0">
-								<button class="btn btn-link collapsed lead" data-toggle="collapse" data-target="#collapseOne"
-									aria-expanded="false" aria-controls="collapseOne">
-									Powered by Kubernetes
-								</button>
-							</h4>
-						</div>
-	
-						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
-							<div class="card-body lead">
-								All platform infrastructure runs on Kubernetes. Giving you the possibility to scale on demand. Each layer of the stack is designed to scale indpendently of the others.
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="headingTwo">
-							<h4 class="mb-0">
-								<button class="btn btn-link collapsed lead" data-toggle="collapse" data-target="#collapseTwo"
-									aria-expanded="false" aria-controls="collapseTwo">
-									High Throughput Event Bus
-								</button>
-							</h4>
-						</div>
-						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
-							<div class="card-body lead">
-								Events are transported through Kafka and profit from the resilience of Kafka. Enabling event and execution throughputs of 100K+ executions per day - day in and day out.
-							</div>
-						</div>
-					</div>
-					<div class="card">
-						<div class="card-header" id="headingThree">
-							<h4 class="mb-0">
-								<button class="btn btn-link collapsed lead" data-toggle="collapse" data-target="#collapseThree"
-									aria-expanded="false" aria-controls="collapseThree">
-									Replicated Executors
-								</button>
-							</h4>
-						</div>
-						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
-							<div class="card-body lead">
-								Executions are parallelised on an easily scalable cluster of containers.
-							</div>
-						</div>
-					</div>
-				</div>
+				<!-- Accordion -->
+				{{< blocks/feature_set_accordion color="white" feature_set="scalability">}}
 			</div>
 		</div>
 	</div>
 {{< /blocks/section >}}
-
-
-
 
 <!-- 3 Column Section  -->
 <section class="row td-cover-block" style="background-color: #F5F4EE;">

@@ -1,0 +1,30 @@
+{{ $_hugo_config := `{ "version": 1 }` }}
+<!--{{ $col_id := .Get "color" | default .Ordinal }}-->
+<!--{{ $height := .Get "height" | default "auto"  }}-->
+<!--{{ $type   := .Get "type" | default "" }}-->
+
+{{ $feature_set   := .Get "feature_set" }}
+{{ $data := index site.Data.features $feature_set }}
+
+<div id="accordion" class="accordion">
+{{ range $data }}
+    {{ range . }}
+    <div class="card">
+        <div class="card-header" id="heading_{{ $feature_set }}_{{ .name | base64Encode }}">
+            <h4 class="mb-0">
+                <button class="btn btn-link collapsed lead" data-toggle="collapse" data-target="#{{ $feature_set }}_{{ .id }}"
+                    aria-expanded="false" aria-controls="{{ $feature_set }}_{{ .name | base64Encode }}">
+                    {{ .name }}
+                </button>
+            </h4>
+        </div>
+
+        <div id="{{ $feature_set }}_{{ .name | base64Encode }}" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+            <div class="card-body lead">
+                {{ .description }}
+            </div>
+        </div>
+    </div>
+    {{ end }}
+{{ end }}
+</div>
