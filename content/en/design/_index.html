@@ -21,6 +21,85 @@ linkTitle = "DESIGN"
 
 {{< /blocks/cover >}}
 
+<!-- Accordion -->
+{{< blocks/section color="white" >}}
+	<div class="col">
+ 		<h1 class="text-center home_title mb-5">Accordion Example</h1>
+		<div class="row">
+			<div class="col-sm-12 col-md-6">
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consequuntur numquam aspernatur omnis voluptatibus aut cupiditate, obcaecati quidem maxime eos. Nobis assumenda iusto modi ducimus ea autem reprehenderit quis obcaecati!</p>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta consequuntur numquam aspernatur omnis voluptatibus aut cupiditate, obcaecati quidem maxime eos. Nobis assumenda iusto modi ducimus ea autem reprehenderit quis obcaecati!</p>
+			</div>
+			<div class="col-sm-12 col-md-6">
+				<div id="accordion" class="accordion">
+					<div class="card">
+						<div class="card-header" id="headingOne">
+							<h4 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseOne"
+									aria-expanded="false" aria-controls="collapseOne">
+									Collapsible #1
+								</button>
+							</h4>
+						</div>
+	
+						<div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+							<div class="card-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat incidunt quis molestias vitae doloremque, molestiae dolore mollitia similique deserunt accusamus laborum rem est facilis magni expedita voluptas inventore exercitationem omnis?
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingTwo">
+							<h4 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo"
+									aria-expanded="false" aria-controls="collapseTwo">
+									Collapsible #2
+								</button>
+							</h4>
+						</div>
+						<div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+							<div class="card-body">
+								Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio dolore expedita veritatis ea enim eaque vero pariatur qui perferendis. Itaque, consequuntur sapiente. Mollitia in quas alias possimus nisi dicta tempore?
+							</div>
+						</div>
+					</div>
+					<div class="card">
+						<div class="card-header" id="headingThree">
+							<h4 class="mb-0">
+								<button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree"
+									aria-expanded="false" aria-controls="collapseThree">
+									Collapsible #3
+								</button>
+							</h4>
+						</div>
+						<div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+							<div class="card-body">
+								Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae facere est atque, voluptatibus saepe mollitia illum ipsa quos molestias officia quod placeat facilis illo dolor corrupti ratione ut quidem velit!
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+{{< /blocks/section >}}
+
+
+<!-- Carousel -->
+{{< blocks/section color="white" >}}
+	<div class="col">
+ 		<h1 class="text-center home_title mb-5">Carousel Example</h1>
+		<div class="row">
+			<div class="col">
+				{{< carousel items="1" height="500" unit="px" duration="2000" fileName="carousel" >}} 
+			</div>
+		</div>
+	</div>
+{{< /blocks/section >}}
+
+
+
+
 
 <!-- 2 column image to left Image should be in proportion 600:400-->
 
@@ -250,30 +329,26 @@ linkTitle = "DESIGN"
 
 
 <section>
-
 	<div class="row">
 		<div class="col-sm-6">
-		  <div class="card">
-			<div class="card-body">
-			  <h5 class="card-title">Special title treatment</h5>
-			  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-			  <a href="#" class="btn btn-primary">Go somewhere</a>
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">Special title treatment</h5>
+					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
 			</div>
-		  </div>
 		</div>
 		<div class="col-sm-6">
-		  <div class="card">
-			<div class="card-body">
-			  <h5 class="card-title">Special title treatment</h5>
-			  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-			  <a href="#" class="btn btn-primary">Go somewhere</a>
+			<div class="card">
+				<div class="card-body">
+					<h5 class="card-title">Special title treatment</h5>
+					<p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+					<a href="#" class="btn btn-primary">Go somewhere</a>
+				</div>
 			</div>
-		  </div>
 		</div>
-	  </div>
-
-
-
+	</div>
 </section>
 
 
