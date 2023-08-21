@@ -20574,4 +20574,16 @@ footer {
   bottom: 8px;
   right: 16px; }
 
+.accordion .btn-link {
+  width: 100%;
+  text-align: left;
+  color: #E11439; }
+  .accordion .btn-link:after {
+    content: "\f107";
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    float: right; }
+  .accordion .btn-link.collapsed:after {
+    content: "\f106"; }
+
 /*# sourceMappingURL=main.css.map */
