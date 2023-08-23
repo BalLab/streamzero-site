@@ -1,11 +1,11 @@
 images: 
-  - image: /images/DASHBOARD.png
+  - image: /images/temp/screenshots_annotated.svg
     heading: "Heading 1"
     subheading: "Subheading 1"
-  - image: /images/DASHBOARD.png
+  - image: /images/temp/screenshots_annotated.svg
     heading: "Heading 2"
     subheading: "Subheading 2"
-  - image: /images/DASHBOARD.png
+  - image: /images/temp/screenshots_annotated.svg
     heading: "Heading 3"
     subheading: "Subheading 3"
   - image: /images/DASHBOARD.png

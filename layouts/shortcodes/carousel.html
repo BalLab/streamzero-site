@@ -3,7 +3,7 @@
 {{ .Scratch.Set "ordinal" .Ordinal }}
 {{ .Scratch.Set "items" (.Get "items") }}
 {{ $fileName := .Get "fileName" | default "carousel" }}
-{{/*  <div id="carousel{{ .Ordinal }}" class="carousel" duration="{{ .Get `duration` }}">
+{{/*  <div id="carousel{{ .Ordinal }}" class="carousel carousel-fade carousel-dark" duration="{{ .Get `duration` }}">
     <ul>
       {{ range $index, $slide := .Site.Data.carousel.images }}
         <li id="c{{ $.Scratch.Get "ordinal" }}_slide{{ add $index 1}}" style="min-width: calc(100%/{{ $.Scratch.Get "items" }}); padding-bottom: {{ $.Scratch.Get "height" }}{{ $.Scratch.Get "unit" }};"><img src="{{ $slide.image }}" alt="" /><div><div>{{ $slide.content_html }}</div></div></li>
@@ -18,7 +18,7 @@
     <div class="next">&rsaquo;</div>
 </div>  */}}
 
-<div id="carousel{{ .Ordinal }}" class="carousel slide" data-touch="true" data-interval="{{ .Get `duration` }}">
+<div id="carousel{{ .Ordinal }}" class="carousel slide" enable-gradients="false" data-touch="true" data-interval="{{ .Get `duration` }}">
   <ol class="carousel-indicators">
     {{ range index $.Site.Data.carousels $fileName }}
       {{ range $index, $slide := . }}
@@ -31,7 +31,8 @@
       {{ range $index, $slide := . }}
         <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
           <img src="{{ $slide.image }}" class="d-block w-100" alt="" />
-          <div><div>{{ $slide.content_html }}</div></div>
+          
+          <!--p class="carousel-subheading">{{ $slide.subheading }}</p-->
         </div>
       {{ end }}
     {{ end }}
