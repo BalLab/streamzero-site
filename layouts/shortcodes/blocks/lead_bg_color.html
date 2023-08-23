@@ -4,8 +4,7 @@
 {{ $height := .Get "height" | default "auto"  }}
 {{/* Height can be one of: auto, min, med, max, full. */}}
 <a id="td-block-{{ .Ordinal }}" class="td-offset-anchor"></a>
-<section style="linear-gradient(180deg, rgba(246,250,254,1) 100%, 
-rgba(255,255,255,1) 100%);"  
+<section style="background: #c33764; background: -webkit-linear-gradient(to right, #1d2671, #c33764);background: linear-gradient(to right, #1d2671, #c33764);"  
 class="row td-box td-box--{{ $col_id }} position-relative td-box--gradient td-box--height-{{ $height }}">
 	<div class="container text-center td-arrow-down">
 		<span class="h4 mb-0">
@@ -17,3 +16,4 @@ class="row td-box td-box--{{ $col_id }} position-relative td-box--gradient td-bo
 		</span>
 	</div>
 </section>
+

@@ -20586,4 +20586,25 @@ footer {
   .accordion .btn-link.collapsed:after {
     content: "\f106"; }
 
+/** Carousel control override  **/
+.carousel-control-prev, .carousel-control-next {
+  background: none !important;
+  filter: none !important;
+  progid: none !important; }
+
+/** Carousel Styles **/
+.carousel-heading {
+  font-family: 'dm-sans';
+  font-size: 1.8rem;
+  line-height: 60px;
+  color: #fff; }
+
+.carousel-subheading {
+  font-family: 'dm-sans';
+  font-size: 1.0rem;
+  line-height: 60px;
+  color: #fff; }
+
+/** Features Section and Accordion Styles **/
+
 /*# sourceMappingURL=main.css.map */
