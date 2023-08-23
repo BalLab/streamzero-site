@@ -391,3 +391,9 @@ enable = false
 #    url = "/SUPPORT/"
 #    parent = "company"
 #    weight = 5
+
+
+[params.replacements]
+	company_name = "GridMine GmbH"
+	product_brand_name = "StreamZero"
+
