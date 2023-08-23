@@ -1,7 +1,6 @@
 ---
 title: "Create a Service"
 linkTitle: "Create a Service"
-weight: 203
 description: >-
      In this section we will create a simple service, add a manifest file to the service and deploy the service.
 ---
