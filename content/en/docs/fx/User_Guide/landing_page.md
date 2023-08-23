@@ -1,7 +1,7 @@
 ---
 title: "Landing Page (Dashboard)"
 linkTitle: "Landing page (Dashboard)"
-weight: -18
+weight: 301
 description: >-
   Overview of the StreamZero FX Dashboard.
 ---

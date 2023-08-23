@@ -1,6 +1,7 @@
 ---
 title: "Architecture Overview"
 linkTitle: "Architecture"
+weight: 201
 description: >-
      An overview of the architecture of StreamZero FX.
 ---

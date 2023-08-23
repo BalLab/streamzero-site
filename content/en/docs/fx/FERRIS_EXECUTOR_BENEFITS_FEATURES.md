@@ -1,9 +1,8 @@
 ---
-categories: ["Overview", "Placeholders"]
 tags: ["features","docs"] 
 title: "Features & Benefits"
 linkTitle: "Features & Benefits"
-
+weight: 200
 description: >
   A short overview of the benefits and features of StreamZero FX
 ---
