@@ -41,7 +41,7 @@ banner_image="/images/temp/featured-background_5.jpg"
 		<h1 class="text-center home_title">Event Driven Automation for Everyone</h1>
  			<p class="text-center lead">The ease of working with StreamZero with it's ability to rewire services at will and integrate across clouds and services - Agility into engineering.</p>
 
-			 <p><img src="/images/temp/fx.svg" style="max-width: 90%;				
+			 <p><img src="/images/temp/fx.svg" class="xsvg"   style="max-width: 90%;				
 				margin: 0 auto 40px auto;"></p>
 
 
@@ -96,8 +96,12 @@ banner_image="/images/temp/featured-background_5.jpg"
 
 
 
+
            <div class="col-md-6">
-               <img src="/images/temp/streamzero_lifecycle.png" class="img-fluid" xstyle="border:2px solid #fff;
+
+            
+            {{< blocks/svg >}} 
+               <img   src="/images/temp/css.svg" class="img-fluid" xstyle="border:2px solid #fff;
                box-shadow: 10px 10px 5px #ccc;
                -moz-box-shadow: 10px 10px 5px #ccc;
                -webkit-box-shadow: 10px 10px 5px #ccc;
@@ -139,3 +143,27 @@ banner_image="/images/temp/featured-background_5.jpg"
 <!-- DEMO START -->
 {{< blocks/call-to-demo >}}
 <!-- DEMO END -->
+
+
+
+<style>
+
+#marching_ants {
+   scale: 2.0;
+}
+
+.connector {
+   stroke-width: 4;
+   stroke-dasharray: 4px;
+   stroke-dashoffset: 8px;
+   animation: stroke 0.2s linear infinite;
+}
+
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+</style>
+
+
