@@ -305,13 +305,13 @@ enable = false
 #  [menu.main.params]
 #    class = 'highlight-menu-item'
 
-[[menu.main]]
-  identifier = 'learn'
-  name = 'DOCUMENTATION'
-  url = '/docs/'
-  weight = 4
-  [menu.main.params]
-    class = 'highlight-menu-item'
+#[[menu.main]]
+#  identifier = 'learn'
+#  name = 'DOCUMENTATION'
+#  url = '/docs/'
+#  weight = 4
+#  [menu.main.params]
+#    class = 'highlight-menu-item'
 
 #[[menu.main]]
 #    identifier = "learn_develoer_guide"
