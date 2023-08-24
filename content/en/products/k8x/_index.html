@@ -26,8 +26,9 @@ banner_image="/images/temp/featured-background_3.jpg"
             Build service flows spanning multiple containers and languages with ease. 
             Optimise the resource usage of your Kubernetes cluster. Fully managed in a single UI.</p>
 
-			 <p><img src="/images/temp/k8x.svg" style="max-width: 90%;				
-				margin: 0 auto 40px auto;"></p>
+			 <p>
+				{{< blocks/svg >}} 
+			</p>
 
 
 	   </div>
@@ -39,7 +40,7 @@ banner_image="/images/temp/featured-background_3.jpg"
 
 <!-- DEVELOP / DEPLOY / Monitor START -->
 <!-- 3 Card with Images-->
-<section class="row td-cover-block " style="background-color: #ececec;">
+{{< blocks/lead_bg_color color="red"  color_left="#000000" color_right="#00000F">}}
 
 	<div class="container">
 		<h1 class="text-center home_title">DEVELOP &gt; DEPLOY &gt; MONITOR</h1>
@@ -80,15 +81,15 @@ banner_image="/images/temp/featured-background_3.jpg"
 							<div>
 								<div class="integration-card-title-big" title="StreamZero DX">
 									<a href="/products/sx/">
-										<img src="/images/temp/homescreen_ui.svg" />  
+										<img src="/images/temp/gitsync_ui.svg" />  
 									</a>  
 								</div>
 								<div class="card-text">
                                     <!--h4 class="integration-card-title-big">STREAMZERO SX</h4-->
-                                    <p class="lead ">
+                                    <p>
                                        Push to GIT. Approved Deployment Manager sync with StreamZero at the click of a button to deploy.
                                   </p>
-                                  <p class="lead ">
+                                  <p>
                                     Your service is Live, logging to aggregated log storage, monitorable and scalable.
                                   </p>
 								</div>
@@ -114,7 +115,7 @@ banner_image="/images/temp/featured-background_3.jpg"
 								</div>
 								<div class="card-text">
                                     <!--h4 class="integration-card-title-big">STREAMZERO K8X</h4-->
-                                    <p class="lead ">
+                                    <p>
                                        Monitor, trigger and review on the management UI. View logs of each service. Be alerted on failure. View service execution flows. De-activate services. Skip services temporarily. Prioritize and de-prioritize services. And more .....
                                   </p>
 								</div>
@@ -132,7 +133,7 @@ banner_image="/images/temp/featured-background_3.jpg"
 			</div>
 		</div>
 	</div>
-</section>
+   {{< /blocks/lead_bg_color >}}
 
 <!-- DEVELOP / DEPLOY / Monitor END -->
 
@@ -256,4 +257,23 @@ banner_image="/images/temp/featured-background_3.jpg"
 {{< blocks/call-to-demo >}}
 <!-- DEMO END -->
 
+<style>
 
+	#marching_ants {
+	   scale: 2.0;
+	}
+	
+	.connector {
+	   stroke: rgb(256, 256, 256);
+	   stroke-width: 6;
+	   stroke-dasharray: 4px;
+	   stroke-dashoffset: 8px;
+	   animation: stroke 0.2s linear infinite;
+	}
+	
+	@keyframes stroke {
+	  to {
+		stroke-dashoffset: 0;
+	  }
+	}
+	</style>

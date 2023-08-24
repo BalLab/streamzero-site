@@ -1,7 +1,7 @@
 
 ---
 title: "DOCUMENTATION"
-linkTitle: "DOCUMENTATIONX"
+linkTitle: "DOCUMENTATION"
 weight: 0
 menu:
   main:
