@@ -31,7 +31,9 @@
 
                                 <div id="{{ $feature_set }}_{{ anchorize .name  }}" class="collapse" aria-labelledby="heading_{{ $feature_set }}_{{ anchorize .name  }}" data-parent="#accordion">
                                     <div class="card-body lead">
-                                        {{ .description }}
+                                        <p>{{ .name }}</p>
+                                        <p>{{ .description }}</p>
+                                        
                                     </div>
                                 </div>
                             </div>
