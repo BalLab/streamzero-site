@@ -20605,6 +20605,28 @@ footer {
   line-height: 60px;
   color: #fff; }
 
+.fade_rule {
+  background: -webkit-linear-gradient(#AC72F0, #63D0FE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  height: 80px; }
+
+.lifecycle_title_magenta {
+  background: -webkit-linear-gradient(#AC72F0, #63D0FE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.lifecycle_title_red {
+  background: -webkit-linear-gradient(#FF3333, #63D0FE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
+.lifecycle_title_blue {
+  background: -webkit-linear-gradient(#420eeb, #63D0FE);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; }
+
 /** Features Section and Accordion Styles **/
+/** **/
 
 /*# sourceMappingURL=main.css.map */
