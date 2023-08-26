@@ -26,4 +26,4 @@ context.logging.setLevel('INFO')
 context.logging.debug("debug msg")
 
 #Scheduling retry of service execution
-context.retry(minutes=0, hours=0, days=0, cron_expression=None, parameters={}):
+context.retry(minutes=0, hours=0, days=0, cron_expression=None, parameters={})
