@@ -1,6 +1,6 @@
 features:
   feature_sets:
-    - name: Built to Scale
+    - name: Scalability
       description: StreamZero's products have been built from the ground up for large transaction volumes. The scalability is inherited from the underlying platforms of Kafka and Kubernetes.
                    Building on top of this robust infrastructure we have engineered features such as execution reprioritization based on real world experience.
       features: 
@@ -11,7 +11,7 @@ features:
         - name: Easily Scalable Executors
           description: Executors run in easily scalable clusters which are further subdivided by priority lanes.
 
-    - name: Ingest from Anywhere
+    - name: Data Ingestion
       description: Easily manage ingestion from Files, Database or Streams
       features: 
         - name: Streaming Inputs
@@ -21,7 +21,7 @@ features:
         - name: Storage Inputs
           description: Amazon S3, HDFS, Minio, NFS, Google Cloud Storage, Azure Cloud Storage...
 
-    - name: Low-Ops
+    - name: Operations and Monitoring
       description: Low-Ops, you heard it here first. Our integrated platform manages deployments, collects operations data and enables a low effort operations.
       features: 
         - name: Stream Aggregated Logs, Events and Notifications
@@ -30,7 +30,6 @@ features:
           description: Use the Management dashboard to view the health of your system. Identify slow running executions and fix them easily. Get notified on failure. View precise execution time of each step within a service. Identify new code running on platform and who esecuted them.
         - name: Trouble Ticketing Integrations
           description: Auto-generate trouble tickets on failure. Integrate with your ticketing system of choice - after all it is just a service away.
-
 
     - name: Comprehensive Security
       description: Low-Ops, you heard it here first. Our integrated platform manages deployments, collects operations data and enables a low effort operations.
@@ -45,4 +44,3 @@ features:
           description: In-built secrets storage to save your applications secrets. Support for secrets at service, project and platform level.
         - name: Environment Isolation
           description: Each Service runs in it's own environment - with it's own dedicated context.
-
