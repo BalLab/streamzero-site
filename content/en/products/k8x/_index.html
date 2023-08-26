@@ -123,7 +123,7 @@ banner_image="/images/temp/featured-background_6.jpg"
 		<h1 class="text-center home_title text-black">Pragmatically Crafted</h1>
  			<p class="text-center lead text-black">We have used StreamZero FX day in and day out for years, both developing as well as operating the platform - so we built it for optimum operational efficiency.</p>
 
-			 <p><img src="/images/temp/screenshots_annotated.svg" style="max-width: 90%; margin: 0 auto 40px auto;"></p>
+			 {{< carousel items="1" height="500" unit="px" duration="2000" fileName="carousel" >}}
 	   </div>
    </row>
 {{< /blocks/lead_bg_color >}}
@@ -131,51 +131,55 @@ banner_image="/images/temp/featured-background_6.jpg"
 <!-- FX SCREEN DIAGRAM END -->
 
 
-<!-- White block with Triangle down -->
-{{< blocks/lead color="white" >}}
-   <row>
-	   <div class="container">
-		<h1 class="text-center home_title">Feature Rich ..</h1>
- 			<p class="text-center lead_big">
-                .. yet designed for everyday usability. Our platforms are designed to serve as Enterprise Development Platforms with multiple teams and divergent use cases. Role based authentication, multi-project support, secrets management, aggregated logging, programmatic retries, automated and programatic re-prioritization, cross-network eventing, execution log archiving ... all features engineered based on decades of project experience.
-            </p>
-	   </div>
-   </row>
-{{< /blocks/lead >}}
+<!-- FEATURES BLOCK START -->
 
-<section class="row td-cover-block" style="background-color: #F7F5F5;;">
+{{< blocks/lead_bg_color color="red"  color_left="#1B1026" color_right="#000000">}}
 	<div class="container">
-		<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/F6zJwUjzSig?si=7qnBdX0k0M0fOZz_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-	</div>
-</section>
+		<h1 class="text-center home_title">Feature Rich</h1>
+		 <p class="text-center lead_big">
+			Yet designed for everyday usability.
+		</p>
+   </div>
 
-<section class="row td-cover-block" style="background-color: #F7F5F5;;">
 	<div class="container">
-		{{< blocks/feature_set_accordion color="white" feature_set="features">}}
+		<div class="row">
+			<div class="col-6 text-align-left lead">			
+				<p>Our platforms are designed to serve as Enterprise Development Platforms with multiple teams and divergent use cases</p>
+				<p>Role based authentication, multi-project support, secrets management, aggregated logging, programmatic retries, automated and programatic re-prioritization, cross-network eventing, execution log archiving ...</p> 
+				<p>All features engineered based on decades of project experience.</p>
+			</div>
+			<div class="col-6 text-align-left">
+				{{< blocks/feature_set_accordion color="white" feature_set="features">}}
+			</div>
+		</div>
 	</div>
-</section>
+
+{{< /blocks/lead_bg_color >}}
+
+<!-- FEATURES BLOCK END -->
 
 <!-- DEMO START -->
 {{< blocks/call-to-demo >}}
 <!-- DEMO END -->
 
+
+
 <style>
 
-	#marching_ants {
-	   scale: 2.0;
-	}
-	
-	.connector {
-	   stroke: rgb(256, 256, 256);
-	   stroke-width: 6;
-	   stroke-dasharray: 4px;
-	   stroke-dashoffset: 8px;
-	   animation: stroke 0.2s linear infinite;
-	}
-	
-	@keyframes stroke {
-	  to {
-		stroke-dashoffset: 0;
-	  }
-	}
-	</style>
+#marching_ants {
+   scale: 2.0;
+}
+
+.connector {
+   stroke-width: 4;
+   stroke-dasharray: 4px;
+   stroke-dashoffset: 8px;
+   animation: stroke 0.2s linear infinite;
+}
+
+@keyframes stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+</style>
