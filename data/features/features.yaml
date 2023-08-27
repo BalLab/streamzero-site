@@ -44,3 +44,11 @@ features:
           description: In-built secrets storage to save your applications secrets. Support for secrets at service, project and platform level.
         - name: Environment Isolation
           description: Each Service runs in it's own environment - with it's own dedicated context.
+
+    - name: Project and Team Features
+      description: 
+      features: 
+        - name: Service Collections / Projects
+          description: Groups services into distinct Projects. Each with it's own distinct team and roles
+        - name: Micro-UIs for Business Users
+          description: Attach forms to services to trigger executions - so business users can trigger on demand executions. Forms are generated from JSON definitions. Create forms in minutes.
