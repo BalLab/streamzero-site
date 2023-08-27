@@ -20,11 +20,13 @@ banner_image="/images/temp/featured-background_5.jpg"
 
 <!-- FX TEST CAROUSEL DIAGRAM -->
 <!-- Red block with Traingle down -->
-{{< blocks/lead_bg_color color="red" >}}
+<section class="row td-cover-block " style="background-color: #fefbfb; background-image: url('/images/temp/featured-background_8.jpg'); background-repeat: no-repeat; background-size: cover;">
+
+<div class="container">
    <row>
 	   <div class="container">
 		<h1 class="text-center home_title text-white">Event Driven Services Simplified</h1>
- 			<p class="text-center lead">We have used StreamZero FX day in and day out for years, both developing as well as operating the platform - so we built it for optimum operational efficiency.</p>
+ 			<p class="text-center lead text-white">We have used StreamZero FX day in and day out for years, both developing as well as operating the platform - so we built it for optimum operational efficiency.</p>
 			 {{< blocks/svg_fx >}} 
 
           <row>
@@ -32,7 +34,8 @@ banner_image="/images/temp/featured-background_5.jpg"
             </row>
 	   </div>
    </row>
-{{< /blocks/lead_bg_color >}}
+</div>
+</section>
 
 <!-- FX SCREEN DIAGRAM END -->
 
@@ -161,24 +164,27 @@ banner_image="/images/temp/featured-background_5.jpg"
 
 
 
+
 <style>
 
-#marching_ants {
-   scale: 2.0;
-}
-
-.connector {
-   stroke-width: 4;
-   stroke-dasharray: 4px;
-   stroke-dashoffset: 8px;
-   animation: stroke 0.2s linear infinite;
-}
-
-@keyframes stroke {
-  to {
-    stroke-dashoffset: 0;
-  }
-}
+	#marching_ants {
+	   scale: 2.0;
+	}
+	
+	.connector {
+	   stroke-width: 4;
+	   stroke-dasharray: 4px;
+	   stroke-dashoffset: 8px;
+	   animation: stroke 0.2s linear infinite;
+	   stroke: white;
+	   
+	}
+	
+	@keyframes stroke {
+	  to {
+		stroke-dashoffset: 0;
+	  }
+	}
 </style>
 
 
