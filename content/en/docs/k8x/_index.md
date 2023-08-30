@@ -10,24 +10,29 @@ description: >
 
 ## What is StreamZero K8X
 
-StreamZero K8X is the first *Event driven Kubernetes*, invoking and terminating containers upon demand. Meaning, a containers default state is dormant and only invoked upon a pre-defined event happening.
+StreamZero K8X brings event driven automation to Kubernetes. 
 
-Event Driven Kubernetes works across any Kubernetes cluster, be it within StreamZero or across external clusters, such as cloud based services and applications.
+With K8X you can create service flows which span multiple containers written in different programming languages. K8X takes over the responsibility of launching the right container when an event arrives that is mapped to the container. Further it provides the container with the incoming parameters, the service specific configurations and secrets injected into the container environment.
 
-The purpose of StreamZero K8X is to concatenate containers and their associated services with each other, therefore building a chain of event driven services. Since each service or container is invoked upon an event trigger, they (service, container) are dormant and require no compute resources.
+Since each service or container is invoked upon an event trigger, they (service, container) are dormant and require no compute resources.
 
-This embedded and event driven nature of K8X makes it not only easy to use and fast to deploy, it brings unprecedented levels of resources effiecncy to any Kubernetes Cluster.
-
-## What does it do?
-
-K8X
-
-## How it works
-
-Lorem ...
+The event driven nature of K8X makes it not only easy to use and fast to deploy, it brings unprecedented levels of resources efficiency as well as decreases resource contention to any Kubernetes Cluster.
 
 ## Benefits of K8X
 
-Lorem ...
+K8X shares the benefits provided by StreamZero FX in that it enables easy to build and operate event-driven microservices platform. In contrast to FX it is no more limited to the services built in the Python Programming language - i.e. the services (and containers) may be written in any lanuage. These can leverage the simple approach of FX to retreive event parameters, service configurations and secrets.
 
-## ...
+* K8X's first and foremost benefit is that it significantly decreases developer time to develop event-driven microservices. 
+* K8X provides a very low learning curve.
+* K8X significantly decreases time spent on deploymnets and CI/CD by offering a built in deployment mechanism.
+* K8X improves observability by allowing easy viewing of the status as well as logs of the associated containers.
+
+
+## How it works
+The following is a brief explanation of how K8X works.
+
+* Edge Adapters are responsible for sourcing events from external systems, converting the incoming events into cloud events and forwarding them to the appropriate topic in Kafka. 
+* These events are consumed by the K8X Hub which looks up the mapping of the event to the target services.
+* The K8X hub then deploys the appropriate service/container and injects the event parameters, service configs and secrets to the container environment.
+* The container executes the service.
+* The K8X hub collects the logs from the container for monitoring of the container status.
