@@ -2,6 +2,7 @@
 tags: ["features","docs"] 
 title: "Features & Benefits"
 linkTitle: "Features & Benefits"
+pageTitle: "Features & Benefits: {{< param replacables.brand_name >}} FX"
 weight: 200
 description: >
   A short overview of the benefits and features of StreamZero FX

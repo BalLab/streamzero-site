@@ -20633,7 +20633,7 @@ footer {
   -webkit-text-fill-color: transparent; }
 
 .lifecycle_title_red {
-  background: -webkit-linear-gradient(#FF3333, #63D0FE);
+  background: -webkit-linear-gradient(#E11439, #63D0FE);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent; }
 
@@ -20720,5 +20720,8 @@ footer {
 
 .text-black {
   color: #000; }
+
+.text-red {
+  color: #E11439; }
 
 /*# sourceMappingURL=main.css.map */

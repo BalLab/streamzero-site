@@ -1,35 +1,67 @@
 ---
 title: "Project and Code Structure"
 linkTitle: "Project and Code Structure"
-weight: 202
+tags: [quickstart, connect, register] 
+weight: 205
+categories: ["Knowledge Base"]
 description: >-
-  Structure and Artefacts of a Service
+     Project and Code Structure 
 ---
-The following section provides a better understanding of the various artefacts of a service.
 
-## Understanding Projects
-Within the DX Platform the Project is a collection of Services. Projects do not have a functional role they are primarily to help in organising collections of services either because they are related functionally, or srve a specific solution domain or are accessed by a sepcific group of users. 
+# Project and Code Structure: Navigating Service Artefacts 
 
-A project may be linked to multiple git repositories. With each repository consiting of a number of services.
+In this section, we'll delve into the structure and components that make up an FX service. Understanding the organization of services, repositories, and the various artefacts involved is pivotal for efficient development within the FX platform.
 
-## Repository Structure
-The DX platform considers each directory within a Repository as a distinct service. Any files in the root directory of a Repository are ignored.
+**Understanding Projects**
+
+Within the FX Platform, a Project serves as a container for multiple Services. Projects don't play a functional role; they primarily aid in organizing services based on functional relationships, solution domains, or user access groups.
+
+A project can be associated with multiple git repositories, each containing a collection of services.
+
+**Repository Structure**
+
+In the DX platform, every directory within a Repository represents a distinct service. Files located in the root directory of a Repository are disregarded.
+
+**Service Artefacts**
+
+A service encompasses an assortment of scripts, modules, and assets, including configuration files. The following are the supported types of artefacts along with their respective roles:
+
+Artefact Type | Description
+--- | ---
+`*.py` | Python scripts form the core of a service. You can include multiple python scripts, and they are executed in the order defined in the `manifest.json` file. These scripts can define classes, static methods, and more.
+`*.sql` | SQL files containing SQL statements. They are executed against the default database defined in the platform. These files support a 'jinja' like notation for parameter extraction and embedding program logic within the SQL.
+`manifest.json` | The `manifest.json` file serves to describe the service to the platform and other users. It adheres to a predefined structure and is detailed further in the 'Manifest File' section.
+`config.json` | This JSON file defines the service's configuration. These values are stored in Consul once imported into the platform. Configuration values can be accessed using the service's 'context' with the `ferris_ef` module.
+`secrets.json` | This file outlines the secrets accessible within a specific service. The `secrets.json` file is uploaded via the UI and should not be committed to Git.
+`*.txt`, `*.json`, `*.jinja`, etc. | Various assets utilized by the service.
+`parameters.json` | Optional. This file defines MicroUIs, which generate forms to trigger a service.
+
+Understanding the components that constitute a service, repository, and project sets the foundation for effective FX service development. With this knowledge, you can seamlessly create, organize, and manage your services within the DX platform.
 
 
-## Service Artefacts
+Sample Repository and Directory Structure
 
-A service is a collection of scripts, modules and assets such as additional configuration files.
+```plaintext
+Project
+│
+├── Repository
+│   ├── service_1
+│   │   ├── app.py
+│   │   ├── manifest.json
+│   │   ├── config.json
+│   │   ├── secrets.json
+│   │   ├── asset.txt
+│   │   └── ...
+│   ├── service_2
+│   │   ├── app.py
+│   │   ├── manifest.json
+│   │   ├── config.json
+│   │   ├── secrets.json
+│   │   ├── asset.txt
+│   │   └── ...
+│   └── ...
+│
+└── Repository ...
 
-The following are the types of supported artefacts and their roles.
-
-
-
-| Artefact Type              | Description                                                  |
-| -------------------------- | ------------------------------------------------------------ |
-| *.py                       | Python scripts. A service may consist of any number of python scripts. If there are multiple scripts they are run in the sequence defined in the `manifest.json`file. Python scripts which define classes and static methods may also be used. |
-| *.sql                      | A file containing SQL statements which will be executed against the default DB defined in the platform. The .sql files also support 'jinja' like notation which can be used to extract parmeter or embed program logic within the .sql file |
-| manifest.json              | The `manifest.json`file helps describe the service to the platform as well as other users. It follows a pre-defined structure. It is describe in detail in the section `Manifest File`. |
-| config.json                | A JSON file which defines the service configuration. These are stored within consul once they are imported into the platform. The configuration values can be retrieved by using the 'context' of the service using the ferris_ef module. |
-| secrets.json               | A file which defines the secrets accessible within a specific service. |
-| *.txt, *.json, *.jinja etc | Assests used by the Service.                                 |
+```
 

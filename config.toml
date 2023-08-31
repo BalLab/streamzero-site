@@ -393,7 +393,15 @@ enable = false
 #    weight = 5
 
 
-[params.replacements]
-	company_name = "GridMine GmbH"
-	product_brand_name = "StreamZero"
+[params.globalString]
+  globalString = "Rocks!"
+
+[params.replacables]
+  company_name = "GridMine GmbH"
+  github_url = "https://github.com/gridmine/"
+  twitter_url = "https://github.com/gridmine/"
+  youtube_url = "https://github.com/gridmine/"
+  website_url = "https://github.com/gridmine/"
+  brand_name = "StreamZero"
+
 
