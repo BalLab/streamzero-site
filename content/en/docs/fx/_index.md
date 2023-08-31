@@ -1,5 +1,5 @@
 ---
-title: "StreamZero FX"
+title: "StreamZero  FX"
 linkTitle: "StreamZero FX"
 weight: 100
 description: >
