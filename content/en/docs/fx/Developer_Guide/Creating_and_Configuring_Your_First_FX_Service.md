@@ -1,6 +1,6 @@
 ---
 title: "Creating and Configuring Your First FX Service"
-linkTitle: "Creating and Configuring Your First FX Service"
+linkTitle: "Your First FX Service"
 tags: [quickstart, connect, register] 
 weight: 202
 categories: ["Knowledge Base"]
@@ -10,7 +10,11 @@ description: >-
 
 **Creating and Configuring Your First FX Service in a Local Environment**
 
-When it comes to developing FX services, there's no need for complex infrastructure setups. Nearly all of the platform's essential features can be replicated in your local development environment. This guide provides a clear walkthrough of the process for creating and simulating services, all within the comfort of your desktop IDE. By following these steps, you'll be able to seamlessly generate and define services, and then simulate their behavior before taking them live.
+{{% alert title="No Infrastructure Required!" color="warning" %}}
+When it comes to developing FX services, there's no need for complex infrastructure setups. Nearly all of the platform's essential features can be replicated in your local development environment. 
+{{% /alert %}}
+
+This guide provides a clear walkthrough of the process for creating and simulating services, all within the comfort of your desktop IDE. By following these steps, you'll be able to seamlessly generate and define services, and then simulate their behavior before taking them live.
 
 **Step 1: Create a Virtual Environment**
 
