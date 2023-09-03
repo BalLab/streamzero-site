@@ -1,6 +1,6 @@
 ---
 title: "FX Core Lib: Simplifying FX Service Development"
-linkTitle: "FX Core Lib: Simplifying FX Service Development"
+linkTitle: "The FX Platform Lib"
 tags: [quickstart, connect, register] 
 weight: 203
 categories: ["Knowledge Base"]
