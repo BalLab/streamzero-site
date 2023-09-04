@@ -11,7 +11,7 @@ description: >-
 
 #### Roles
 
-This is us - humans - using StreamZero on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.
+This is us - humans - using {{< param replacables.brand_name  >}} on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.
 
 > To get the the Users page, navigate to: Security > List Roles
 

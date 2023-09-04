@@ -5,15 +5,15 @@ tags: [security, access rights]
 weight: 104
 categories: [Security]
 description: >-
-  Introduction and "how-to" guide to the StreamZero Security and Access Rights Management.
+  Introduction and "how-to" guide to the {{< param replacables.brand_name  >}} Security and Access Rights Management.
 
 ---
 
 #### Concept
 
-StreamZero is taking a multi-layered and integrative approach to security and access rights management, protecting systems, networks, users and data alike.
+{{< param replacables.brand_name  >}} is taking a multi-layered and integrative approach to security and access rights management, protecting systems, networks, users and data alike.
 
-While the security architecture of StreamZero stands alone and operates well in isolation, it is built to integrate with enterprise security systems such as LDAP and Active Directory. 
+While the security architecture of {{< param replacables.brand_name  >}} stands alone and operates well in isolation, it is built to integrate with enterprise security systems such as LDAP and Active Directory. 
 
 It supports Single Sign On (SSO) through open protocols such as Auth0 and SAML.
 
@@ -23,7 +23,7 @@ This user guide focuses on the application internal - user controlled - aspects 
 
 #### Approach
 
-StreamZero applies the proven notion of #Users, #Roles and #Permissions and linking them to the application elements such as #Menues, Views and Pages.
+{{< param replacables.brand_name  >}} applies the proven notion of #Users, #Roles and #Permissions and linking them to the application elements such as #Menues, Views and Pages.
 
 This approach enables the breaking of the application into granular elements and organizing them into groups of like access control areas. The ultimate benefit is the implementation of user rights on a strict "need-to-know" basis.
 
@@ -33,7 +33,7 @@ This approach enables the breaking of the application into granular elements and
 
 In the following sections you will learn how the security components work and how to set them up for your purpose.
 
-> If you want to follow the instructions and examples, you first need to connect to your StreamZero demo instance. 
+> If you want to follow the instructions and examples, you first need to connect to your {{< param replacables.brand_name  >}} demo instance. 
 
 ##### Navigation
 
@@ -43,9 +43,9 @@ The Security menu is found on left hand navigation of Ferris.
 
 {{< blocks/screenshot color="white" image="/streamzero/images/security/security_navigation.png">}}
 
-*StreamZero Security Navigation*
+*{{< param replacables.brand_name  >}} Security Navigation*
 
-- [**List Users:**]({{< ref "users.md" >}}) Setup individual users and assign one or more roles to them. If StreamZero is integrated with a company own Single Sign On, here is where all users can be viewed. Each user may be deactivated manually.
+- [**List Users:**]({{< ref "users.md" >}}) Setup individual users and assign one or more roles to them. If {{< param replacables.brand_name  >}} is integrated with a company own Single Sign On, here is where all users can be viewed. Each user may be deactivated manually.
 - [**List Roles:**]({{< ref "roles.md" >}}) Setup and maintain individual roles and assign them viewing, editing, executing and other rights pertinent to the character and scope of the role. Roles can be integrated and inheritet with the company Active Directory.
 - **Users Statistics:** Useful grafical statistic displaying the login behavior of individual users, such as login count and failed logins. For *Security Admins* only.
 - **User Registrations:** Listing pending registration requests. For *Security Admins* only.

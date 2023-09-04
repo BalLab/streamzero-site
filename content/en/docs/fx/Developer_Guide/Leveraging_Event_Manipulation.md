@@ -18,7 +18,7 @@ Events are the powerful concept at the center of the DX Platform. There are a nu
 
 ## Understand the Structure
 
-The StreamZero DX events are based on CloudEvents ... 
+The {{< param replacables.brand_name  >}} FX events are based on CloudEvents ... 
 
 
 

@@ -3,10 +3,10 @@ title: "Architecture"
 linkTitle: "Architecture"
 weight: 6
 description: >
-  StreamZero SX Architecture.
+  {{< param replacables.brand_name  >}} SX Architecture.
 ---
 
-## StreamZero SX Architecture Principles
+## {{< param replacables.brand_name  >}} SX Architecture Principles
 
 Stream processing is a technique for processing large volumes of data
 in real-time as it is generated or received. One way to implement a
@@ -35,23 +35,23 @@ processing architecture that is both scalable and reliable. This
 architecture can be used for a wide range of use cases, including
 real-time analytics, event-driven architectures, and data integration.
 
-Below is the high-level architecture diagram of StreamZero SX:
+Below is the high-level architecture diagram of {{< param replacables.brand_name  >}} SX:
 
-![StreamZero_sx_architecture](/images/StreamZero_sx_architecture.png)
+![streamzero_sx_architecture](/images/streamzero_sx_architecture.png)
 
 
 ## Required Infrastructure
 
-The following are the infrastructure components required for a StreamZeroSX installation
+The following are the infrastructure components required for a {{< param replacables.brand_name  >}} SX installation
 
 | Component         | Description                                                                                                                                                         |
 |-------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Apache Kafka      | Apache Kafka serves as the backbone to pass events and operational data within a StreamZeroSX Installation.                                                             |
-| PostgreSQL        | Postgres is used as the database for the StreamZeroSX Management Application.                                                                                           |
-| Consul            | Consul is the configuration store used by the StreamZeroSX platform. It is also used by the services to store their configurations.                                     |
+| Apache Kafka      | Apache Kafka serves as the backbone to pass events and operational data within a {{< param replacables.brand_name  >}} SX Installation.                                                             |
+| PostgreSQL        | Postgres is used as the database for the {{< param replacables.brand_name  >}} SX Management Application.                                                                                           |
+| Consul            | Consul is the configuration store used by the {{< param replacables.brand_name  >}} SX platform. It is also used by the services to store their configurations.                                     |
 | MinIO             | Minio provides the platform internal storage for scripts and assets used by the Services.                                                                           |
 | Elasticsearch     | Elasticsearch is used as a central store for all operational data. Thereby making the data easiliy searchable.                                                      |
 | Kibana            | Kibana is used to view and query the data stored in Elasticsearch.                                                                                                  |
-| StreamZeroSX-Manager  | StreamZeroSX Manager is the main UI used for all activities on the StreamZeroFX platform.                                                                                   |
-| StreamZeroFX-Router   | The Route container is responsible for listening to events flowing through the system and forwarding the events to the appropriate micro-services that you create. |
-| StreamZeroFX-Executor | The executor container(s) is where the code gets executed.                                                                                                          |
+| {{< param replacables.brand_name  >}} Management UI  | {{< param replacables.brand_name  >}} Management UI is the main UI used for all activities on the {{< param replacables.brand_name  >}} FX platform.                                                                                   |
+| {{< param replacables.brand_name  >}} FX-Router   | The Route container is responsible for listening to events flowing through the system and forwarding the events to the appropriate micro-services that you create. |
+| {{< param replacables.brand_name  >}} FX-Executor | The executor container(s) is where the code gets executed.                                                                                                          |

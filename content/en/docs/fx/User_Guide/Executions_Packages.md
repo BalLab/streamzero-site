@@ -8,7 +8,7 @@ description: >-
 
 The Executions/Packages is an event oriented framework that allows enterprise organizations the automation of script processing which can be triggered by:
 
-- Manually: By clicking the ‘Run’ button on the StreamZero FX Management Server.
+- Manually: By clicking the ‘Run’ button on the {{< param replacables.brand_name  >}} FX Management Server.
 - On Schedule: As a cron job whereas the Cron expression is added on the UI.
 - On Event: Where a package is configured to be triggered bt the FX Router when a specific type of event is observed on the platform.
 

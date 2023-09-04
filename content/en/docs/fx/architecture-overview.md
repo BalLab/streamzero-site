@@ -3,12 +3,12 @@ title: "Architecture Overview"
 linkTitle: "Architecture"
 weight: 201
 description: >-
-     An overview of the architecture of StreamZero FX.
+     An overview of the architecture of {{< param replacables.brand_name  >}} FX.
 ---
 
 ## Concepts
 
-StreamZero FX is based on 2 simple concepts - **Services** and **Events**
+{{< param replacables.brand_name  >}} FX is based on 2 simple concepts - **Services** and **Events**
 
 **On FX you are effectively writing large applications by connecting “blocks” of code through Events.** 
 
@@ -54,7 +54,7 @@ context.events.send(my_event_type, data)
 
 ### Events
 
-Events are messages passed through the platform which are generated either by Services or by the StreamZero Manager(in the case of manually triggered runs and scheduled runs).
+Events are messages passed through the platform which are generated either by Services or by the {{< param replacables.brand_name  >}} Manager(in the case of manually triggered runs and scheduled runs).
 
 Events are in the form of JSON formatted messages which adhere to the CloudEvents format. 
 
@@ -83,7 +83,7 @@ The following is a sample Event.
 
 Services can be triggered in the following ways:
 
-- Manually: By clicking the 'Run' button on the StreamZero FX Management UI.
+- Manually: By clicking the 'Run' button on the {{< param replacables.brand_name  >}} FX Management UI.
 - On Schedule: As a cron job whereas the Cron expression is in the service manifest.
 - On Event: Where a package is configured to be triggered by the FX Router when a specific type of event(s) is encountered on the platform - also configured in the service manifest.
 
@@ -100,7 +100,7 @@ This approach gives you a great flexibility to:
 
 
 
-## The StreamZero FX Flow
+## The {{< param replacables.brand_name  >}} FX Flow
 
 At the core of the FX Platform messages (Events) are passed through **Apache Kafka**. These 'events' are JSON formatted messages which adhere to the CloudEvents format. 
 
@@ -108,7 +108,7 @@ At the core of the FX Platform messages (Events) are passed through **Apache Kaf
 
 Each **Event** consists of what may be simplified as Headers and Payload. The headers indicate the type of event and other attributes. Whereas the payload are the attributes or parameters that are sent out by Services in order to either provide information about their state or for usage by downstream Services.
 
-The **FX Router(s)** is listening on the stream of Events passing through Kafka. Based on the configuration of the platform which is managed in the **StreamZero Management UI** the Router decides if a Service requires to be executed based on the Event contents. On finding a configured Handler the gateway sends a message to the Executor and informs it of which packages or scripts are required to be run.
+The **FX Router(s)** is listening on the stream of Events passing through Kafka. Based on the configuration of the platform which is managed in the **{{< param replacables.brand_name  >}} Management UI** the Router decides if a Service requires to be executed based on the Event contents. On finding a configured Handler the gateway sends a message to the Executor and informs it of which packages or scripts are required to be run.
 
 The **FX Executor(s)** executes the **Service**. The Service may use any Python module that is embedded in the Executor and also uses the platform internal configuration management database(at present Consul) for storing its configurations. The Executor sends a series of Events on Service execution. These are once again processed by the FX Router.
 
@@ -120,17 +120,17 @@ The FX Executor provides infrastructure which tracks logs, maintains record of s
 
 ## Required Infrastructure
 
-The following are the infrastructure components required for a StreamZero FX installation
+The following are the infrastructure components required for a {{< param replacables.brand_name  >}} FX installation
 
 | Component         | Description                                                  |
 | ----------------- | ------------------------------------------------------------ |
-| Apache Kafka      | Apache Kafka serves as the backbone to pass events and operational data within a StreamZero FX Installation. |
-| PostgreSQL        | Postgres is used as the database for the StreamZero FX Manager Application. |
-| Consul            | Consul is the configuration store used by the StreamZero FX platform. It is also used by the services to store their configurations. |
+| Apache Kafka      | Apache Kafka serves as the backbone to pass events and operational data within a {{< param replacables.brand_name  >}} FX Installation. |
+| PostgreSQL        | Postgres is used as the database for the {{< param replacables.brand_name  >}} FX Manager Application. |
+| Consul            | Consul is the configuration store used by the {{< param replacables.brand_name  >}} FX platform. It is also used by the services to store their configurations. |
 | MinIO             | Minio provides the platform internal storage for scripts and assets used by the Services. |
 | Elasticsearch     | Elasticsearch is used as a central store for all operational data. Thereby making the data easiliy searchable. |
 | Kibana            | Kibana is used to view and query the data stored in Elasticsearch. |
-| StreamZero FX-Management UI  | StreamZero FX Management UI is the main UI used for all activities on the StreamZero FX platform. |
-| StreamZero FX-Router   | The Route container is responsible for listenting to events flowing through the system and forwarding the events to the appropriate micro-services that you create. |
-| StreamZero FX-Executor | The executor container(s) is where the code gets executed.   |
+| {{< param replacables.brand_name  >}} FX-Management UI  | {{< param replacables.brand_name  >}} FX Management UI is the main UI used for all activities on the {{< param replacables.brand_name  >}} FX platform. |
+| {{< param replacables.brand_name  >}} FX-Router   | The Route container is responsible for listenting to events flowing through the system and forwarding the events to the appropriate micro-services that you create. |
+| {{< param replacables.brand_name  >}} FX-Executor | The executor container(s) is where the code gets executed.   |
 

@@ -10,10 +10,6 @@ description: >-
 
 ---
 
-![ferris_banner](/images/ferris_banner.png)
-
-
-
 ## New <img src="/images/added_blue.png" alt="added_blue" style="zoom:25%;" />
 
 - [x] Introduction of **Secrets Management UI & API** that can be used for securely storing and accessing secrets on the Platform and Project level.
@@ -30,7 +26,7 @@ description: >-
 ## Improved <img src="/images/improved_green.png" alt="improved_green" style="zoom:25%;" />
 
 - [x] **Executor fx_ef package** adjusted for local development.
-- [x] Various changes on the **StreamZero UI**.
+- [x] Various changes on the **{{< param replacables.brand_name  >}} UI**.
 
 ---
 
