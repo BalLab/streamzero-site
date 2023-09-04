@@ -2,12 +2,12 @@
 title: "Notifications and Messaging"
 linkTitle: "Notifications and Messaging"
 description: >-
-  How to integrate a notifications with the StreamZero Platform.
+  How to integrate a notifications with the {{< param replacables.brand_name  >}} Platform.
 ---
 
-StreamZero provides you access to over 40 notification services such as Slack, Email and Telegram.
+{{< param replacables.brand_name  >}} provides you access to over 40 notification services such as Slack, Email and Telegram.
 
-StreamZero DX uses the Apprise Python Libs as an engine for notifiation dispatch. The power of Apprise gives you access to over 40 notification services.  A complete list is provided in a table and the end of the document.
+{{< param replacables.brand_name  >}} FX uses the Apprise Python Libs as an engine for notifiation dispatch. The power of Apprise gives you access to over 40 notification services.  A complete list is provided in a table and the end of the document.
 
 In order to send notifications from your package you need is to create and emit a pre-defined event type. 
 
@@ -41,7 +41,7 @@ context.events.send(event_type, data)
 
 There are 2 approaches to implementing the notifications support.
 
-* Implementation within a StreamZero Service
+* Implementation within a {{< param replacables.brand_name  >}} Service
 * Implementation in an Exit Gateway
 
 The 2nd option is used in platforms which are behind a firewall and therefore require the gateway to be outside the firewall for accessing external services. In these cases the adapter runs as a separate container. 
@@ -70,9 +70,9 @@ In order to send notifcations
 
 
 
-## The StreamZero Apprise Package
+## The {{< param replacables.brand_name  >}} Apprise Package
 
-The following is code for an StreamZero executor package to send apprise based notifications.
+The following is code for an {{< param replacables.brand_name  >}} executor package to send apprise based notifications.
 
 To send a notification from within your python application, just do the following:
 
@@ -103,7 +103,7 @@ except Exception as ex:
 
 ## Configuration
 
-The following is a sample configuration which is uploaded as a secrets.json file for the StreamZero Apprise Package. 
+The following is a sample configuration which is uploaded as a secrets.json file for the {{< param replacables.brand_name  >}} Apprise Package. 
 
 The configuration consists of a set of named URL templates. With each url_template being based on the Apprise URL schema as shown in the sections further in document. 
 

@@ -3,13 +3,13 @@ title: "StreamZero K8X"
 linkTitle: "StreamZero K8X"
 weight: 102
 description: >
-  Overview and in-depth introduction to StreamZero Event Driven Kubernetes.
+  Overview and in-depth introduction to {{< param replacables.brand_name  >}} Event Driven Kubernetes.
 ---
 
 
-## What is StreamZero K8X?
+## What is {{< param replacables.brand_name  >}} K8X?
 
-StreamZero K8X brings event driven automation to Kubernetes. 
+{{< param replacables.brand_name  >}} K8X brings event driven automation to Kubernetes. 
 
 With K8X you can create service flows which span multiple containers written in different programming languages. K8X takes over the responsibility of launching the right container when an event arrives that is mapped to the container. Further it provides the container with the incoming parameters, the service specific configurations and secrets injected into the container environment.
 
@@ -19,7 +19,7 @@ The event driven nature of K8X makes it not only easy to use and fast to deploy,
 
 ## Benefits of K8X
 
-K8X shares the benefits provided by StreamZero FX in that it enables easy to build and operate event-driven microservices platform. In contrast to FX it is no more limited to the services built in the Python Programming language - i.e. the services (and containers) may be written in any lanuage. These can leverage the simple approach of FX to retreive event parameters, service configurations and secrets.
+K8X shares the benefits provided by {{< param replacables.brand_name  >}} FX in that it enables easy to build and operate event-driven microservices platform. In contrast to FX it is no more limited to the services built in the Python Programming language - i.e. the services (and containers) may be written in any lanuage. These can leverage the simple approach of FX to retreive event parameters, service configurations and secrets.
 
 * K8X's first and foremost benefit is that it significantly decreases developer time to develop event-driven microservices. 
 * K8X provides a very low learning curve.

@@ -3,12 +3,12 @@ title: "Solutions snippets / explain problem solved / link to relevant use case"
 linkTitle: "Solutions"
 weight: 4
 description: >
-  The following section provides StreamZero SX solutions snippets / explain problem solved / link to relevant use case.
+  The following section provides {{< param replacables.brand_name  >}} SX solutions snippets / explain problem solved / link to relevant use case.
 ---
 
 ## Twitter message processing example
 
-The first example application is using StreamZero-sx python library to implement stream processor to count the number of words in incoming messages. The messages are queried from Twitter API with specific filter condition and then fed to the processor. The results are sent to a Kafka topic.  
+The first example application is using {{< param replacables.brand_name  >}}-sx python library to implement stream processor to count the number of words in incoming messages. The messages are queried from Twitter API with specific filter condition and then fed to the processor. The results are sent to a Kafka topic.  
 ```python
 import json
 from StreamZero_sx.core import app

@@ -2,7 +2,7 @@
 title: "Event Source Adapters"
 linkTitle: "Event Source Adapters"
 description: >-
-  A Guide to Integrations Using the StreamZero Edge Adapter.
+  A Guide to Integrations Using the {{< param replacables.brand_name  >}} Edge Adapter.
 ---
 
 The Event Source Adapter enables easy integration of external event streams to Ferris.  
@@ -183,13 +183,13 @@ In order to use the end point you must first generate a token to be used when su
 
 # How it Works
 
-The StreamZero Edge Adapter is an edge service which is exposed to services outside the network for incoming integrations with external services. It exposes a single token protected endpoint which accepts a JSON payload within a POST request. 
+The {{< param replacables.brand_name  >}} Edge Adapter is an edge service which is exposed to services outside the network for incoming integrations with external services. It exposes a single token protected endpoint which accepts a JSON payload within a POST request. 
 
 The payload encapsulated within the POST is forwarded to the ferris.events topic with the data encapsulated in the Cloud Events 'data' section. The event type is 'ferris.events.webhook.incoming' . 
 
 The platform may host any number of packages which then process the webhooks based on parsing the data section. 
 
-The StreamZero Edge Adapter is one of the few services exposed to the Internet.
+The {{< param replacables.brand_name  >}} Edge Adapter is one of the few services exposed to the Internet.
 
 
 
@@ -250,7 +250,7 @@ Select the Webhooks menu on the left of the 'Settings' page. Then click on the '
 
 
 
-Add the URL of your edge adapter end point. And ensure the content type is application/json. Finally add the api token generated on the StreamZero Management UI. Further in the page you may select what event types should be sent. If unsure please maintain the default settings.
+Add the URL of your edge adapter end point. And ensure the content type is application/json. Finally add the api token generated on the {{< param replacables.brand_name  >}} Management UI. Further in the page you may select what event types should be sent. If unsure please maintain the default settings.
 
 {{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/image-20220305123919206.png">}}
 

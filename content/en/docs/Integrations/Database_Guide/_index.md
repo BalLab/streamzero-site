@@ -8,7 +8,7 @@ description: >-
 
 ## Install Database Drivers
 
-StreamZero DX requires a Python DB-API database driver and a SQLAlchemy dialect to be installed for each datastore you want to connect to within the executor image.
+{{< param replacables.brand_name  >}} DX requires a Python DB-API database driver and a SQLAlchemy dialect to be installed for each datastore you want to connect to within the executor image.
 
 ## Configuring Database Connections
 
@@ -50,7 +50,7 @@ Depending on whether this is a service, project or platform level secret there a
 
 The following table provides a guide on the python libs to be installed within the Executor docker image. For instructions on how to extend the Executor docker image please check this page: /docs/extending_executor_image
 
-You can read more here about how to install new database drivers and libraries into your StreamZero DX executor image.
+You can read more here about how to install new database drivers and libraries into your {{< param replacables.brand_name  >}} FX executor image.
 
 Note that many other databases are supported, the main criteria being the existence of a functional SQLAlchemy dialect and Python driver. Searching for the keyword "sqlalchemy + (database name)" should help get you to the right place.
 

@@ -27,7 +27,7 @@ This subcategory explains the creation of new projects and users withtin these p
 
 
 
-Project on the StreamZero Platform form the overarching organizational bracket for different types of objects. All users, packages, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).  
+Project on the {{< param replacables.brand_name  >}} Platform form the overarching organizational bracket for different types of objects. All users, packages, scripts, parameters, secrets and other elements are organized into projects to ease enterprise data management. The default owner for new projects is the Platform Admin (PA).  
 
 ## User creation within the project
 

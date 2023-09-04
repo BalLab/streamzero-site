@@ -2,10 +2,10 @@
 title: "Git Integration"
 linkTitle: "Git Integration"
 description: >-
-  How to integrate a Git Repository with the StreamZero Platform.
+  How to integrate a Git Repository with the {{< param replacables.brand_name  >}} Platform.
 ---
 
-The Git Integration is the capability to generate a connection from a git repository with projects and synchronise the Packages from the Executor with the git repository, with the goal to execute it through the StreamZero FX Platform. It provides another, more fluent way for connecting scripts with the StreamZero FX Platform without the necessity to upload files directly to the platform.
+The Git Integration is the capability to generate a connection from a git repository with projects and synchronise the Packages from the Executor with the git repository, with the goal to execute it through the {{< param replacables.brand_name  >}} FX Platform. It provides another, more fluent way for connecting scripts with the {{< param replacables.brand_name  >}} FX Platform without the necessity to upload files directly to the platform.
 
 A new Project will be created to showcase the capabilty of the git integration:
 
@@ -54,7 +54,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 {{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/create_git_repo.png">}}
 
-*Note that a pair of  public and private keys are generated for each repository which is safed on the StreamZero FX platform. The private key is encrypted and stored safely in the database and will never be presented to anyone, whereas the public key should be copied and added to the git repository in order to provide the StreamZero FX access to the repository and the possibility to clone packages.*
+*Note that a pair of  public and private keys are generated for each repository which is safed on the {{< param replacables.brand_name  >}} FX platform. The private key is encrypted and stored safely in the database and will never be presented to anyone, whereas the public key should be copied and added to the git repository in order to provide the {{< param replacables.brand_name  >}} FX access to the repository and the possibility to clone packages.*
 
 {{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/public_key_repo.png">}}
 
@@ -79,7 +79,7 @@ A new Project will be created to showcase the capabilty of the git integration:
 
 ## Synchronise the repository
 
-1. Return to the StreamZero FX platform
+1. Return to the {{< param replacables.brand_name  >}} FX platform
 2. Click the Sync Now button to synchronise the platform with the GitHub
 
 {{< blocks/screenshot color="white" image="/streamzero/images/developer_guide/sync_now_button.png">}}

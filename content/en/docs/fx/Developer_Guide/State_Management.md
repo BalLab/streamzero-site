@@ -8,7 +8,7 @@ description: >-
 
 One key aspect in reactive applications is how to manage state between runs. 
 
-With StreamZero this is simple. Each Service has a state object available at run time. All you need to do is the following.
+With {{< param replacables.brand_name  >}} FX this is simple. Each Service has a state object available at run time. All you need to do is the following.
 
 ```python
 from ferris_cli import context

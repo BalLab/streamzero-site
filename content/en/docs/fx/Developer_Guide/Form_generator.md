@@ -8,7 +8,7 @@ description: >-
 
 Occasionally you will come across use cases where you are required to provide a frontend for trigerring a service - usually by a non-technical person. FX and K8X both provide the ability to define Forms using a simple JSON structure. 
 
-The Forms are generated automatically by the StreamZero Management UI based on the 'parameters.json' file. 
+The Forms are generated automatically by the {{< param replacables.brand_name  >}} Management UI based on the 'parameters.json' file. 
 
 When a service directory contains a parameters.json file the 'Run' Button on th Management UI will automatically change the icon to a 'Form' icon.
 

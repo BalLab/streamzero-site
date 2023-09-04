@@ -7,7 +7,7 @@ description: >-
 
 # Logging and Monitoring
 
-StreamZero FX aggregates all operational data into Elasticsearch. Most operational data and events are transported through Kafka from which it is placed in Elasticsearch by Elasticsearch Sink containers. 
+{{< param replacables.brand_name  >}} FX aggregates all operational data into Elasticsearch. Most operational data and events are transported through Kafka from which it is placed in Elasticsearch by Elasticsearch Sink containers. 
 
 The following are the Kex Data and The matching Elasticsearch Indexes
 
@@ -25,7 +25,7 @@ All events that are transported through the ferris.events Topic are loaded into 
 
 ## Checking Logs
 
-StreamZero Logs are in logstash format. The logs can be aggregated from the application by using the ferris_cli library. 
+{{< param replacables.brand_name  >}} Logs are in logstash format. The logs can be aggregated from the application by using the ferris_cli library. 
 
 The following is a sample log entry with extended descriptions below. 
 
