@@ -38,15 +38,18 @@ Each script is provided with the Payload of the Event that triggered it. It is t
 The following is a basic Service which parses the event sent to it and prints the payload.
 
 ```python
-import sys
-import json
+from fx_ef import context
 
-def hello_world(payload):
-  print(payload)
+# The context.params object carries the payload of the incoming event
+param_value = context.params.get('param_name')
 
-payload = json.loads(sys.arg[1])
+# And this is how a service sends an event
+my_event_type = "com.test.my_event_type"
+data = {"my attribute": "my_value"}
 
-hello_world(payload)
+context.events.send(my_event_type, data)
+
+
 ```
 
 ### Events
@@ -80,9 +83,9 @@ The following is a sample Event.
 
 Services can be triggered in the following ways:
 
-- Manually: By clicking the 'Run' button on the StreamZero FX Management Server.
-- On Schedule: As a cron job whereas the Cron expression is added on the UI.
-- On Event: Where a package is configured to be triggered bt the FX Router when a specific type of event is observed on the platform.
+- Manually: By clicking the 'Run' button on the StreamZero FX Management UI.
+- On Schedule: As a cron job whereas the Cron expression is in the service manifest.
+- On Event: Where a package is configured to be triggered by the FX Router when a specific type of event(s) is encountered on the platform - also configured in the service manifest.
 
 Irrespective of how a Service is triggered it is always triggered by an Event. In the case of Manual and Scheduled triggering it is the FX platform that generates the trigger event.
 
@@ -105,13 +108,13 @@ At the core of the FX Platform messages (Events) are passed through **Apache Kaf
 
 Each **Event** consists of what may be simplified as Headers and Payload. The headers indicate the type of event and other attributes. Whereas the payload are the attributes or parameters that are sent out by Services in order to either provide information about their state or for usage by downstream Services.
 
-The **FX Router(s)** is listening on the stream of Events passing through Kafka. Based on the configuration of the platform which is managed in the **StreamZero Manager UI** the Router decides if a Service requires to be executed based on the Event contents. On finding a configured Handler the gateway sends a message to the Executor and informs it of which packages or scripts are required to be run.
+The **FX Router(s)** is listening on the stream of Events passing through Kafka. Based on the configuration of the platform which is managed in the **StreamZero Management UI** the Router decides if a Service requires to be executed based on the Event contents. On finding a configured Handler the gateway sends a message to the Executor and informs it of which packages or scripts are required to be run.
 
-The **FX Executor(s)** downloads the Service from the **Minio** storage and executes the **Service**. The Service may use any Python module that is embedded in the Executor and also use **Consul** for storing its configurations. The Executor sends a series of Events on Service execution. These are once again processed by the FX Router.
+The **FX Executor(s)** executes the **Service**. The Service may use any Python module that is embedded in the Executor and also uses the platform internal configuration management database(at present Consul) for storing its configurations. The Executor sends a series of Events on Service execution. These are once again processed by the FX Router.
 
 ![image-20211024084807506](/images/image-20211024084807506.png)
 
-The FX Executor provides infrastructure which tracks logs, maintains record of service metrics and operational data. The Operational information is first sent to appropriate Kafka Topics from where they are picked up by Ops-Data Sinks whose role it is to store data within **Elasticsearch** and in some cases also filter the data for the purpose of alerting or anomaly tracking. All operational data may be viewed and queried through tools such as **Kibana** and is also viewable on the **FX Manager UI**.
+The FX Executor provides infrastructure which tracks logs, maintains record of service metrics and operational data. The Operational information is first sent to appropriate Kafka Topics from where they are picked up by Ops-Data Sinks whose role it is to store data within **Elasticsearch** and in some cases also filter the data for the purpose of alerting or anomaly tracking. All operational data may be viewed and queried through tools such as **Kibana** and is also viewable on the **FX Management UI**.
 
 
 
@@ -127,7 +130,7 @@ The following are the infrastructure components required for a StreamZero FX ins
 | MinIO             | Minio provides the platform internal storage for scripts and assets used by the Services. |
 | Elasticsearch     | Elasticsearch is used as a central store for all operational data. Thereby making the data easiliy searchable. |
 | Kibana            | Kibana is used to view and query the data stored in Elasticsearch. |
-| StreamZero FX-Manager  | StreamZero FX Manager is the main UI used for all activities on the StreamZero FX platform. |
+| StreamZero FX-Management UI  | StreamZero FX Management UI is the main UI used for all activities on the StreamZero FX platform. |
 | StreamZero FX-Router   | The Route container is responsible for listenting to events flowing through the system and forwarding the events to the appropriate micro-services that you create. |
 | StreamZero FX-Executor | The executor container(s) is where the code gets executed.   |
 
