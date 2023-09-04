@@ -3,7 +3,7 @@ title: "Secrets"
 linkTitle: "Secrets"
 weight: 205
 description: >-
-  How to integrate sensitive configurations(Secrets) within your services
+  How to integrate Secrets(sensitive configurations) within your services
 
 ---
 Secrets are sensitive configuration information which you wish to use within your service. These may be a single attribute(such as a password) structures with multiple attributes.
@@ -27,7 +27,7 @@ The DX platform supports the following scopes for a secret.
 | Project Secrets  | Secrets that are accessible to any service within a specific project. These are created by uploading a JSON file on the project secrets tab on the UI. |
 | Platform Secrets | Secrets that are accessible to any service running on the platform. These are created by uploading JSON file on the Vault->Secrets page. |
 
-*When accessing secrets using `ferris_ef.context.secrets.get('secret_name')` it will first lookup for `secret_name` within service secrets, then project and finally platform*
+*When accessing secrets using `fx_ef.context.secrets.get('secret_name')` it will first lookup for `secret_name` within service secrets, then project and finally platform*
 
 ##### The secrets.json File
 
@@ -44,12 +44,12 @@ Those values are stored double encrypted in database and can be only accessed wi
 
 ### Accessing secrets
 
-With `ferris_ef.context.secrets` you can access secrets stored on at the platform, project or service scope.   
+With `fx_ef.context.secrets` you can access secrets stored on at the platform, project or service scope.   
 
 
 
 ```python
-from ferris_ef import context
+from fx_ef import context
 context.secrets.get('secret_name')
 ```
 
@@ -57,16 +57,16 @@ context.secrets.get('secret_name')
 
 This command will first lookup for secret named `secret_name` within package secrets (defined in `secrets.json` file of the package). If such key doesn't exist it will lookup for it within project secrets, and finally within platform's secrets. If secret with such name doesn't exist `None` will be returned.
 
-Can be accessed using `ferris_ef.context.secrets.get('secret_name'). Can be set using `context.secrets.set("secret_name", {"somekey":"someval"}, "project")`
+Can be accessed using `fx_ef.context.secrets.get('secret_name'). Can be set using `context.secrets.set("secret_name", {"somekey":"someval"}, "project")`
 
-Can be accessed using `ferris_ef.context.secrets.get('secret_name')`. Can be set using `context.secrets.set("secret_name", {"somekey":"someval"}, "platform")`
+Can be accessed using `fx_ef.context.secrets.get('secret_name')`. Can be set using `context.secrets.set("secret_name", {"somekey":"someval"}, "platform")`
 
 ### Setting secrets
 
-Using `ferris_ef.context.secrets.set(name, value, context)` method you can set secrets on project and platform level.   
+Using `fx_ef.context.secrets.set(name, value, context)` method you can set secrets on project and platform level.   
 
 ```python
-from ferris_ef import context
+from fx_ef import context
 
 context.secrets.set(name="platform_secret", value={"somekey":"someval"}, context="platform")
 ```
@@ -98,13 +98,13 @@ Note that the package creation was presented in another submenu of the User Guid
 
 ##### test_secrets.py script
 
-This is an example script that shows how secrets from the `secrets.json` file can be accessed from a script at execution time using the `get_secret()` helper function from the `ferris_ef` package.
+This is an example script that shows how secrets from the `secrets.json` file can be accessed from a script at execution time using the `get_secret()` helper function from the `fx_ef` package.
 
 ```python
-from ferris_ef import get_secret, get_param
+from fx_ef import context
 
-print(f"DB NAME: {get_secret('DB_NAME')}")
-print(f"DB PASS: {get_secret('DB_PASS')}")
+print(f"DB NAME: {context.secrets.get('DB_NAME')}")
+print(f"DB PASS: {context.secrets.get('DB_PASS')}")
 
-print(f"PACKAGE NAME: {get_param('package_name')}")
+print(f"PACKAGE NAME: {context.params.get('package_name')}")
 ```

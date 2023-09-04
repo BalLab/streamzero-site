@@ -23,4 +23,4 @@ dremio+flight://{username}:{password}@{host}:{port}/dremio
 ```
 
 This [blog post by Dremio](https://www.dremio.com/tutorials/dremio-apache-Feris/) has some
-additional helpful instructions on connecting Feris to Dremio.
+additional helpful instructions on connecting {{< param replacables.brand_name  >}} to Dremio.

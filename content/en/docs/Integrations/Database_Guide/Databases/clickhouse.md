@@ -7,14 +7,14 @@ version: 1
 
 ## Clickhouse
 
-To use Clickhouse with Feris, you will need to add the following Python libraries:
+To use Clickhouse with {{< param replacables.brand_name  >}} you will need to add the following Python libraries:
 
 ```
 clickhouse-driver==0.2.0
 clickhouse-sqlalchemy==0.1.6
 ```
 
-If running Feris using Docker Compose, add the following to your `./docker/requirements-local.txt` file:
+If running {{< param replacables.brand_name  >}} using Docker Compose, add the following to your `./docker/requirements-local.txt` file:
 
 ```
 clickhouse-driver>=0.2.0

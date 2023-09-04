@@ -50,7 +50,7 @@ Then register your table with the alias name logstasg_all
 
 **Time zone**
 
-By default, Feris uses UTC time zone for elasticsearch query. If you need to specify a time zone,
+By default, {{< param replacables.brand_name  >}} uses UTC time zone for elasticsearch query. If you need to specify a time zone,
 please edit your Database and enter the settings of your specified time zone in the Other > ENGINE PARAMETERS:
 
 ```
@@ -65,4 +65,4 @@ Another issue to note about the time zone problem is that before elasticsearch7.
 you need to use the `CAST` function,but this function does not support our `time_zone` setting. So it is recommended to upgrade to the version after elasticsearch7.8.
 After elasticsearch7.8, you can use the `DATETIME_PARSE` function to solve this problem.
 The DATETIME_PARSE function is to support our `time_zone` setting, and here you need to fill in your elasticsearch version number in the Other > VERSION setting.
-the Feris will use the `DATETIME_PARSE` function for conversion.
+the {{< param replacables.brand_name  >}} will use the `DATETIME_PARSE` function for conversion.

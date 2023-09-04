@@ -13,7 +13,7 @@ The recommended connector library for BigQuery is
 ### Install BigQuery Driver
 
 Follow the steps [here](/docs/databases/docker-add-drivers) about how to
-install new database drivers when setting up Feris locally via docker-compose.
+install new database drivers when setting up {{< param replacables.brand_name  >}} locally via docker-compose.
 
 ```
 echo "pybigquery" >> ./docker/requirements-local.txt
@@ -21,12 +21,12 @@ echo "pybigquery" >> ./docker/requirements-local.txt
 
 ### Connecting to BigQuery
 
-When adding a new BigQuery connection in Feris, you'll need to add the GCP Service Account
+When adding a new BigQuery connection in {{< param replacables.brand_name  >}}, you'll need to add the GCP Service Account
 credentials file (as a JSON).
 
 1. Create your Service Account via the Google Cloud Platform control panel, provide it access to the
    appropriate BigQuery datasets, and download the JSON configuration file for the service account.
-2. In Feris, you can either upload that JSON or add the JSON blob in the following format (this should be the content of your credential JSON file):
+2. In {{< param replacables.brand_name  >}} you can either upload that JSON or add the JSON blob in the following format (this should be the content of your credential JSON file):
 
 ```
 {
@@ -83,5 +83,5 @@ credentials file (as a JSON).
 
 You should then be able to connect to your BigQuery datasets.
 
-To be able to upload CSV or Excel files to BigQuery in Feris, you'll need to also add the
+To be able to upload CSV or Excel files to BigQuery in {{< param replacables.brand_name  >}}, you'll need to also add the
 [pandas_gbq](https://github.com/pydata/pandas-gbq) library.

@@ -2,7 +2,7 @@
 title: "Database Integration"
 linkTitle: "Database Integration"
 description: >-
-  How to integrate a Database with the StreamZero Platform.
+  How to integrate a Database with the {{< param replacables.brand_name  >}} Platform.
 ---
 ## Install Database Drivers
 
@@ -10,9 +10,9 @@ StreamZero DX requires a Python DB-API database driver and a SQLAlchemy dialect 
 
 ## Configuring Database Connections
 
-StreamZero DX can manage preset connection configurations. This enables a platform wide set up for both confidential as well as general access databases. 
+{{< param replacables.brand_name  >}} can manage preset connection configurations. This enables a platform wide set up for both confidential as well as general access databases. 
 
-StreamZero uses the SQL Alchemy Engine along with the URL template based approach to connection management. The connection configurations are maintained as secrets within the platform and are therefore not publicly accessible i.e. access is provided for administrators only.
+{{< param replacables.brand_name  >}} uses the SQL Alchemy Engine along with the URL template based approach to connection management. The connection configurations are maintained as secrets within the platform and are therefore not publicly accessible i.e. access is provided for administrators only.
 
 
 ## Retrieving DB Connections
@@ -20,10 +20,10 @@ StreamZero uses the SQL Alchemy Engine along with the URL template based approac
 The following is how to retrieve a named connection. The following sample assumes that the connection identifier key is uploaded to the package as a secrets.json. 
 
 ```python
-from ferris_ef import context
+from fx_ef import context
 import sqlalchemy as db
 
-db_url = get_secret('my_connection')
+db_url = context.secrets.get('my_connection')
 engine = db.create_engine(db_url)
 
 connection = engine.connect()
@@ -42,17 +42,17 @@ Depending on whether this is a service, project or platform level secret there a
 * For Project scope use the `'secrets'` tab of the Project Management UI. 
 * For Platform scope secrets use the `Vault UI` in the DX Manager Application.
 
- 
-
-
-
 
 
 ## Database Drivers
 
-The following table provides a guide on the python libs to be installed within the Executor docker image. For instrctions on how to extend the Executor docker image please check this page: /docs/extending_executor_image
+The following table provides a guide on the python libs to be installed within the Executor docker image. For instructions on how to extend the Executor docker image please check this page: /docs/extending_executor_image
 
 You can read more here about how to install new database drivers and libraries into your StreamZero DX executor image.
+
+Note that many other databases are supported, the main criteria being the existence of a functional SQLAlchemy dialect and Python driver. Searching for the keyword "sqlalchemy + (database name)" should help get you to the right place.
+
+If your database or data engine isn't on the list but a SQL interface exists, please file an issue so we can work on documenting and supporting it.
 
 
 A list of some of the recommended packages.
@@ -97,9 +97,7 @@ A list of some of the recommended packages.
 
 ------
 
-Note that many other databases are supported, the main criteria being the existence of a functional SQLAlchemy dialect and Python driver. Searching for the keyword "sqlalchemy + (database name)" should help get you to the right place.
 
-If your database or data engine isn't on the list but a SQL interface exists, please file an issue so we can work on documenting and supporting it.
 
 
 

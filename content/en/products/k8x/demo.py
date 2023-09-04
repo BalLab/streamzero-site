@@ -1,5 +1,5 @@
 # import the core library
-from ferris_ef import context
+from fx_ef import context
 
 # Accessing service configuration
 context.config.get('some_configuration_key')
