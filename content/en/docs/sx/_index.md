@@ -1,7 +1,7 @@
 ---
 title: "StreamZero SX"
 linkTitle: "StreamZero SX"
-weight: 102
+weight: 103
 description: >
   The following section provides a short overview of key features, concepts and architecture of StreamZero SX.
 ---

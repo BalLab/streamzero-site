@@ -59,7 +59,7 @@ cd my-service-name
 
 **Step 5: Create app.py**
 
-Inside the service directory, create an `app.py` file. This file will serve as the entry point for your FX service. In this file, import the necessary context from the `ferris_ef` (core library) for your service:
+Inside the service directory, create an `app.py` file. This file will serve as the entry point for your FX service. In this file, import the necessary context from the `fx_ef` (core library) for your service:
 
 ```python
 # app.py
@@ -187,7 +187,7 @@ The `ef_env.json` file plays a crucial role in simulating your service's environ
 }
 ```
 
-- `"parameters"`: In the local environment, you can define parameters directly within this dictionary. These parameters are typically accessed within your service code using the `ferris_ef` library.
+- `"parameters"`: In the local environment, you can define parameters directly within this dictionary. These parameters are typically accessed within your service code using the `fx_ef` library.
 
 - `"secrets"`: Similarly, you can define secret values in this section. While on the platform, secrets will be managed through the UI and loaded into your service securely. During local simulation, you can include sample secret values for testing.
 
@@ -198,26 +198,26 @@ The `ef_env.json` file plays a crucial role in simulating your service's environ
 By expanding your `ef_env.json` file with the appropriate parameters, secrets, and sample configuration values, you'll be able to effectively simulate your service's behavior in a local environment. This allows you to test and refine your service logic before deploying it on the FX platform, where parameters, secrets, and configurations are handled differently.
 
 
-**Step 12: Exploring the `ferris_ef` Library**
+**Step 12: Exploring the `fx_ef` Library**
 
 In the following section, we'll delve into the capabilities of the `ferris_ef` library. This library serves as a bridge between your FX service and the platform, allowing you to seamlessly implement various platform features within your service's logic.
 
-The `ferris_ef` library encapsulates essential functionalities that enable your service to interact with the FX platform, handling triggers, events, and more. By leveraging these features, you can create robust and responsive FX services that seamlessly integrate with the platform's ecosystem.
+The `fx_ef` library encapsulates essential functionalities that enable your service to interact with the FX platform, handling triggers, events, and more. By leveraging these features, you can create robust and responsive FX services that seamlessly integrate with the platform's ecosystem.
 
-Here's a sneak peek at some of the functionalities offered by the `ferris_ef` library:
+Here's a sneak peek at some of the functionalities offered by the `fx_ef` library:
 
 1. **Event Handling**: The library facilitates event-driven architecture, allowing your service to react to various triggers from the platform. Whether it's an incoming data event or an external signal, the library provides the tools to manage and respond to events effectively.
 
 2. **Parameter Access**: While on the FX platform, parameters are passed through trigger event payloads. The library offers methods to access these parameters effortlessly, enabling your service to make decisions and take actions based on the provided inputs.
 
-3. **Configuration Management**: Although configuration values are typically managed through a separate `config.json` file on the platform, the `ferris_ef` library simplifies the process of accessing these configurations from within your service code.
+3. **Configuration Management**: Although configuration values are typically managed through a separate `config.json` file on the platform, the `fx_ef` library simplifies the process of accessing these configurations from within your service code.
 
 4. **Secrets Handling**: On the platform, secrets are managed securely through the UI. The library ensures that your service can access these secrets securely when running on the platform.
 
 5. **Service State Tracking**: The library also assists in managing your service's execution state, tracking its progress and ensuring smooth operation.
 
-By tapping into the capabilities of the `ferris_ef` library, you can build powerful and versatile FX services that seamlessly integrate with the FX platform's functionalities. In the next section, we'll dive deeper into the specifics of how to utilize these features in your service logic.
+By tapping into the capabilities of the `fx_ef` library, you can build powerful and versatile FX services that seamlessly integrate with the FX platform's functionalities. In the next section, we'll dive deeper into the specifics of how to utilize these features in your service logic.
 
-Stay tuned as we explore the `ferris_ef` library in depth, unraveling the tools at your disposal for creating impactful and responsive FX services.
+Stay tuned as we explore the `fx_ef` library in depth, unraveling the tools at your disposal for creating impactful and responsive FX services.
 
-Feel free to adapt this content to your documentation's style and structure. It's designed to introduce users to the significance of the `ferris_ef` library and prepare them for a deeper dive into its features and usage.
+Feel free to adapt this content to your documentation's style and structure. It's designed to introduce users to the significance of the `fx_ef` library and prepare them for a deeper dive into its features and usage.

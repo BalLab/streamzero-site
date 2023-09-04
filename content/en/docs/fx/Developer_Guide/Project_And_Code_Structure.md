@@ -8,7 +8,7 @@ description: >-
      Project and Code Structure 
 ---
 
-# Project and Code Structure: Navigating Service Artefacts 
+
 
 In this section, we'll delve into the structure and components that make up an FX service. Understanding the organization of services, repositories, and the various artefacts involved is pivotal for efficient development within the FX platform.
 

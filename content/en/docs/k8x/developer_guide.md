@@ -1,9 +1,9 @@
 ---
-title: "Developer Guide"
+title: "K8X Developer Guide"
 linkTitle: "Developer Guide"
 weight: 1
 description: >
-  {{< param replacables.brand_name  >}} K8X Developer Guide (for Developers).
+  {{< param replacables.brand_name  >}} K8X Developer Guide.
 ---
 
 

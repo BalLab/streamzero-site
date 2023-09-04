@@ -1,14 +1,13 @@
 ---
 title: "StreamZero K8X"
 linkTitle: "StreamZero K8X"
-weight: 103
+weight: 102
 description: >
   Overview and in-depth introduction to StreamZero Event Driven Kubernetes.
 ---
 
-> StreamZero K8X is available as an optional component to StreamZero FX.
 
-## What is StreamZero K8X
+## What is StreamZero K8X?
 
 StreamZero K8X brings event driven automation to Kubernetes. 
 
@@ -24,7 +23,7 @@ K8X shares the benefits provided by StreamZero FX in that it enables easy to bui
 
 * K8X's first and foremost benefit is that it significantly decreases developer time to develop event-driven microservices. 
 * K8X provides a very low learning curve.
-* K8X significantly decreases time spent on deploymnets and CI/CD by offering a built in deployment mechanism.
+* K8X significantly decreases time spent on deployments and CI/CD by offering a built in deployment mechanism.
 * K8X improves observability by allowing easy viewing of the status as well as logs of the associated containers.
 
 

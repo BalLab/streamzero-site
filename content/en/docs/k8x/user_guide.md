@@ -3,7 +3,17 @@ title: "User Guide"
 linkTitle: "User Guide"
 weight: 3
 description: >
-  StreamZero K8X User Guide (for non-Tech).
+  {{< param replacables.brand_name  >}} K8X User Guide
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+{{< param replacables.brand_name  >}} K8X is fully integrated with FX in the {{< param replacables.brand_name  >}} Management UI. Hence K8X jobs will be visible in projects view along with the FX based jobs.
+
+FX and K8X jobs can also share the same GIT Repos. 
+
+# List Services
+The list services view of projects will display both FX and K8X jobs. K8X jobs are differentiated by the job type. 
+
+![image-20211024081829495](/streamzero/images/k8x/userguide/list_services.png)
+
+
+
