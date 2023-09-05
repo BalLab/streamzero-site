@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – Database Guide</title>
+    <title>GridMine – Database Guide</title>
     <link>/docs/integrations/database_guide/</link>
-    <description>Recent content in Database Guide on Ferris Labs</description>
+    <description>Recent content in Database Guide on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/docs/integrations/database_guide/index.xml" rel="self" type="application/rss+xml" />
     
@@ -12,19 +13,6 @@
         
       
     
-    
-    <item>
-      <title>Docs: Configuring Databases</title>
-      <link>/docs/integrations/database_guide/configuration_overview/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>/docs/integrations/database_guide/configuration_overview/</guid>
-      <description>
-        
-        
-        
-      </description>
-    </item>
     
     <item>
       <title>Docs: Supported Databases</title>

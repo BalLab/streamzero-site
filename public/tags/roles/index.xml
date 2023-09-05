@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – roles</title>
+    <title>GridMine – roles</title>
     <link>/tags/roles/</link>
-    <description>Recent content in roles on Ferris Labs</description>
+    <description>Recent content in roles on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/tags/roles/index.xml" rel="self" type="application/rss+xml" />
     
@@ -34,14 +35,14 @@
 
 
 &lt;p&gt; 
-            &lt;img src=&#34;/images/list_roles_page.png&#34; style=&#34;border:2px solid #fff;
+            &lt;img src=&#34;/streamzero/images/security/list_roles_page.png&#34; style=&#34;border:2px solid #fff;
             box-shadow: 10px 10px 5px #ccc;
             -moz-box-shadow: 10px 10px 5px #ccc;
             -webkit-box-shadow: 10px 10px 5px #ccc;
             -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Example: List of Ferris Roles&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Example: List of StreamZero Roles&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Besides displaying the list of all available Roles, the Roles page offers a number of capabilities:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Add Role &lt;img src=&#34;/images/add_icon.png&#34; alt=&#34;Add User&#34;&gt;&lt;/li&gt;
@@ -52,8 +53,8 @@
 &lt;/ul&gt;
 &lt;p&gt;&lt;em&gt;Note that each of these capabilities depends on the Permissions given to your Role. Some roles may be given full rights (e.g. add, show, edit, delete), where others may only be given viewing rights (e.g. show). As a result, some users may only be seeing the &amp;ldquo;Show Roles&amp;rdquo; magnifying glass icon.&lt;/em&gt;&lt;/p&gt;
 &lt;h5 id=&#34;add-new-role&#34;&gt;Add new Role&lt;/h5&gt;
-&lt;p&gt;Adding a new Role can be done directly within Ferris by any person who has the necessary permissions to do so. This is normally a designated Security Lead.&lt;/p&gt;
-&lt;p&gt;Often times, adding new Roles is done by integrating Ferris with the corporate Identity Access Management (IAM) and Active Directory (AD).&lt;/p&gt;
+&lt;p&gt;Adding a new Role can be done directly within StreamZero by any person who has the necessary permissions to do so. This is normally a designated Security Lead.&lt;/p&gt;
+&lt;p&gt;Often times, adding new Roles is done by integrating StreamZero with the corporate Identity Access Management (IAM) and Active Directory (AD).&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;Click on the plus sign &lt;img src=&#34;/images/add_icon.png&#34; alt=&#34;Add Role&#34;&gt; to add a new user.&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -64,7 +65,7 @@
 
 
 &lt;p&gt; 
-            &lt;img src=&#34;/images/add_role_page.png&#34; style=&#34;border:2px solid #fff;
+            &lt;img src=&#34;/streamzero/images/security/add_role_page.png&#34; style=&#34;border:2px solid #fff;
             box-shadow: 10px 10px 5px #ccc;
             -moz-box-shadow: 10px 10px 5px #ccc;
             -webkit-box-shadow: 10px 10px 5px #ccc;

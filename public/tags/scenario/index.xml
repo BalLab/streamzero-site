@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – scenario</title>
+    <title>GridMine – scenario</title>
     <link>/tags/scenario/</link>
-    <description>Recent content in scenario on Ferris Labs</description>
+    <description>Recent content in scenario on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/tags/scenario/index.xml" rel="self" type="application/rss+xml" />
     

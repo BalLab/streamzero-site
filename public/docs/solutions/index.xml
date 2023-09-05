@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – Solutions</title>
+    <title>GridMine – Solutions</title>
     <link>/docs/solutions/</link>
-    <description>Recent content in Solutions on Ferris Labs</description>
+    <description>Recent content in Solutions on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/docs/solutions/index.xml" rel="self" type="application/rss+xml" />
     
@@ -261,7 +262,7 @@ All relationship intense industries, i.e. insurance&lt;/p&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;testimonials&#34;&gt;Testimonials&lt;/h3&gt;
 &lt;blockquote&gt;
-&lt;p&gt;&amp;ldquo;Using Ferris we were able to digest a massive amount of text and extract personalized investment themes which allows our RMs to increase their face time with the clients and surprise them with the meaningful content.&amp;rdquo;
+&lt;p&gt;&amp;ldquo;Using StreamZero we were able to digest a massive amount of text and extract personalized investment themes which allows our RMs to increase their face time with the clients and surprise them with the meaningful content.&amp;rdquo;
 — Mr. R. Giger, Head of Marketing and Campaigns, Swiss Private Bank&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id=&#34;tags--keywords&#34;&gt;Tags / Keywords&lt;/h3&gt;
@@ -503,7 +504,7 @@ Usually a gradual improvement can be monitored within 3-6 months from the start 
 
 
 &lt;p&gt; 
-            &lt;img src=&#34;/images/uc_012_2021.png&#34; style=&#34;border:2px solid #fff;
+            &lt;img src=&#34;/streamzero/images/solutions/uc_012_2021.png&#34; style=&#34;border:2px solid #fff;
             box-shadow: 10px 10px 5px #ccc;
             -moz-box-shadow: 10px 10px 5px #ccc;
             -webkit-box-shadow: 10px 10px 5px #ccc;
@@ -735,7 +736,7 @@ It seems like a lucky punch if product information leads to a trade / product sa
 &lt;/ul&gt;
 &lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
 &lt;p&gt;During the use case implementation 16 different cash-flow generating order systems were integrated using different schemas of how they handle transactions.
-Ferris Data Platform was able to resolve the complexities of the event handling to absorb all different situations and rules that need to be applied depending on the different states that the system can take.
+StreamZero Data Platform was able to resolve the complexities of the event handling to absorb all different situations and rules that need to be applied depending on the different states that the system can take.
 Data sourcing patterns evolved quickly from single file batch to data streaming using Kafka and Flink. A global end-user enablement was achieved with a multi network environment for regional user and both logical and physical data segregation. Irreversible client data protection using SHA 256 hash algorithm allowed for globally integrated algorithms in spite of highly confidential raw input data.
 We were able to implement dynamic throttling and acceleration of cash flows depending on current market situations and liquidity levels.&lt;/p&gt;
 &lt;p&gt;The solution included:&lt;/p&gt;
@@ -816,7 +817,7 @@ Using the domain expertise to create the rules is time consuming and often not f
 
 
 &lt;p&gt; 
-            &lt;img src=&#34;/images/uc_008_2021.png&#34; style=&#34;border:2px solid #fff;
+            &lt;img src=&#34;/streamzero/images/solutions/uc_008_2021.jpeg&#34; style=&#34;border:2px solid #fff;
             box-shadow: 10px 10px 5px #ccc;
             -moz-box-shadow: 10px 10px 5px #ccc;
             -webkit-box-shadow: 10px 10px 5px #ccc;
@@ -839,7 +840,7 @@ Using the domain expertise to create the rules is time consuming and often not f
 &lt;/ul&gt;
 &lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Ferris error correction toolbox&lt;/li&gt;
+&lt;li&gt;StreamZero error correction toolbox&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The deliverables included:&lt;/p&gt;
 &lt;ul&gt;
@@ -1015,7 +1016,7 @@ Using the domain expertise to create the rules is time consuming and often not f
 
 
 &lt;p&gt; 
-            &lt;img src=&#34;/images/uc_001_2021.png&#34; style=&#34;border:2px solid #fff;
+            &lt;img src=&#34;/streamzero/images/solutions/uc_001_2021.png&#34; style=&#34;border:2px solid #fff;
             box-shadow: 10px 10px 5px #ccc;
             -moz-box-shadow: 10px 10px 5px #ccc;
             -webkit-box-shadow: 10px 10px 5px #ccc;
@@ -1116,7 +1117,7 @@ Using the domain expertise to create the rules is time consuming and often not f
 
 
 &lt;p&gt; 
-            &lt;img src=&#34;/images/uc_001_2021.png&#34; style=&#34;border:2px solid #fff;
+            &lt;img src=&#34;/streamzero/images/solutions/uc_001_2021.png&#34; style=&#34;border:2px solid #fff;
             box-shadow: 10px 10px 5px #ccc;
             -moz-box-shadow: 10px 10px 5px #ccc;
             -webkit-box-shadow: 10px 10px 5px #ccc;
@@ -1184,7 +1185,7 @@ Using the domain expertise to create the rules is time consuming and often not f
 &lt;li&gt;Insurance&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
-&lt;p&gt;Leveraging the semantic integration capabilities of Ferris Data Platform, it  allows you to reuse all the integration efforts you have previously started and yet converge on a common path towards an integrated (regulatory) enterprise view. The ability to eliminate high-maintenance Extraction Transformation Loading (ETL) coding or ETL tooling in favor of a transparent and business driven process will save you money during the initial implementation and during ongoing maintenance.
+&lt;p&gt;Leveraging the semantic integration capabilities of StreamZero Data Platform, it  allows you to reuse all the integration efforts you have previously started and yet converge on a common path towards an integrated (regulatory) enterprise view. The ability to eliminate high-maintenance Extraction Transformation Loading (ETL) coding or ETL tooling in favor of a transparent and business driven process will save you money during the initial implementation and during ongoing maintenance.
 Templates and a proven process were applied to use what exists and build what’s missing without long-term lock in.&lt;/p&gt;
 &lt;p&gt;The solution included:&lt;/p&gt;
 &lt;ul&gt;
@@ -1337,7 +1338,7 @@ All of this can be offered fully pay peruse, to ensure a very low entry point fo
 
 
 &lt;p&gt; 
-            &lt;img src=&#34;/images/uc_006_2021.png&#34; style=&#34;border:2px solid #fff;
+            &lt;img src=&#34;/streamzero/images/solutions/uc_006_2021.png&#34; style=&#34;border:2px solid #fff;
             box-shadow: 10px 10px 5px #ccc;
             -moz-box-shadow: 10px 10px 5px #ccc;
             -webkit-box-shadow: 10px 10px 5px #ccc;

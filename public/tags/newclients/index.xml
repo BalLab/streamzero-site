@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – newclients</title>
+    <title>GridMine – newclients</title>
     <link>/tags/newclients/</link>
-    <description>Recent content in newclients on Ferris Labs</description>
+    <description>Recent content in newclients on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/tags/newclients/index.xml" rel="self" type="application/rss+xml" />
     
@@ -52,7 +53,7 @@
 
 
 &lt;p&gt; 
-            &lt;img src=&#34;/images/uc_001_2021.png&#34; style=&#34;border:2px solid #fff;
+            &lt;img src=&#34;/streamzero/images/solutions/uc_001_2021.png&#34; style=&#34;border:2px solid #fff;
             box-shadow: 10px 10px 5px #ccc;
             -moz-box-shadow: 10px 10px 5px #ccc;
             -webkit-box-shadow: 10px 10px 5px #ccc;

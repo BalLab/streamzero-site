@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – LEARN</title>
+    <title>GridMine – LEARN</title>
     <link>/learn/</link>
-    <description>Recent content in LEARN on Ferris Labs</description>
+    <description>Recent content in LEARN on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/learn/index.xml" rel="self" type="application/rss+xml" />
     

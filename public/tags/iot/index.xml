@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – iot</title>
+    <title>GridMine – iot</title>
     <link>/tags/iot/</link>
-    <description>Recent content in iot on Ferris Labs</description>
+    <description>Recent content in iot on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/tags/iot/index.xml" rel="self" type="application/rss+xml" />
     

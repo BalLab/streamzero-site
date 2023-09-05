@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – permissions</title>
+    <title>GridMine – permissions</title>
     <link>/tags/permissions/</link>
-    <description>Recent content in permissions on Ferris Labs</description>
+    <description>Recent content in permissions on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/tags/permissions/index.xml" rel="self" type="application/rss+xml" />
     
@@ -23,7 +24,7 @@
         
         
         &lt;h4 id=&#34;roles&#34;&gt;Roles&lt;/h4&gt;
-&lt;p&gt;This is us - humans - using Ferris on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.&lt;/p&gt;
+&lt;p&gt;This is us - humans - using StreamZero on a day to day basis. And in this section each user is listed with the most important attributes defininig name, e-mail, status and - most importantly - the associated roles.&lt;/p&gt;
 &lt;blockquote&gt;
 &lt;p&gt;To get the the Users page, navigate to: Security &amp;gt; List Roles&lt;/p&gt;
 &lt;/blockquote&gt;
@@ -34,14 +35,14 @@
 
 
 &lt;p&gt; 
-            &lt;img src=&#34;/images/list_users_page.png&#34; style=&#34;border:2px solid #fff;
+            &lt;img src=&#34;/streamzero/images/security/list_users_page.png&#34; style=&#34;border:2px solid #fff;
             box-shadow: 10px 10px 5px #ccc;
             -moz-box-shadow: 10px 10px 5px #ccc;
             -webkit-box-shadow: 10px 10px 5px #ccc;
             -khtml-box-shadow: 10px 10px 5px #ccc;&#34;/&gt;
 &lt;/p&gt;
 
-&lt;p&gt;&lt;em&gt;Example: List of Ferris Users&lt;/em&gt;&lt;/p&gt;
+&lt;p&gt;&lt;em&gt;Example: List of Users&lt;/em&gt;&lt;/p&gt;
 &lt;p&gt;Besides displaying the list of all current users, the Users page offers a number of capabilities:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;Add User &lt;img src=&#34;../../../../../../../images/add_icon.png&#34; alt=&#34;Add User&#34;&gt;&lt;/li&gt;

@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.94.2" /><link rel="canonical" type="text/html" href="/docs/integrations/">
+<meta name="generator" content="Hugo 0.117.0"><link rel="canonical" type="text/html" href="/docs/integrations/">
 <link rel="alternate" type="application/rss&#43;xml" href="/docs/integrations/index.xml">
 <META NAME="ROBOTS" CONTENT="NOINDEX, NOFOLLOW">
 
@@ -19,15 +19,14 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Integrations Guide | Ferris Labs</title>
+<title>Integrations Guide | GridMine</title>
 
 
   <meta name="description" content="The Integrations Guide provides an overview of integrations with various services and infrastructure.">
 <meta property="og:title" content="Integrations Guide" />
 <meta property="og:description" content="The Integrations Guide provides an overview of integrations with various services and infrastructure." />
 <meta property="og:type" content="website" />
-<meta property="og:url" content="/docs/integrations/" /><meta property="og:site_name" content="Ferris Labs" />
-
+<meta property="og:url" content="/docs/integrations/" />
 <meta itemprop="name" content="Integrations Guide">
 <meta itemprop="description" content="The Integrations Guide provides an overview of integrations with various services and infrastructure."><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Integrations Guide"/>
@@ -36,8 +35,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.73bd3da85b34d8277717ae3d0694ab84bf7cc2483ec0b74b623d1e06b19678a6.css" as="style">
-<link href="/scss/main.min.73bd3da85b34d8277717ae3d0694ab84bf7cc2483ec0b74b623d1e06b19678a6.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
 
 
 <script
@@ -69,12 +68,15 @@ if (!doNotTrack) {
   <body class="td-section">
     <header>
       
-<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+<nav class="js-navbar-scroll navbar navbar-expand-lg navbar-dark  td-navbar">
 	<a class="navbar-brand" href="/">
-		<span class="navbar-logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2500 750" style="enable-background:new 0 0 2500 750"><style>.st0{fill:#fff}</style><g><g><g><g><path class="st0" d="M827 228.9v53.3h84.6v27.5H827v67.2h-32.5V201.6h127.9v27.3H827z"/><path class="st0" d="M1091.5 349.6v27.3H960.1V201.6H1088v27.3h-95.3v45.5h84.6v26.8h-84.6v48.3H1091.5V349.6z"/><path class="st0" d="M1248.7 376.9l-35.8-51.3c-1.5.2-3.8.2-6.8.2h-39.5v51h-32.5V201.6h72.1c15.2.0 28.4 2.5 39.7 7.5s19.9 12.2 25.9 21.5 9 20.4 9 33.3c0 13.2-3.2 24.5-9.6 34s-15.6 16.6-27.7 21.3l40.3 57.6L1248.7 376.9zm-11.8-138.8c-7.3-6-18.1-9-32.3-9h-38V299h38c14.2.0 24.9-3 32.3-9.1 7.3-6.1 11-14.7 11-25.9S1244.3 244.1 1236.9 238.1z"/><path class="st0" d="M1437.9 376.9l-35.8-51.3c-1.5.2-3.8.2-6.8.2h-39.5v51h-32.5V201.6h72.1c15.2.0 28.4 2.5 39.7 7.5s19.9 12.2 25.9 21.5 9 20.4 9 33.3c0 13.2-3.2 24.5-9.6 34s-15.6 16.6-27.7 21.3l40.3 57.6L1437.9 376.9zM1426.1 238.1c-7.3-6-18.1-9-32.3-9h-38V299h38c14.2.0 24.9-3 32.3-9.1 7.3-6.1 11-14.7 11-25.9S1433.5 244.1 1426.1 238.1z"/><path class="st0" d="M1512.5 201.6h32.5v175.3h-32.5V201.6z"/><path class="st0" d="M1613.7 373.6c-12.6-3.8-22.6-8.9-29.9-15.3l11.3-25.3c7.2 5.7 16 10.3 26.4 13.9 10.4 3.6 20.9 5.4 31.4 5.4 13 0 22.7-2.1 29.2-6.3 6.4-4.2 9.6-9.7 9.6-16.5.0-5-1.8-9.1-5.4-12.4-3.6-3.2-8.1-5.8-13.6-7.6s-13-3.9-22.5-6.3c-13.3-3.2-24.2-6.3-32.4-9.5s-15.3-8.1-21.3-14.9c-6-6.8-8.9-15.9-8.9-27.4.0-9.7 2.6-18.5 7.9-26.4 5.3-7.9 13.2-14.2 23.8-18.9 10.6-4.7 23.6-7 38.9-7 10.7.0 21.2 1.3 31.5 4s19.3 6.5 26.8 11.5l-10.3 25.3c-7.7-4.5-15.7-7.9-24-10.3-8.3-2.3-16.4-3.5-24.3-3.5-12.8.0-22.4 2.2-28.7 6.5s-9.4 10.1-9.4 17.3c0 5 1.8 9.1 5.4 12.3s8.1 5.7 13.6 7.5 13 3.9 22.5 6.3c13 3 23.7 6.1 32 9.4 8.3 3.2 15.5 8.2 21.4 14.9s8.9 15.7 8.9 27c0 9.7-2.6 18.4-7.9 26.3-5.3 7.8-13.2 14.1-23.9 18.8s-23.7 7-39 7C1639.3 379.4 1626.3 377.5 1613.7 373.6z"/><path class="st0" d="M1840.3 201.6h25v153.5h94.8v21.8h-119.9L1840.3 201.6z"/><path class="st0" d="M2107.6 333.1h-93.1l-19.3 43.8h-25.8l79.3-175.3h24.8l79.6 175.3h-26.3L2107.6 333.1zM2098.8 313.1l-37.8-85.9-37.8 85.9H2098.8z"/><path class="st0" d="M2327.3 301.3c5.8 7.4 8.8 16.8 8.8 28.2.0 15.2-5.7 26.9-17.1 35-11.4 8.2-28.1 12.3-49.9 12.3h-83.6V201.6h78.6c20 0 35.5 4 46.4 12s16.4 19.1 16.4 33.3c0 9.2-2.1 17.1-6.4 23.8-4.2 6.7-10 11.8-17.1 15.3C2313.5 288.8 2321.5 293.9 2327.3 301.3zm-116.9-79.4V278h51.3c12.9.0 22.7-2.4 29.7-7.1 6.9-4.8 10.4-11.7 10.4-20.9.0-9.2-3.5-16.1-10.4-20.9s-16.8-7.1-29.7-7.1L2210.4 221.9zM23e2 349.6c7.2-4.7 10.8-12 10.8-22 0-19.5-14.3-29.3-42.8-29.3h-57.6v58.3h57.6C2282.2 356.6 2292.9 354.3 23e2 349.6z"/><path class="st0" d="M2394 372.8c-12.3-4.1-21.9-9.4-28.9-15.9l9.3-19.5c6.7 6 15.2 10.9 25.6 14.6s21.1 5.6 32.2 5.6c14.5.0 25.4-2.5 32.5-7.4 7.2-4.9 10.8-11.5 10.8-19.7.0-6-2-10.9-5.9-14.6-3.9-3.7-8.8-6.6-14.5-8.6s-13.9-4.2-24.4-6.8c-13.2-3.2-23.8-6.3-31.9-9.5s-15-8-20.8-14.6-8.6-15.5-8.6-26.7c0-9.3 2.5-17.8 7.4-25.3s12.4-13.5 22.4-18 22.4-6.8 37.3-6.8c10.3.0 20.5 1.3 30.5 4s18.6 6.5 25.8 11.5l-8.3 20c-7.3-4.7-15.2-8.2-23.5-10.6s-16.5-3.6-24.5-3.6c-14.2.0-24.8 2.6-31.9 7.8-7.1 5.2-10.6 11.8-10.6 20 0 6 2 10.9 6 14.6 4 3.8 9 6.7 14.9 8.8s14 4.3 24.1 6.6c13.2 3.2 23.8 6.3 31.8 9.5s14.9 8 20.6 14.5 8.6 15.3 8.6 26.3c0 9.2-2.5 17.6-7.5 25.2-5 7.6-12.6 13.6-22.8 18-10.2 4.4-22.7 6.6-37.5 6.6C2419 378.9 2406.3 376.9 2394 372.8z"/></g><g><path class="st0" d="M1142.5 532.1h-46.8l-10.1 22.4h-9.2l38.4-84.1h8.8l38.4 84.1h-9.3L1142.5 532.1zM1139.2 524.9l-20.2-45.1-20.2 45.1H1139.2z"/><path class="st0" d="M1181.8 470.6h8.9V547h47v7.7h-55.9V470.6z"/><path class="st0" d="M1258.4 470.6h8.9V547h47v7.7h-55.9V470.6z"/><path class="st0" d="M1372.5 470.6h34.2c8.9.0 16.7 1.8 23.5 5.3s12.1 8.5 15.8 14.9c3.8 6.4 5.6 13.6 5.6 21.8.0 8.2-1.9 15.4-5.6 21.8-3.8 6.4-9 11.3-15.8 14.9s-14.6 5.3-23.5 5.3h-34.2V470.6zm33.7 76.3c7.4.0 13.8-1.5 19.3-4.4s9.8-7 12.8-12.1c3-5.2 4.6-11.1 4.6-17.8.0-6.7-1.5-12.7-4.6-17.8s-7.3-9.2-12.8-12.1-11.9-4.4-19.3-4.4h-24.8V547h24.8z"/><path class="st0" d="M1529 532.1h-46.8l-10.1 22.4h-9.2l38.4-84.1h8.8l38.4 84.1h-9.3L1529 532.1zM1525.8 524.9l-20.2-45.1-20.2 45.1H1525.8z"/><path class="st0" d="M1580.5 478.3H1551v-7.7h67.9v7.7h-29.5v76.4h-8.9V478.3z"/><path class="st0" d="M1687.4 532.1h-46.8l-10.1 22.4h-9.2l38.4-84.1h8.8l38.4 84.1h-9.3L1687.4 532.1zM1684.2 524.9l-20.2-45.1-20.2 45.1H1684.2z"/><path class="st0" d="M1834.4 470.6v84.1h-7.3l-54-68.2v68.2h-8.9v-84.1h7.3l54.1 68.2v-68.2L1834.4 470.6z"/><path class="st0" d="M1927.1 546.9v7.7h-59.4v-84.1h57.6v7.7h-48.7v29.9h43.4v7.6h-43.4V547L1927.1 546.9z"/><path class="st0" d="M2013.3 546.9v7.7h-59.4v-84.1h57.6v7.7h-48.7v29.9h43.4v7.6h-43.4V547L2013.3 546.9z"/><path class="st0" d="M2040.2 470.6h34.2c8.9.0 16.7 1.8 23.5 5.3 6.8 3.6 12.1 8.5 15.8 14.9 3.8 6.4 5.6 13.6 5.6 21.8.0 8.2-1.9 15.4-5.6 21.8-3.8 6.4-9 11.3-15.8 14.9s-14.6 5.3-23.5 5.3h-34.2V470.6zm33.7 76.3c7.4.0 13.8-1.5 19.3-4.4s9.8-7 12.8-12.1c3-5.2 4.6-11.1 4.6-17.8.0-6.7-1.5-12.7-4.6-17.8s-7.3-9.2-12.8-12.1-11.9-4.4-19.3-4.4H2049V547H2073.9z"/><path class="st0" d="M2150.4 552.3c-5.7-2-10.1-4.6-13.2-7.9l3.5-6.8c3 3 7.1 5.5 12.1 7.4s10.2 2.8 15.6 2.8c7.5.0 13.1-1.4 16.9-4.1s5.6-6.3 5.6-10.7c0-3.4-1-6-3.1-8s-4.5-3.5-7.5-4.6-7.1-2.3-12.4-3.5c-6.3-1.6-11.4-3.1-15.1-4.6-3.8-1.5-7-3.7-9.7-6.8-2.7-3-4-7.2-4-12.3.0-4.2 1.1-8.1 3.4-11.6 2.2-3.5 5.7-6.3 10.3-8.3 4.6-2.1 10.4-3.1 17.3-3.1 4.8.0 9.5.7 14.1 2s8.6 3.1 11.9 5.5l-3 7.1c-3.5-2.3-7.3-4.1-11.3-5.2-4-1.2-7.9-1.7-11.8-1.7-7.4.0-12.9 1.4-16.6 4.3-3.7 2.8-5.6 6.5-5.6 11 0 3.4 1 6.1 3.1 8.1s4.6 3.6 7.7 4.7c3.1 1.1 7.2 2.3 12.4 3.5 6.2 1.5 11.1 3 14.9 4.5s7 3.7 9.6 6.7 4 7.1 4 12.2c0 4.2-1.1 8.1-3.4 11.6s-5.8 6.2-10.5 8.3c-4.7 2-10.5 3.1-17.4 3.1C2162.1 555.2 2156.2 554.2 2150.4 552.3z"/></g></g></g><g><polygon class="st0" points="9.7,309.9 254,450.8 254.1,591.6 292.3,613.5 292.1,428.7 38.2,282.3 38.2,209.9 186,124.2 323,203.2 361.1,181.1 224.1,102 324.3,44 461.2,123 499.3,101 324.3,0 0,187.8 0.1,304.5"/><polygon class="st0" points="425.4,398.4 547.2,327.9 547.1,283.8 387.3,376.4 387.6,669.5 324.8,705.9 176.8,620.6 176.6,462.5 138.5,440.4 138.6,598.7 38.3,540.8 38.2,382.6 0.1,360.6 0.2,562.9 324.8,750 425.8,691.6 425.7,680.5"/><polygon class="st0" points="649,187.3 547.8,129.1 538.3,134.6 294.4,276 172.5,205.8 134.4,227.8 294.4,320.1 548,173.2 610.8,209.4 611,380.4 474.2,459.6 474.1,503.6 611.1,424.4 611.2,540.3 474.4,619.5 474.4,663.5 649.3,562.2"/></g></g></svg></span>
+		<span class="navbar-logo"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6675 639" width="200" height="29"><style>.a{fill:#e21339}</style><path class="a" d="m234 638.6q-66.8.0-119.6-22.9-52-22.9-81.9-66.9-29.9-44-31.7-106.5h125.9q.9 27.3 14.1 49.3t36.9 35.2q23.8 12.3 56.3 12.3 27.3.0 47.6-8.8 21.1-9.7 32.5-26.4 12.3-16.7 12.3-39.6.0-27.3-14-44.9-13.2-18.4-36.1-29.9-22.9-12.3-52.8-22-29.1-10.5-61.6-21.1Q90.6 321.8 52.8 283q-37.9-39.6-37.9-104.7.0-55.4 26.4-95 26.4-39.6 73.9-60.7 47.6-21.2 108.3-21.2 62.5.0 110 22 47.5 21.2 74.8 61.6 27.3 40.5 29 95.1H309.7q-.9-20.3-11.4-37.9-10.6-18.4-29.9-29-19.4-11.4-46.7-11.4-22.9-.9-41.3 7-18.5 7.9-30 23.8-10.5 14.9-10.5 37.8.0 22 10.5 37 10.6 14.9 30 26.4 19.3 10.5 45.7 20.2 26.4 8.8 57.2 18.5 46.7 15.8 84.5 37.8 38.7 21.1 61.6 55.5 22.9 34.3 22.9 90.6.0 48.4-25.5 89.8-24.7 41.3-73.1 66.8-48.4 25.6-119.7 25.6zM929.2 628H811.3V107.9H630.9V12h478.7v95.9H929.2zm498 0h-118.8V12H1539q73.9.0 122.3 25.5 49.3 25.6 73.1 68.7 23.7 42.2 23.7 94.1.0 49.3-23.7 92.4-22.9 42.3-72.2 68.7-48.4 25.5-125 25.5h-110zm336.2.0h-135.5l-126.7-271h128.4zm-336.1-516.6v189.2h103.8q54.6.0 80.1-26.4 25.5-26.4 25.5-69.5t-25.5-67.8q-25.5-25.5-80.1-25.5zM2383.8 628h-405.6V12h405.6v95.9H2097v161h260.4v92.4H2097V532h286.8zm306.2.0h-124l224.4-616H2925l225.3 616h-125.9l-167.2-480.4zm351.2-140h-375.8l30.8-92.4h314.2zm422.3 140h-118.8V12h141.7l191.8 383.6L3867.4 12h141.7v616h-118.8V213.5L3724 540h-94.2l-166.3-327.4zm1153.7.0h-393.4v-58.1l303.6-493.7h-299.2V12h385.4v58.1l-304.4 493.7h308zm601.8.0h-381V12h381v60.7h-307.1v214.7h280.7v59.8h-280.7v220H5219zm306.2.0h-73.9V12h198.9q72.2.0 117.9 24.7 45.8 23.7 67.8 64.2t22 91.5q0 49.3-22.9 90.7-22 41.3-68.6 66-46.7 24.6-119.7 24.6h-121.5zm338.8.0h-87.1l-135.5-275.4h82.7zM5525.2 74.5v241.1h119.7q70.4.0 103-34.3 33.4-34.4 33.4-88 0-54.6-32.6-86.3-31.6-32.5-104.7-32.5zm844.8 564q-90.7.0-159.3-39.6-67.8-40.4-106.5-111.7-37.8-72.2-37.8-167.2.0-94.2 37.8-165.5 38.7-72.1 106.5-112.6 68.6-40.5 159.3-40.5 91.5.0 159.3 40.5 68.6 40.5 106.4 112.6 37.9 71.3 37.9 165.5.0 95-37.9 167.2-37.8 71.3-106.4 111.7-67.8 39.6-159.3 39.6zm0-65.1q67.7.0 118.8-29.9 51.9-30.8 80.1-87.1 29-57.2 29-136.4t-29-135.5q-28.2-57.2-80.1-87.2-51.1-29.9-118.8-29.9-67.8.0-119.7 29.9-51 30-80.1 87.2-28.1 56.3-28.1 135.5t28.1 136.4q29.1 56.3 80.1 87.1 51.9 29.9 119.7 29.9z"/></svg></span>
 	</a>
-	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
-		<ul class="navbar-nav mt-2 mt-lg-0">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
 			
 			
 				
@@ -84,56 +86,25 @@ if (!doNotTrack) {
 				
 				
 				
-					<li class="nav-item mr-2 mb-2 mb-lg-0">
-						<a class="nav-link" href="/product/" ><span>PRODUCT</span></a>
-					</li>
-				
-			
-				
-				
-				
-				
-				
-				
-				
-					<li class="nav-item mr-2 mb-2 mb-lg-0">
-						<a class="nav-link" href="/integrations/" ><span>INTEGRATIONS</span></a>
-					</li>
-				
-			
-				
-				
-				
-				
-				
-				
-				
-					<li class="nav-item mr-2 mb-2 mb-lg-0">
-						<a class="nav-link" href="/solutions/" ><span>CASE STUDIES</span></a>
-					</li>
-				
-			
-				
-				
-				
-				
-				
-				
-				
-					<li class="nav-item mr-2 mb-2 mb-lg-0">
-						<a class="nav-link" href="/features/" ><span>FEATURES</span></a>
-					</li>
-				
-			
-				
-				
-				
-				
-				
-				
-				
-					<li class="nav-item mr-2 mb-2 mb-lg-0">
-						<a class="nav-link" href="/about/" ><span>ABOUT</span></a>
+					<li class="nav-item mr-2 mb-2 mb-lg-0 dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+							PRODUCTS
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							
+								<li>
+									<a class="nav-link" href="/products/fx/" >STREAMZERO FX</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/k8x/" >STREAMZERO K8X</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/sx/" >STREAMZERO SX</a>
+								</li>
+							
+						</ul>
 					</li>
 				
 			
@@ -147,7 +118,7 @@ if (!doNotTrack) {
 				
 				
 					<li class="nav-item mr-2 mb-2 mb-lg-0">
-						<a class="nav-link active" href="/docs/" ><span class="active">DOCS</span></a>
+						<a class="nav-link active" href="/docs/" ><span class="active">DOCUMENTATION</span></a>
 					</li>
 				
 			
@@ -204,26 +175,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>1: <a href="#pg-0e8157366e15a3c69b745b3f2a9cac07">PaaS SaaS Guide</a></li>
-
-
-    
-    <ul>
-        
-  
-  
-  
-  
-
-  
-
-    </ul>
-    
-  
-    
-    
-	
-<li>2: <a href="#pg-e53cb7761c1447c70a0fc0648d3df3da">Database Guide</a></li>
+<li>1: <a href="#pg-e53cb7761c1447c70a0fc0648d3df3da">Database Guide</a></li>
 
 
     
@@ -238,7 +190,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.1: <a href="#pg-48e9dc2a5944044ed8d7b47bd6b259ad">Configuring Databases</a></li>
+<li>1.1: <a href="#pg-f5902546e2f3382efd68cc1ff0f06547">Supported Databases</a></li>
 
 
     
@@ -253,7 +205,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.1.1: <a href="#pg-5b8c38af0d76bf62300bb243b39d7200">Adding New Drivers in Docker</a></li>
+<li>1.1.1: <a href="#pg-85e39f837736e14d35ffe5650919d954">Ascend.io</a></li>
 
 
     
@@ -261,7 +213,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.1.2: <a href="#pg-3d574cf8f4935c211c8fef24a686e650">Extra Database Settings</a></li>
+<li>1.1.2: <a href="#pg-3cd21d5f234c70bea5abd5f2b158de09">Amazon Athena</a></li>
 
 
     
@@ -269,7 +221,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.1.3: <a href="#pg-63091ffb56fa2cbee17246ce3ec385f3">Installing Database Drivers</a></li>
+<li>1.1.3: <a href="#pg-a5ef06a44e2beaeaf2a3c98bf81c2c5d">Amazon Redshift</a></li>
 
 
     
@@ -277,34 +229,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.1.4: <a href="#pg-24a54ac44c59d7d6190abb9b6492ac2c">Using Database Connection UI</a></li>
-
-
-    
-  
-
-    </ul>
-    
-  
-    
-    
-	
-<li>2.2: <a href="#pg-f5902546e2f3382efd68cc1ff0f06547">Supported Databases</a></li>
-
-
-    
-    <ul>
-        
-  
-  
-  
-  
-
-  
-    
-    
-	
-<li>2.2.1: <a href="#pg-85e39f837736e14d35ffe5650919d954">Ascend.io</a></li>
+<li>1.1.4: <a href="#pg-c5b2acdd81c246738031b8cfbf6fd430">Apache Drill</a></li>
 
 
     
@@ -312,7 +237,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.2: <a href="#pg-3cd21d5f234c70bea5abd5f2b158de09">Amazon Athena</a></li>
+<li>1.1.5: <a href="#pg-1ff2151c97d1f0191fc4d4e1585c3429">Apache Druid</a></li>
 
 
     
@@ -320,7 +245,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.3: <a href="#pg-a5ef06a44e2beaeaf2a3c98bf81c2c5d">Amazon Redshift</a></li>
+<li>1.1.6: <a href="#pg-8527bf36788dfaadc7cc049c9e224d40">Apache Hive</a></li>
 
 
     
@@ -328,7 +253,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.4: <a href="#pg-c5b2acdd81c246738031b8cfbf6fd430">Apache Drill</a></li>
+<li>1.1.7: <a href="#pg-23ab22688dcfbc862871246776109cae">Apache Impala</a></li>
 
 
     
@@ -336,7 +261,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.5: <a href="#pg-1ff2151c97d1f0191fc4d4e1585c3429">Apache Druid</a></li>
+<li>1.1.8: <a href="#pg-cb66dc613cab7388aa086de41b6cb561">Apache Kylin</a></li>
 
 
     
@@ -344,7 +269,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.6: <a href="#pg-8527bf36788dfaadc7cc049c9e224d40">Apache Hive</a></li>
+<li>1.1.9: <a href="#pg-8b6b39d6e8914dbbaad36be6658bad9e">Apache Pinot</a></li>
 
 
     
@@ -352,7 +277,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.7: <a href="#pg-23ab22688dcfbc862871246776109cae">Apache Impala</a></li>
+<li>1.1.10: <a href="#pg-b34de0c3595710dc4f12fc03fe29e2f5">Apache Solr</a></li>
 
 
     
@@ -360,7 +285,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.8: <a href="#pg-cb66dc613cab7388aa086de41b6cb561">Apache Kylin</a></li>
+<li>1.1.11: <a href="#pg-a1df4691431163fbf5a290554f7efbbb">Apache Spark SQL</a></li>
 
 
     
@@ -368,7 +293,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.9: <a href="#pg-8b6b39d6e8914dbbaad36be6658bad9e">Apache Pinot</a></li>
+<li>1.1.12: <a href="#pg-94ff6a532016988c85b4b8b0de571195">Clickhouse</a></li>
 
 
     
@@ -376,7 +301,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.10: <a href="#pg-b34de0c3595710dc4f12fc03fe29e2f5">Apache Solr</a></li>
+<li>1.1.13: <a href="#pg-502939f5dea7e9bf52013fd1eeec7c3a">CockroachDB</a></li>
 
 
     
@@ -384,7 +309,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.11: <a href="#pg-a1df4691431163fbf5a290554f7efbbb">Apache Spark SQL</a></li>
+<li>1.1.14: <a href="#pg-da290602c274061691efd3c1fc8bd546">CrateDB</a></li>
 
 
     
@@ -392,7 +317,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.12: <a href="#pg-94ff6a532016988c85b4b8b0de571195">Clickhouse</a></li>
+<li>1.1.15: <a href="#pg-74686483a29c33331fc7175a42ce9dab">Databricks</a></li>
 
 
     
@@ -400,7 +325,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.13: <a href="#pg-502939f5dea7e9bf52013fd1eeec7c3a">CockroachDB</a></li>
+<li>1.1.16: <a href="#pg-3e8f575d87357baa5f9c18637ef6999b">Dremio</a></li>
 
 
     
@@ -408,7 +333,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.14: <a href="#pg-da290602c274061691efd3c1fc8bd546">CrateDB</a></li>
+<li>1.1.17: <a href="#pg-b6c2d3ae62147bee644e73fdfe5b5d95">Elasticsearch</a></li>
 
 
     
@@ -416,7 +341,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.15: <a href="#pg-74686483a29c33331fc7175a42ce9dab">Databricks</a></li>
+<li>1.1.18: <a href="#pg-9b3125303076fc90c6f9f3b0c98b7678">Exasol</a></li>
 
 
     
@@ -424,7 +349,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.16: <a href="#pg-3e8f575d87357baa5f9c18637ef6999b">Dremio</a></li>
+<li>1.1.19: <a href="#pg-067dde8fa8aa68f57352fbd0d0a563dc">Firebird</a></li>
 
 
     
@@ -432,7 +357,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.17: <a href="#pg-b6c2d3ae62147bee644e73fdfe5b5d95">Elasticsearch</a></li>
+<li>1.1.20: <a href="#pg-d9da980991f7a5cee5d34a27b89c0406">Firebolt</a></li>
 
 
     
@@ -440,7 +365,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.18: <a href="#pg-9b3125303076fc90c6f9f3b0c98b7678">Exasol</a></li>
+<li>1.1.21: <a href="#pg-f9f124d66c04e8949a1be1b4dfbb89c0">Google BigQuery</a></li>
 
 
     
@@ -448,7 +373,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.19: <a href="#pg-067dde8fa8aa68f57352fbd0d0a563dc">Firebird</a></li>
+<li>1.1.22: <a href="#pg-6698f4c22ab4cc2b1f5b3f1459e67f2b">Google Sheets</a></li>
 
 
     
@@ -456,7 +381,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.20: <a href="#pg-d9da980991f7a5cee5d34a27b89c0406">Firebolt</a></li>
+<li>1.1.23: <a href="#pg-0c8af8f1139128b3a15ba2cb21485303">Hana</a></li>
 
 
     
@@ -464,7 +389,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.21: <a href="#pg-f9f124d66c04e8949a1be1b4dfbb89c0">Google BigQuery</a></li>
+<li>1.1.24: <a href="#pg-aa8552e02c5c9effe9fdc856ee2ae206">Hologres</a></li>
 
 
     
@@ -472,7 +397,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.22: <a href="#pg-6698f4c22ab4cc2b1f5b3f1459e67f2b">Google Sheets</a></li>
+<li>1.1.25: <a href="#pg-613e82bc8bb3e8598035646c17a5e4e3">IBM DB2</a></li>
 
 
     
@@ -480,7 +405,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.23: <a href="#pg-0c8af8f1139128b3a15ba2cb21485303">Hana</a></li>
+<li>1.1.26: <a href="#pg-f17cc328f4de3c63d23d98ef24bf36fb">IBM Netezza Performance Server</a></li>
 
 
     
@@ -488,7 +413,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.24: <a href="#pg-aa8552e02c5c9effe9fdc856ee2ae206">Hologres</a></li>
+<li>1.1.27: <a href="#pg-86e4a2f7fdee7d5af8942f47dede6115">Microsoft SQL Server</a></li>
 
 
     
@@ -496,7 +421,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.25: <a href="#pg-613e82bc8bb3e8598035646c17a5e4e3">IBM DB2</a></li>
+<li>1.1.28: <a href="#pg-173acb377051b7c023be545372f824a7">MySQL</a></li>
 
 
     
@@ -504,7 +429,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.26: <a href="#pg-f17cc328f4de3c63d23d98ef24bf36fb">IBM Netezza Performance Server</a></li>
+<li>1.1.29: <a href="#pg-c4b1811499db1d4b1b5c7424968322b5">Oracle</a></li>
 
 
     
@@ -512,7 +437,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.27: <a href="#pg-86e4a2f7fdee7d5af8942f47dede6115">Microsoft SQL Server</a></li>
+<li>1.1.30: <a href="#pg-c57ee0b8f64b4f1f9bc0b23f206f7bf7">Postgres</a></li>
 
 
     
@@ -520,7 +445,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.28: <a href="#pg-173acb377051b7c023be545372f824a7">MySQL</a></li>
+<li>1.1.31: <a href="#pg-7a45235c2e51bfde7165e9a85f6368d1">Presto</a></li>
 
 
     
@@ -528,7 +453,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.29: <a href="#pg-c4b1811499db1d4b1b5c7424968322b5">Oracle</a></li>
+<li>1.1.32: <a href="#pg-29119b26f226dc4349f5a3b7238904db">Rockset</a></li>
 
 
     
@@ -536,7 +461,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.30: <a href="#pg-c57ee0b8f64b4f1f9bc0b23f206f7bf7">Postgres</a></li>
+<li>1.1.33: <a href="#pg-467f2ab658952c0b9ecd8abc43c1efc4">Snowflake</a></li>
 
 
     
@@ -544,7 +469,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.31: <a href="#pg-7a45235c2e51bfde7165e9a85f6368d1">Presto</a></li>
+<li>1.1.34: <a href="#pg-0e2497078e99139dde28481fc00b5f28">Teradata</a></li>
 
 
     
@@ -552,7 +477,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.32: <a href="#pg-29119b26f226dc4349f5a3b7238904db">Rockset</a></li>
+<li>1.1.35: <a href="#pg-d26a65f8c161b809f18b324b94400cce">Trino</a></li>
 
 
     
@@ -560,7 +485,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.33: <a href="#pg-467f2ab658952c0b9ecd8abc43c1efc4">Snowflake</a></li>
+<li>1.1.36: <a href="#pg-ea5fd90695c8bc554c2454a13295de95">Vertica</a></li>
 
 
     
@@ -568,31 +493,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>2.2.34: <a href="#pg-0e2497078e99139dde28481fc00b5f28">Teradata</a></li>
-
-
-    
-  
-    
-    
-	
-<li>2.2.35: <a href="#pg-d26a65f8c161b809f18b324b94400cce">Trino</a></li>
-
-
-    
-  
-    
-    
-	
-<li>2.2.36: <a href="#pg-ea5fd90695c8bc554c2454a13295de95">Vertica</a></li>
-
-
-    
-  
-    
-    
-	
-<li>2.2.37: <a href="#pg-7abc37e7a1ffce6adb2c0f7853e44aae">YugabyteDB</a></li>
+<li>1.1.37: <a href="#pg-7abc37e7a1ffce6adb2c0f7853e44aae">YugabyteDB</a></li>
 
 
     
@@ -608,7 +509,7 @@ This the multi-page printable view of this section.
     
     
 	
-<li>3: <a href="#pg-04b7f72a66df416b93cd6c397532a46b">Notifications and Messaging</a></li>
+<li>2: <a href="#pg-04b7f72a66df416b93cd6c397532a46b">Notifications and Messaging</a></li>
 
 
     
@@ -619,14 +520,6 @@ This the multi-page printable view of this section.
   
   
 
-  
-    
-    
-	
-<li>3.1: <a href="#pg-5401baa9cffe22cd34de854d693d17b7">Notifications and Messaging</a></li>
-
-
-    
   
 
     </ul>
@@ -658,454 +551,227 @@ This the multi-page printable view of this section.
 
 <div class="td-content" style="">
     
-	<h1 id="pg-0e8157366e15a3c69b745b3f2a9cac07">1 - PaaS SaaS Guide</h1>
-    <div class="lead">Provides an overview of a growing number of PaaS and SaaS integrations.</div>
-	
-</div>
-
-
-
-    
-      
-  
-  
-  
-  
-
-  
-  
-
-  
-
-    
-	
-  
-    
-    
-	
-    
-
-<div class="td-content" style="page-break-before: always">
-    
-	<h1 id="pg-e53cb7761c1447c70a0fc0648d3df3da">2 - Database Guide</h1>
+	<h1 id="pg-e53cb7761c1447c70a0fc0648d3df3da">1 - Database Guide</h1>
     <div class="lead">The Database Guide provides an overview of setting up databases and the specifics of each DB type.</div>
-	
-</div>
-
-
-
-    
-      
-  
-  
-  
-  
-
-  
-  
-
-  
-    
-    
-	
-    
-
-<div class="td-content" style="">
-    
-	<h1 id="pg-48e9dc2a5944044ed8d7b47bd6b259ad">2.1 - Configuring Databases</h1>
-    <div class="lead">The Database Guide provides an overview of setting up databases and the specifics of each DB type.</div>
-	
-</div>
-
-
-
-    
-      
-  
-  
-  
-  
-
-  
-  
-
-  
-    
-    
-	
-    
-
-<div class="td-content" style="">
-    
-	<h1 id="pg-5b8c38af0d76bf62300bb243b39d7200">2.1.1 - Adding New Drivers in Docker</h1>
-    
-	<h2 id="adding-new-database-drivers-in-docker">Adding New Database Drivers in Docker</h2>
-<p>Ferris requires a Python database driver to be installed within the Executor Image for each additional type of database you
-want to connect to.</p>
-<p>In this section, we&rsquo;ll walk through how to install the MySQL connector library. The connector
-library installation process is the same for all additional libraries and we&rsquo;ll end this section
-with the recommended connector library for each database.</p>
-<h3 id="1-determine-the-driver-you-need">1. Determine the driver you need</h3>
-<p>To figure out how to install the <a href="/docs/databases/installing-database-drivers">database driver</a> of your choice.</p>
-<p>In the example, we&rsquo;ll walk through the process of installing a MySQL driver in Ferris Executor.</p>
-<h3 id="2-install-mysql-driver">2. Install MySQL Driver</h3>
-<p>As we are currently running inside of a Docker container via <code>docker compose</code>, we cannot simply run
-<code>pip install mysqlclient</code> on our local shell and expect the drivers to be installed within the
-Docker containers for Ferris.</p>
-<p>In order to address this, the Ferris <code>docker compose</code> setup comes with a mechanism for you to
-install packages locally, which will be ignored by Git for the purposes of local development. Please
-follow these steps:</p>
-<p>Create <code>requirements-local.txt</code></p>
-<pre tabindex="0"><code># From the repo root...
-touch ./docker/requirements-local.txt
-</code></pre><p>Add the driver selected in step above:</p>
-<pre tabindex="0"><code>echo &#34;mysqlclient&#34; &gt;&gt; ./docker/requirements-local.txt
-</code></pre><p>Rebuild your local image with the new driver baked in:</p>
-<pre tabindex="0"><code>docker-compose build --force-rm
-</code></pre><p>After the rebuild of the Docker images is complete (which make take a few minutes) you can relaunch using the following command:</p>
-<pre tabindex="0"><code>docker-compose up
-</code></pre><p>The other option is to start Feris via Docker Compose is using the recipe in <code>docker-compose-non-dev.yml</code>, which will use pre-built frontend assets and skip the building of front-end assets:</p>
-<pre tabindex="0"><code>docker-compose -f docker-compose-non-dev.yml pull
-docker-compose -f docker-compose-non-dev.yml up
-</code></pre><h3 id="3-connect-to-mysql">3. Connect to MySQL</h3>
-<p>Now that you&rsquo;ve got a MySQL driver installed locally, you should be able to test it out.</p>
-<p>We can now create a Datasource in Feris that can be used to connect to a MySQL instance. Assuming
-your MySQL instance is running locally and can be accessed via localhost, use the following
-connection string in “SQL Alchemy URI”, by going to Sources &gt; Databases &gt; + icon (to add a new
-datasource) in Feris.</p>
-<p>For Docker running in Linux:</p>
-<pre tabindex="0"><code>mysql://mysqluser:mysqluserpassword@localhost/example?charset=utf8
-</code></pre><p>For Docker running in OSX:</p>
-<pre tabindex="0"><code>mysql://mysqluser:mysqluserpassword@docker.for.mac.host.internal/example?charset=utf8
-</code></pre><p>Then click “Test Connection”, which should give you an “OK” message. If not, please look at your
-terminal for error messages, and reach out for help.</p>
-<p>You can repeat this process for every database you want Feris to be able to connect to.</p>
-
-</div>
-
-
-
-    
-	
-  
-    
-    
-	
-    
-
-<div class="td-content" style="page-break-before: always">
-    
-	<h1 id="pg-3d574cf8f4935c211c8fef24a686e650">2.1.2 - Extra Database Settings</h1>
-    
-	<h2 id="extra-database-settings">Extra Database Settings</h2>
-<h3 id="deeper-sqlalchemy-integration">Deeper SQLAlchemy Integration</h3>
-<p>It is possible to tweak the database connection information using the parameters exposed by
-SQLAlchemy. In the <strong>Database edit</strong> view, you can edit the <strong>Extra</strong> field as a JSON blob.</p>
-<p>This JSON string contains extra configuration elements. The <code>engine_params</code> object gets unpacked
-into the <code>sqlalchemy.create_engine</code> call, while the <code>metadata_params</code> get unpacked into the
-<code>sqlalchemy.MetaData</code> call. Refer to the SQLAlchemy docs for more information.</p>
-<h3 id="schemas">Schemas</h3>
-<p>Databases like Postgres and Redshift use the <strong>schema</strong> as the logical entity on top of the
-<strong>database</strong>. For Feris to connect to a specific schema, you can set the <strong>schema</strong> parameter in
-the <strong>Edit Tables</strong> form (Sources &gt; Tables &gt; Edit record).</p>
-<h3 id="external-password-store-for-sqlalchemy-connections">External Password Store for SQLAlchemy Connections</h3>
-<p>Feris can be configured to use an external store for database passwords. This is useful if you a
-running a custom secret distribution framework and do not wish to store secrets in Feris’s meta
-database.</p>
-<p>Example: Write a function that takes a single argument of type <code>sqla.engine.url</code> and returns the
-password for the given connection string. Then set <code>SQLALCHEMY_CUSTOM_PASSWORD_STORE</code> in your config
-file to point to that function.</p>
+	<h2 id="install-database-drivers">Install Database Drivers</h2>
+<p>StreamZero DX requires a Python DB-API database driver and a SQLAlchemy dialect to be installed for each datastore you want to connect to within the executor image.</p>
+<h2 id="configuring-database-connections">Configuring Database Connections</h2>
+<p>StreamZero can manage preset connection configurations. This enables a platform wide set up for both confidential as well as general access databases.</p>
+<p>StreamZero uses the SQL Alchemy Engine along with the URL template based approach to connection management. The connection configurations are maintained as secrets within the platform and are therefore not publicly accessible i.e. access is provided for administrators only.</p>
+<h2 id="retrieving-db-connections">Retrieving DB Connections</h2>
+<p>The following is how to retrieve a named connection. The following sample assumes that the connection identifier key is uploaded to the package as a secrets.json.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">example_lookup_password</span>(url):
-</span></span><span style="display:flex;"><span>    secret <span style="color:#f92672">=</span> <span style="color:#f92672">&lt;&lt;</span>get password <span style="color:#f92672">from</span> external framework<span style="color:#f92672">&gt;&gt;</span>
-</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;secret&#39;</span>
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> fx_ef <span style="color:#f92672">import</span> context
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> sqlalchemy <span style="color:#66d9ef">as</span> db
 </span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>SQLALCHEMY_CUSTOM_PASSWORD_STORE <span style="color:#f92672">=</span> example_lookup_password
+</span></span><span style="display:flex;"><span>db_url <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>secrets<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;my_connection&#39;</span>)
+</span></span><span style="display:flex;"><span>engine <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>create_engine(db_url)
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>connection <span style="color:#f92672">=</span> engine<span style="color:#f92672">.</span>connect()
+</span></span><span style="display:flex;"><span>metadata <span style="color:#f92672">=</span> db<span style="color:#f92672">.</span>MetaData()
 </span></span></code></pre></td></tr></table>
 </div>
-</div><p>A common pattern is to use environment variables to make secrets available.
-<code>SQLALCHEMY_CUSTOM_PASSWORD_STORE</code> can also be used for that purpose.</p>
+</div><p>In the above example the db_url is set up as a secret with name <code>'my_connection'</code>.</p>
+<p>Depending on whether this is a service, project or platform level secret there are different approaches to set up the secret. For service level secret the following is a sample set up for a <code>secrets.json</code> file of the package.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#66d9ef">def</span> <span style="color:#a6e22e">example_password_as_env_var</span>(url):
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># assuming the uri looks like</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># mysql://localhost?Feris_user:{Feris_PASSWORD}</span>
-</span></span><span style="display:flex;"><span><span style="color:#66d9ef">return</span> url<span style="color:#f92672">.</span>password<span style="color:#f92672">.</span>format(os<span style="color:#f92672">.</span>environ)
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>SQLALCHEMY_CUSTOM_PASSWORD_STORE <span style="color:#f92672">=</span> example_password_as_env_var
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="ssl-access-to-databases">SSL Access to Databases</h3>
-<p>You can use the <code>Extra</code> field in the <strong>Edit Databases</strong> form to configure SSL:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">9
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-JSON" data-lang="JSON"><span style="display:flex;"><span>{
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;metadata_params&#34;</span>: {},
-</span></span><span style="display:flex;"><span>    <span style="color:#f92672">&#34;engine_params&#34;</span>: {
-</span></span><span style="display:flex;"><span>          <span style="color:#f92672">&#34;connect_args&#34;</span>:{
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;sslmode&#34;</span>:<span style="color:#e6db74">&#34;require&#34;</span>,
-</span></span><span style="display:flex;"><span>              <span style="color:#f92672">&#34;sslrootcert&#34;</span>: <span style="color:#e6db74">&#34;/path/to/my/pem&#34;</span>
-</span></span><span style="display:flex;"><span>        }
-</span></span><span style="display:flex;"><span>     }
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">&#34;my_connection&#34;</span> <span style="color:#960050;background-color:#1e0010">=</span> <span style="color:#e6db74">&#34;mysql://scott:tiger@localhost/test&#34;</span>
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></td></tr></table>
 </div>
-</div>
-</div>
-
-
-
-    
-	
-  
-    
-    
-	
-    
-
-<div class="td-content" style="page-break-before: always">
-    
-	<h1 id="pg-63091ffb56fa2cbee17246ce3ec385f3">2.1.3 - Installing Database Drivers</h1>
-    
-	<h2 id="install-database-drivers">Install Database Drivers</h2>
-<p>Feris requires a Python DB-API database driver and a SQLAlchemy
-dialect to be installed for each datastore you want to connect to.</p>
-<p>You can read more <a href="/docs/databases/docker-add-drivers">here</a> about how to
-install new database drivers into your Feris configuration.</p>
-<h3 id="supported-databases-and-dependencies">Supported Databases and Dependencies</h3>
-<p>Feris does not ship bundled with connectivity to databases, except for SQLite,
-which is part of the Python standard library. You’ll need to install the required packages for the database you want to use as your metadata database as well as the packages needed to connect to the databases you want to access through Feris.</p>
+</div><ul>
+<li>For Project scope use the <code>'secrets'</code> tab of the Project Management UI.</li>
+<li>For Platform scope secrets use the <code>Vault UI</code> in the DX Manager Application.</li>
+</ul>
+<h2 id="database-drivers">Database Drivers</h2>
+<p>The following table provides a guide on the python libs to be installed within the Executor docker image. For instructions on how to extend the Executor docker image please check this page: /docs/extending_executor_image</p>
+<p>You can read more here about how to install new database drivers and libraries into your StreamZero FX executor image.</p>
+<p>Note that many other databases are supported, the main criteria being the existence of a functional SQLAlchemy dialect and Python driver. Searching for the keyword &ldquo;sqlalchemy + (database name)&rdquo; should help get you to the right place.</p>
+<p>If your database or data engine isn&rsquo;t on the list but a SQL interface exists, please file an issue so we can work on documenting and supporting it.</p>
 <p>A list of some of the recommended packages.</p>
 <table>
 <thead>
 <tr>
 <th>Database</th>
 <th>PyPI package</th>
-<th>Connection String</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="/docs/databases/athena">Amazon Athena</a></td>
+<td><a href="/docs/integrations/database_guide/databases/athena">Amazon Athena</a></td>
 <td><code>pip install &quot;PyAthenaJDBC&gt;1.0.9</code> , <code>pip install &quot;PyAthena&gt;1.2.0</code></td>
-<td><code>awsathena+rest://{aws_access_key_id}:{aws_secret_access_key}@athena.{region_name}.amazonaws.com/{ </code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/redshift">Amazon Redshift</a></td>
+<td><a href="/docs/integrations/database_guide/databases/redshift">Amazon Redshift</a></td>
 <td><code>pip install sqlalchemy-redshift</code></td>
-<td><code> redshift+psycopg2://&lt;userName&gt;:&lt;DBPassword&gt;@&lt;AWS End Point&gt;:5439/&lt;Database Name&gt;</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/drill">Apache Drill</a></td>
+<td><a href="/docs/integrations/database_guide/databases/drill">Apache Drill</a></td>
 <td><code>pip install sqlalchemy-drill</code></td>
-<td><code>drill+sadrill:// For JDBC drill+jdbc://</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/druid">Apache Druid</a></td>
+<td><a href="/docs/integrations/database_guide/databases/druid">Apache Druid</a></td>
 <td><code>pip install pydruid</code></td>
-<td><code>druid://&lt;User&gt;:&lt;password&gt;@&lt;Host&gt;:&lt;Port-default-9088&gt;/druid/v2/sql</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/hive">Apache Hive</a></td>
+<td><a href="/docs/integrations/database_guide/databases/hive">Apache Hive</a></td>
 <td><code>pip install pyhive</code></td>
-<td><code>hive://hive@{hostname}:{port}/{database}</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/impala">Apache Impala</a></td>
+<td><a href="/docs/integrations/database_guide/databases/impala">Apache Impala</a></td>
 <td><code>pip install impyla</code></td>
-<td><code>impala://{hostname}:{port}/{database}</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/kylin">Apache Kylin</a></td>
+<td><a href="/docs/integrations/database_guide/databases/kylin">Apache Kylin</a></td>
 <td><code>pip install kylinpy</code></td>
-<td><code>kylin://&lt;username&gt;:&lt;password&gt;@&lt;hostname&gt;:&lt;port&gt;/&lt;project&gt;?&lt;param1&gt;=&lt;value1&gt;&amp;&lt;param2&gt;=&lt;value2&gt;</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/pinot">Apache Pinot</a></td>
+<td><a href="/docs/integrations/database_guide/databases/pinot">Apache Pinot</a></td>
 <td><code>pip install pinotdb</code></td>
-<td><code>pinot://BROKER:5436/query?server=http://CONTROLLER:5983/</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/solr">Apache Solr</a></td>
+<td><a href="/docs/integrations/database_guide/databases/solr">Apache Solr</a></td>
 <td><code>pip install sqlalchemy-solr</code></td>
-<td><code>solr://{username}:{password}@{hostname}:{port}/{server_path}/{collection}</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/spark-sql">Apache Spark SQL</a></td>
+<td><a href="/docs/integrations/database_guide/databases/spark-sql">Apache Spark SQL</a></td>
 <td><code>pip install pyhive</code></td>
-<td><code>hive://hive@{hostname}:{port}/{database}</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/ascend">Ascend.io</a></td>
+<td><a href="/docs/integrations/database_guide/databases/ascend">Ascend.io</a></td>
 <td><code>pip install impyla</code></td>
-<td><code>ascend://{username}:{password}@{hostname}:{port}/{database}?auth_mechanism=PLAIN;use_ssl=true</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/sql-server">Azure MS SQL</a></td>
+<td><a href="/docs/integrations/database_guide/databases/sql-server">Azure MS SQL</a></td>
 <td><code>pip install pymssql</code></td>
-<td><code>mssql+pymssql://UserName@presetSQL:TestPassword@presetSQL.database.windows.net:1433/TestSchema</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/bigquery">Big Query</a></td>
+<td><a href="/docs/integrations/database_guide/databases/bigquery">Big Query</a></td>
 <td><code>pip install pybigquery</code></td>
-<td><code>bigquery://{project_id}</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/clickhouse">ClickHouse</a></td>
+<td><a href="/docs/integrations/database_guide/databases/clickhouse">ClickHouse</a></td>
 <td><code>pip install clickhouse-driver==0.2.0 &amp;&amp; pip install clickhouse-sqlalchemy==0.1.6</code></td>
-<td><code>clickhouse+native://{username}:{password}@{hostname}:{port}/{database}</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/cockroachdb">CockroachDB</a></td>
+<td><a href="/docs/integrations/database_guide/databases/cockroachdb">CockroachDB</a></td>
 <td><code>pip install cockroachdb</code></td>
-<td><code>cockroachdb://root@{hostname}:{port}/{database}?sslmode=disable</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/dremio">Dremio</a></td>
+<td><a href="/docs/integrations/database_guide/databases/dremio">Dremio</a></td>
 <td><code>pip install sqlalchemy_dremio</code></td>
-<td><code>dremio://user:pwd@host:31010/</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/elasticsearch">Elasticsearch</a></td>
+<td><a href="/docs/integrations/database_guide/databases/elasticsearch">Elasticsearch</a></td>
 <td><code>pip install elasticsearch-dbapi</code></td>
-<td><code>elasticsearch+http://{user}:{password}@{host}:9200/</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/exasol">Exasol</a></td>
+<td><a href="/docs/integrations/database_guide/databases/exasol">Exasol</a></td>
 <td><code>pip install sqlalchemy-exasol</code></td>
-<td><code>exa+pyodbc://{username}:{password}@{hostname}:{port}/my_schema?CONNECTIONLCALL=en_US.UTF-8&amp;driver=EXAODBC</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/google-sheets">Google Sheets</a></td>
+<td><a href="/docs/integrations/database_guide/databases/google-sheets">Google Sheets</a></td>
 <td><code>pip install shillelagh[gsheetsapi]</code></td>
-<td><code>gsheets://</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/firebolt">Firebolt</a></td>
+<td><a href="/docs/integrations/database_guide/databases/firebolt">Firebolt</a></td>
 <td><code>pip install firebolt-sqlalchemy</code></td>
-<td><code>firebolt://{username}:{password}@{database} or firebolt://{username}:{password}@{database}/{engine_name}</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/hologres">Hologres</a></td>
+<td><a href="/docs/integrations/database_guide/databases/hologres">Hologres</a></td>
 <td><code>pip install psycopg2</code></td>
-<td><code>postgresql+psycopg2://&lt;UserName&gt;:&lt;DBPassword&gt;@&lt;Database Host&gt;/&lt;Database Name&gt;</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/ibm-db2">IBM Db2</a></td>
+<td><a href="/docs/integrations/database_guide/databases/ibm-db2">IBM Db2</a></td>
 <td><code>pip install ibm_db_sa</code></td>
-<td><code>db2+ibm_db://</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/netezza">IBM Netezza Performance Server</a></td>
+<td><a href="/docs/integrations/database_guide/databases/netezza">IBM Netezza Performance Server</a></td>
 <td><code>pip install nzalchemy</code></td>
-<td><code>netezza+nzpy://&lt;UserName&gt;:&lt;DBPassword&gt;@&lt;Database Host&gt;/&lt;Database Name&gt;</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/mysql">MySQL</a></td>
+<td><a href="/docs/integrations/database_guide/databases/mysql">MySQL</a></td>
 <td><code>pip install mysqlclient</code></td>
-<td><code>mysql://&lt;UserName&gt;:&lt;DBPassword&gt;@&lt;Database Host&gt;/&lt;Database Name&gt;</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/oracle">Oracle</a></td>
+<td><a href="/docs/integrations/database_guide/databases/oracle">Oracle</a></td>
 <td><code>pip install cx_Oracle</code></td>
-<td><code>oracle://</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/postgres">PostgreSQL</a></td>
+<td><a href="/docs/integrations/database_guide/databases/postgres">PostgreSQL</a></td>
 <td><code>pip install psycopg2</code></td>
-<td><code>postgresql://&lt;UserName&gt;:&lt;DBPassword&gt;@&lt;Database Host&gt;/&lt;Database Name&gt;</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/trino">Trino</a></td>
+<td><a href="/docs/integrations/database_guide/databases/trino">Trino</a></td>
 <td><code>pip install sqlalchemy-trino</code></td>
-<td><code>trino://{username}:{password}@{hostname}:{port}/{catalog}</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/presto">Presto</a></td>
+<td><a href="/docs/integrations/database_guide/databases/presto">Presto</a></td>
 <td><code>pip install pyhive</code></td>
-<td><code>presto://</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/hana">SAP Hana</a></td>
+<td><a href="/docs/integrations/database_guide/databases/hana">SAP Hana</a></td>
 <td><code>pip install hdbcli sqlalchemy-hana or pip install apache-Feris[hana]</code></td>
-<td><code>hana://{username}:{password}@{host}:{port}</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/snowflake">Snowflake</a></td>
+<td><a href="/docs/integrations/database_guide/databases/snowflake">Snowflake</a></td>
 <td><code>pip install snowflake-sqlalchemy</code></td>
-<td><code>snowflake://{user}:{password}@{account}.{region}/{database}?role={role}&amp;warehouse={warehouse}</code></td>
 </tr>
 <tr>
 <td>SQLite</td>
 <td>No additional library needed</td>
-<td><code>sqlite://</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/sql-server">SQL Server</a></td>
+<td><a href="/docs/integrations/database_guide/databases/sql-server">SQL Server</a></td>
 <td><code>pip install pymssql</code></td>
-<td><code>mssql://</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/teradata">Teradata</a></td>
-<td><code>pip install teradatasqlalchemy </code></td>
-<td><code>teradata://{user}:{password}@{host}</code></td>
+<td><a href="/docs/integrations/database_guide/databases/teradata">Teradata</a></td>
+<td><code>pip install teradatasqlalchemy</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/vertica">Vertica</a></td>
+<td><a href="/docs/integrations/database_guide/databases/vertica">Vertica</a></td>
 <td><code>pip install sqlalchemy-vertica-python</code></td>
-<td><code>vertica+vertica_python://&lt;UserName&gt;:&lt;DBPassword&gt;@&lt;Database Host&gt;/&lt;Database Name&gt;</code></td>
 </tr>
 <tr>
-<td><a href="/docs/databases/yugabytedb">YugabyteDB</a></td>
+<td><a href="/docs/integrations/database_guide/databases/yugabytedb">Yugabyte</a></td>
 <td><code>pip install psycopg2</code></td>
-<td><code>postgresql://&lt;UserName&gt;:&lt;DBPassword&gt;@&lt;Database Host&gt;/&lt;Database Name&gt;</code></td>
 </tr>
 </tbody>
 </table>
 <hr>
-<p>Note that many other databases are supported, the main criteria being the existence of a functional
-SQLAlchemy dialect and Python driver. Searching for the keyword &ldquo;sqlalchemy + (database name)&rdquo;
-should help get you to the right place.</p>
-<p>If your database or data engine isn&rsquo;t on the list but a SQL interface
-exists, please file an issue on the
-<a href="https://github.com/apache/Feris/issues">Feris GitHub repo</a>, so we can work on documenting and
-supporting it.</p>
-<p>If you&rsquo;d like to build a database connector for Feris integration,
-read the <a href="https://preset.io/blog/building-database-connector/">following tutorial</a>.</p>
 
 </div>
 
 
 
     
-	
+      
+  
+  
+  
+  
+
+  
+  
+
   
     
     
@@ -1114,105 +780,7 @@ read the <a href="https://preset.io/blog/building-database-connector/">following
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-24a54ac44c59d7d6190abb9b6492ac2c">2.1.4 - Using Database Connection UI</h1>
-    
-	<p>Here is the documentation on how to leverage the new DB Connection UI. This will provide admins the ability to enhance the UX for users who want to connect to new databases.</p>
-<p><img src="https://user-images.githubusercontent.com/27827808/125499607-94e300aa-1c0f-4c60-b199-3f9de41060a3.gif" alt="db-conn-docs"></p>
-<p>There are now 3 steps when connecting to a database in the new UI:</p>
-<p>Step 1: First the admin must inform Feris what engine they want to connect to. This page is powered by the <code>/available</code> endpoint which pulls on the engines currently installed in your environment, so that only supported databases are shown.</p>
-<p>Step 2: Next, the admin is prompted to enter database specific parameters. Depending on whether there is a dynamic form available for that specific engine, the admin will either see the new custom form or the legacy SQLAlchemy form. We currently have built dynamic forms for (Redshift, MySQL, Postgres, and BigQuery). The new form prompts the user for the parameters needed to connect (for example, username, password, host, port, etc.) and provides immediate feedback on errors.</p>
-<p>Step 3: Finally, once the admin has connected to their DB using the dynamic form they have the opportunity to update any optional advanced settings.</p>
-<p>We hope this feature will help eliminate a huge bottleneck for users to get into the application and start crafting datasets.</p>
-<h3 id="how-to-setup-up-preferred-database-options-and-images">How to setup up preferred database options and images</h3>
-<p>We added a new configuration option where the admin can define their preferred databases, in order:</p>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e"># A list of preferred databases, in order. These databases will be</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># displayed prominently in the &#34;Add Database&#34; dialog. You should</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># use the &#34;engine_name&#34; attribute of the corresponding DB engine spec</span>
-</span></span><span style="display:flex;"><span><span style="color:#75715e"># in `Feris/db_engine_specs/`.</span>
-</span></span><span style="display:flex;"><span>PREFERRED_DATABASES: List[str] <span style="color:#f92672">=</span> [
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;PostgreSQL&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;Presto&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;MySQL&#34;</span>,
-</span></span><span style="display:flex;"><span>    <span style="color:#e6db74">&#34;SQLite&#34;</span>,
-</span></span><span style="display:flex;"><span>]
-</span></span></code></pre></td></tr></table>
-</div>
-</div><p>For copyright reasons the logos for each database are not distributed with Feris.</p>
-<h3 id="setting-images">Setting images</h3>
-<ul>
-<li>To set the images of your preferred database, admins must create a mapping in the <code>Feris_text.yml</code> file with engine and location of the image. The image can be host locally inside your static/file directory or online (e.g. S3)</li>
-</ul>
-<div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
-<table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span></code></pre></td>
-<td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span>DB_IMAGES:
-</span></span><span style="display:flex;"><span>  postgresql: <span style="color:#e6db74">&#34;path/to/image/postgres.jpg&#34;</span>
-</span></span><span style="display:flex;"><span>  bigquery: <span style="color:#e6db74">&#34;path/to/s3bucket/bigquery.jpg&#34;</span>
-</span></span><span style="display:flex;"><span>  snowflake: <span style="color:#e6db74">&#34;path/to/image/snowflake.jpg&#34;</span>
-</span></span></code></pre></td></tr></table>
-</div>
-</div><h3 id="how-to-add-new-database-engines-to-available-endpoint">How to add new database engines to available endpoint</h3>
-<p>Currently the new modal supports the following databases:</p>
-<ul>
-<li>Postgres</li>
-<li>Redshift</li>
-<li>MySQL</li>
-<li>BigQuery</li>
-</ul>
-<p>When the user selects a database not in this list they will see the old dialog asking for the SQLAlchemy URI. New databases can be added gradually to the new flow. In order to support the rich configuration a DB engine spec needs to have the following attributes:</p>
-<ol>
-<li><code>parameters_schema</code>: a Marshmallow schema defining the parameters needed to configure the database. For Postgres this includes username, password, host, port, etc. (<a href="https://github.com/apache/Feris/blob/accee507c0819cd0d7bcfb5a3e1199bc81eeebf2/Feris/db_engine_specs/base.py#L1309-L1320">see</a>).</li>
-<li><code>default_driver</code>: the name of the recommended driver for the DB engine spec. Many SQLAlchemy dialects support multiple drivers, but usually one is the official recommendation. For Postgres we use &ldquo;psycopg2&rdquo;.</li>
-<li><code>sqlalchemy_uri_placeholder</code>: a string that helps the user in case they want to type the URI directly.</li>
-<li><code>encryption_parameters</code>: parameters used to build the URI when the user opts for an encrypted connection. For Postgres this is <code>{&quot;sslmode&quot;: &quot;require&quot;}</code>.</li>
-</ol>
-<p>In addition, the DB engine spec must implement these class methods:</p>
-<ul>
-<li><code>build_sqlalchemy_uri(cls, parameters, encrypted_extra)</code>: this method receives the distinct parameters and builds the URI from them.</li>
-<li><code>get_parameters_from_uri(cls, uri, encrypted_extra)</code>: this method does the opposite, extracting the parameters from a given URI.</li>
-<li><code>validate_parameters(cls, parameters)</code>: this method is used for <code>onBlur</code> validation of the form. It should return a list of <code>FerisError</code> indicating which parameters are missing, and which parameters are definitely incorrect (<a href="https://github.com/apache/Feris/blob/accee507c0819cd0d7bcfb5a3e1199bc81eeebf2/Feris/db_engine_specs/base.py#L1404">example</a>).</li>
-</ul>
-<p>For databases like MySQL and Postgres that use the standard format of <code>engine+driver://user:password@host:port/dbname</code> all you need to do is add the <code>BasicParametersMixin</code> to the DB engine spec, and then define the parameters 2-4 (<code>parameters_schema</code> is already present in the mixin).</p>
-<p>For other databases you need to implement these methods yourself. The BigQuery DB engine spec is a good example of how to do that.</p>
-
-</div>
-
-
-
-    
-	
-  
-
-    
-	
-  
-    
-    
-	
-    
-
-<div class="td-content" style="page-break-before: always">
-    
-	<h1 id="pg-f5902546e2f3382efd68cc1ff0f06547">2.2 - Supported Databases</h1>
+	<h1 id="pg-f5902546e2f3382efd68cc1ff0f06547">1.1 - Supported Databases</h1>
     <div class="lead">The Database Guide provides an overview of setting up databases and the specifics of each DB type.</div>
 	
 </div>
@@ -1237,7 +805,7 @@ read the <a href="https://preset.io/blog/building-database-connector/">following
 
 <div class="td-content" style="">
     
-	<h1 id="pg-85e39f837736e14d35ffe5650919d954">2.2.1 - Ascend.io</h1>
+	<h1 id="pg-85e39f837736e14d35ffe5650919d954">1.1.1 - Ascend.io</h1>
     
 	<h2 id="ascendio">Ascend.io</h2>
 <p>The recommended connector library to Ascend.io is <a href="https://github.com/cloudera/impyla">impyla</a>.</p>
@@ -1258,7 +826,7 @@ read the <a href="https://preset.io/blog/building-database-connector/">following
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-3cd21d5f234c70bea5abd5f2b158de09">2.2.2 - Amazon Athena</h1>
+	<h1 id="pg-3cd21d5f234c70bea5abd5f2b158de09">1.1.2 - Amazon Athena</h1>
     
 	<h2 id="aws-athena">AWS Athena</h2>
 <h3 id="pyathenajdbc">PyAthenaJDBC</h3>
@@ -1287,7 +855,7 @@ following connection string:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-a5ef06a44e2beaeaf2a3c98bf81c2c5d">2.2.3 - Amazon Redshift</h1>
+	<h1 id="pg-a5ef06a44e2beaeaf2a3c98bf81c2c5d">1.1.3 - Amazon Redshift</h1>
     
 	<h2 id="aws-redshift">AWS Redshift</h2>
 <p>The <a href="https://pypi.org/project/sqlalchemy-redshift/">sqlalchemy-redshift</a> library is the recommended
@@ -1317,7 +885,7 @@ way to connect to Redshift through SQLAlchemy.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-c5b2acdd81c246738031b8cfbf6fd430">2.2.4 - Apache Drill</h1>
+	<h1 id="pg-c5b2acdd81c246738031b8cfbf6fd430">1.1.4 - Apache Drill</h1>
     
 	<h2 id="apache-drill">Apache Drill</h2>
 <h3 id="sqlalchemy">SQLAlchemy</h3>
@@ -1355,7 +923,7 @@ work with Drill through ODBC.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-1ff2151c97d1f0191fc4d4e1585c3429">2.2.5 - Apache Druid</h1>
+	<h1 id="pg-1ff2151c97d1f0191fc4d4e1585c3429">1.1.5 - Apache Druid</h1>
     
 	<h2 id="apache-druid">Apache Druid</h2>
 <p>Use the SQLAlchemy / DBAPI connector made available in the
@@ -1390,7 +958,7 @@ connection to Druid:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-8527bf36788dfaadc7cc049c9e224d40">2.2.6 - Apache Hive</h1>
+	<h1 id="pg-8527bf36788dfaadc7cc049c9e224d40">1.1.6 - Apache Hive</h1>
     
 	<h2 id="apache-hive">Apache Hive</h2>
 <p>The <a href="https://pypi.org/project/PyHive/">pyhive</a> library is the recommended way to connect to Hive through SQLAlchemy.</p>
@@ -1411,7 +979,7 @@ connection to Druid:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-23ab22688dcfbc862871246776109cae">2.2.7 - Apache Impala</h1>
+	<h1 id="pg-23ab22688dcfbc862871246776109cae">1.1.7 - Apache Impala</h1>
     
 	<h2 id="apache-impala">Apache Impala</h2>
 <p>The recommended connector library to Apache Impala is <a href="https://github.com/cloudera/impyla">impyla</a>.</p>
@@ -1432,7 +1000,7 @@ connection to Druid:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-cb66dc613cab7388aa086de41b6cb561">2.2.8 - Apache Kylin</h1>
+	<h1 id="pg-cb66dc613cab7388aa086de41b6cb561">1.1.8 - Apache Kylin</h1>
     
 	<h2 id="apache-kylin">Apache Kylin</h2>
 <p>The recommended connector library for Apache Kylin is
@@ -1454,7 +1022,7 @@ connection to Druid:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-8b6b39d6e8914dbbaad36be6658bad9e">2.2.9 - Apache Pinot</h1>
+	<h1 id="pg-8b6b39d6e8914dbbaad36be6658bad9e">1.1.9 - Apache Pinot</h1>
     
 	<h2 id="apache-pinot">Apache Pinot</h2>
 <p>The recommended connector library for Apache Pinot is <a href="https://pypi.org/project/pinotdb/">pinotdb</a>.</p>
@@ -1475,7 +1043,7 @@ connection to Druid:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-b34de0c3595710dc4f12fc03fe29e2f5">2.2.10 - Apache Solr</h1>
+	<h1 id="pg-b34de0c3595710dc4f12fc03fe29e2f5">1.1.10 - Apache Solr</h1>
     
 	<h2 id="apache-solr">Apache Solr</h2>
 <p>The <a href="https://pypi.org/project/sqlalchemy-solr/">sqlalchemy-solr</a> library provides a
@@ -1497,7 +1065,7 @@ Python / SQLAlchemy interface to Apache Solr.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-a1df4691431163fbf5a290554f7efbbb">2.2.11 - Apache Spark SQL</h1>
+	<h1 id="pg-a1df4691431163fbf5a290554f7efbbb">1.1.11 - Apache Spark SQL</h1>
     
 	<h2 id="apache-spark-sql">Apache Spark SQL</h2>
 <p>The recommended connector library for Apache Spark SQL <a href="https://pypi.org/project/PyHive/">pyhive</a>.</p>
@@ -1518,13 +1086,13 @@ Python / SQLAlchemy interface to Apache Solr.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-94ff6a532016988c85b4b8b0de571195">2.2.12 - Clickhouse</h1>
+	<h1 id="pg-94ff6a532016988c85b4b8b0de571195">1.1.12 - Clickhouse</h1>
     
 	<h2 id="clickhouse">Clickhouse</h2>
-<p>To use Clickhouse with Feris, you will need to add the following Python libraries:</p>
+<p>To use Clickhouse with StreamZero you will need to add the following Python libraries:</p>
 <pre tabindex="0"><code>clickhouse-driver==0.2.0
 clickhouse-sqlalchemy==0.1.6
-</code></pre><p>If running Feris using Docker Compose, add the following to your <code>./docker/requirements-local.txt</code> file:</p>
+</code></pre><p>If running StreamZero using Docker Compose, add the following to your <code>./docker/requirements-local.txt</code> file:</p>
 <pre tabindex="0"><code>clickhouse-driver&gt;=0.2.0
 clickhouse-sqlalchemy&gt;=0.1.6
 </code></pre><p>The recommended connector library for Clickhouse is
@@ -1551,7 +1119,7 @@ uses the default user without a password (and doesn&rsquo;t encrypt the connecti
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-502939f5dea7e9bf52013fd1eeec7c3a">2.2.13 - CockroachDB</h1>
+	<h1 id="pg-502939f5dea7e9bf52013fd1eeec7c3a">1.1.13 - CockroachDB</h1>
     
 	<h2 id="cockroachdb">CockroachDB</h2>
 <p>The recommended connector library for CockroachDB is
@@ -1573,7 +1141,7 @@ uses the default user without a password (and doesn&rsquo;t encrypt the connecti
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-da290602c274061691efd3c1fc8bd546">2.2.14 - CrateDB</h1>
+	<h1 id="pg-da290602c274061691efd3c1fc8bd546">1.1.14 - CrateDB</h1>
     
 	<h2 id="cratedb">CrateDB</h2>
 <p>The recommended connector library for CrateDB is
@@ -1599,13 +1167,13 @@ text to your requirements file:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-74686483a29c33331fc7175a42ce9dab">2.2.15 - Databricks</h1>
+	<h1 id="pg-74686483a29c33331fc7175a42ce9dab">1.1.15 - Databricks</h1>
     
 	<h2 id="databricks">Databricks</h2>
 <p>To connect to Databricks, first install <a href="https://pypi.org/project/databricks-dbapi/">databricks-dbapi</a> with the optional SQLAlchemy dependencies:</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>pip install databricks-dbapi<span style="color:#f92672">[</span>sqlalchemy<span style="color:#f92672">]</span>
@@ -1621,7 +1189,7 @@ text to your requirements file:</p>
 </ul>
 <p>These can be found under &ldquo;Configuration&rdquo; -&gt; &ldquo;Advanced Options&rdquo; -&gt; &ldquo;JDBC/ODBC&rdquo;.</p>
 <p>You also need an access token from &ldquo;Settings&rdquo; -&gt; &ldquo;User Settings&rdquo; -&gt; &ldquo;Access Tokens&rdquo;.</p>
-<p>Once you have all this information, add a database of type &ldquo;Databricks (Hive)&rdquo; in Feris, and use the following SQLAlchemy URI:</p>
+<p>Once you have all this information, add a database of type &ldquo;Databricks (Hive)&rdquo; in StreamZero, and use the following SQLAlchemy URI:</p>
 <pre tabindex="0"><code>databricks+pyhive://token:{access token}@{server hostname}:{port}/{database name}
 </code></pre><p>You also need to add the following configuration to &ldquo;Other&rdquo; -&gt; &ldquo;Engine Parameters&rdquo;, with your HTTP path:</p>
 <pre tabindex="0"><code>{&#34;connect_args&#34;: {&#34;http_path&#34;: &#34;sql/protocolv1/o/****&#34;}}
@@ -1653,7 +1221,7 @@ text to your requirements file:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-3e8f575d87357baa5f9c18637ef6999b">2.2.16 - Dremio</h1>
+	<h1 id="pg-3e8f575d87357baa5f9c18637ef6999b">1.1.16 - Dremio</h1>
     
 	<h2 id="dremio">Dremio</h2>
 <p>The recommended connector library for Dremio is
@@ -1663,7 +1231,7 @@ text to your requirements file:</p>
 </code></pre><p>The expected connection string for Arrow Flight (Dremio 4.9.1+. Default port is 32010) is formatted as follows:</p>
 <pre tabindex="0"><code>dremio+flight://{username}:{password}@{host}:{port}/dremio
 </code></pre><p>This <a href="https://www.dremio.com/tutorials/dremio-apache-Feris/">blog post by Dremio</a> has some
-additional helpful instructions on connecting Feris to Dremio.</p>
+additional helpful instructions on connecting StreamZero to Dremio.</p>
 
 </div>
 
@@ -1679,7 +1247,7 @@ additional helpful instructions on connecting Feris to Dremio.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-b6c2d3ae62147bee644e73fdfe5b5d95">2.2.17 - Elasticsearch</h1>
+	<h1 id="pg-b6c2d3ae62147bee644e73fdfe5b5d95">1.1.17 - Elasticsearch</h1>
     
 	<h2 id="elasticsearch">Elasticsearch</h2>
 <p>The recommended connector library for Elasticsearch is
@@ -1702,7 +1270,7 @@ set Feris’s row limit on config</p>
 }
 </code></pre><p>Then register your table with the alias name logstasg_all</p>
 <p><strong>Time zone</strong></p>
-<p>By default, Feris uses UTC time zone for elasticsearch query. If you need to specify a time zone,
+<p>By default, StreamZero uses UTC time zone for elasticsearch query. If you need to specify a time zone,
 please edit your Database and enter the settings of your specified time zone in the Other &gt; ENGINE PARAMETERS:</p>
 <pre tabindex="0"><code>{
     &#34;connect_args&#34;: {
@@ -1713,7 +1281,7 @@ please edit your Database and enter the settings of your specified time zone in 
 you need to use the <code>CAST</code> function,but this function does not support our <code>time_zone</code> setting. So it is recommended to upgrade to the version after elasticsearch7.8.
 After elasticsearch7.8, you can use the <code>DATETIME_PARSE</code> function to solve this problem.
 The DATETIME_PARSE function is to support our <code>time_zone</code> setting, and here you need to fill in your elasticsearch version number in the Other &gt; VERSION setting.
-the Feris will use the <code>DATETIME_PARSE</code> function for conversion.</p>
+the StreamZero will use the <code>DATETIME_PARSE</code> function for conversion.</p>
 
 </div>
 
@@ -1729,7 +1297,7 @@ the Feris will use the <code>DATETIME_PARSE</code> function for conversion.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-9b3125303076fc90c6f9f3b0c98b7678">2.2.18 - Exasol</h1>
+	<h1 id="pg-9b3125303076fc90c6f9f3b0c98b7678">1.1.18 - Exasol</h1>
     
 	<h2 id="exasol">Exasol</h2>
 <p>The recommended connector library for Exasol is
@@ -1751,14 +1319,14 @@ the Feris will use the <code>DATETIME_PARSE</code> function for conversion.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-067dde8fa8aa68f57352fbd0d0a563dc">2.2.19 - Firebird</h1>
+	<h1 id="pg-067dde8fa8aa68f57352fbd0d0a563dc">1.1.19 - Firebird</h1>
     
 	<h2 id="firebird">Firebird</h2>
 <p>The recommended connector library for Firebird is <a href="https://pypi.org/project/sqlalchemy-firebird/">sqlalchemy-firebird</a>.
-Feris has been tested on <code>sqlalchemy-firebird&gt;=0.7.0, &lt;0.8</code>.</p>
+StreamZero has been tested on <code>sqlalchemy-firebird&gt;=0.7.0, &lt;0.8</code>.</p>
 <p>The recommended connection string is:</p>
 <pre tabindex="0"><code>firebird+fdb://{username}:{password}@{host}:{port}//{path_to_db_file}
-</code></pre><p>Here&rsquo;s a connection string example of Feris connecting to a local Firebird database:</p>
+</code></pre><p>Here&rsquo;s a connection string example of StreamZero connecting to a local Firebird database:</p>
 <pre tabindex="0"><code>firebird+fdb://SYSDBA:masterkey@192.168.86.38:3050//Library/Frameworks/Firebird.framework/Versions/A/Resources/examples/empbuild/employee.fdb
 </code></pre>
 </div>
@@ -1775,16 +1343,16 @@ Feris has been tested on <code>sqlalchemy-firebird&gt;=0.7.0, &lt;0.8</code>.</p
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-d9da980991f7a5cee5d34a27b89c0406">2.2.20 - Firebolt</h1>
+	<h1 id="pg-d9da980991f7a5cee5d34a27b89c0406">1.1.20 - Firebolt</h1>
     
 	<h2 id="firebolt">Firebolt</h2>
 <p>The recommended connector library for Firebolt is <a href="https://pypi.org/project/firebolt-sqlalchemy/">firebolt-sqlalchemy</a>.
-Feris has been tested on <code>firebolt-sqlalchemy&gt;=0.0.1</code>.</p>
+StreamZero has been tested on <code>firebolt-sqlalchemy&gt;=0.0.1</code>.</p>
 <p>The recommended connection string is:</p>
 <pre tabindex="0"><code>firebolt://{username}:{password}@{database}
 or
 firebolt://{username}:{password}@{database}/{engine_name}
-</code></pre><p>Here&rsquo;s a connection string example of Feris connecting to a Firebolt database:</p>
+</code></pre><p>Here&rsquo;s a connection string example of StreamZero connecting to a Firebolt database:</p>
 <pre tabindex="0"><code>firebolt://email@domain:password@sample_database
 or
 firebolt://email@domain:password@sample_database/sample_engine
@@ -1803,22 +1371,22 @@ firebolt://email@domain:password@sample_database/sample_engine
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-f9f124d66c04e8949a1be1b4dfbb89c0">2.2.21 - Google BigQuery</h1>
+	<h1 id="pg-f9f124d66c04e8949a1be1b4dfbb89c0">1.1.21 - Google BigQuery</h1>
     
 	<h2 id="google-bigquery">Google BigQuery</h2>
 <p>The recommended connector library for BigQuery is
 <a href="https://github.com/mxmzdlv/pybigquery">pybigquery</a>.</p>
 <h3 id="install-bigquery-driver">Install BigQuery Driver</h3>
 <p>Follow the steps <a href="/docs/databases/docker-add-drivers">here</a> about how to
-install new database drivers when setting up Feris locally via docker-compose.</p>
+install new database drivers when setting up StreamZero locally via docker-compose.</p>
 <pre tabindex="0"><code>echo &#34;pybigquery&#34; &gt;&gt; ./docker/requirements-local.txt
 </code></pre><h3 id="connecting-to-bigquery">Connecting to BigQuery</h3>
-<p>When adding a new BigQuery connection in Feris, you&rsquo;ll need to add the GCP Service Account
+<p>When adding a new BigQuery connection in StreamZero, you&rsquo;ll need to add the GCP Service Account
 credentials file (as a JSON).</p>
 <ol>
 <li>Create your Service Account via the Google Cloud Platform control panel, provide it access to the
 appropriate BigQuery datasets, and download the JSON configuration file for the service account.</li>
-<li>In Feris, you can either upload that JSON or add the JSON blob in the following format (this should be the content of your credential JSON file):</li>
+<li>In StreamZero you can either upload that JSON or add the JSON blob in the following format (this should be the content of your credential JSON file):</li>
 </ol>
 <pre tabindex="0"><code>{
         &#34;type&#34;: &#34;service_account&#34;,
@@ -1860,7 +1428,7 @@ the following format:</p>
 </code></pre></li>
 </ol>
 <p>You should then be able to connect to your BigQuery datasets.</p>
-<p>To be able to upload CSV or Excel files to BigQuery in Feris, you&rsquo;ll need to also add the
+<p>To be able to upload CSV or Excel files to BigQuery in StreamZero, you&rsquo;ll need to also add the
 <a href="https://github.com/pydata/pandas-gbq">pandas_gbq</a> library.</p>
 
 </div>
@@ -1877,7 +1445,7 @@ the following format:</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-6698f4c22ab4cc2b1f5b3f1459e67f2b">2.2.22 - Google Sheets</h1>
+	<h1 id="pg-6698f4c22ab4cc2b1f5b3f1459e67f2b">1.1.22 - Google Sheets</h1>
     
 	<h2 id="google-sheets">Google Sheets</h2>
 <p>Google Sheets has a very limited
@@ -1898,7 +1466,7 @@ connector library for Google Sheets is <a href="https://github.com/betodealmeida
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-0c8af8f1139128b3a15ba2cb21485303">2.2.23 - Hana</h1>
+	<h1 id="pg-0c8af8f1139128b3a15ba2cb21485303">1.1.23 - Hana</h1>
     
 	<h2 id="hana">Hana</h2>
 <p>The recommended connector library is <a href="https://github.com/SAP/sqlalchemy-hana">sqlalchemy-hana</a>.</p>
@@ -1919,7 +1487,7 @@ connector library for Google Sheets is <a href="https://github.com/betodealmeida
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-aa8552e02c5c9effe9fdc856ee2ae206">2.2.24 - Hologres</h1>
+	<h1 id="pg-aa8552e02c5c9effe9fdc856ee2ae206">1.1.24 - Hologres</h1>
     
 	<h2 id="hologres">Hologres</h2>
 <p>Hologres is a real-time interactive analytics service developed by Alibaba Cloud. It is fully compatible with PostgreSQL 11 and integrates seamlessly with the big data ecosystem.</p>
@@ -1948,7 +1516,7 @@ connector library for Google Sheets is <a href="https://github.com/betodealmeida
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-613e82bc8bb3e8598035646c17a5e4e3">2.2.25 - IBM DB2</h1>
+	<h1 id="pg-613e82bc8bb3e8598035646c17a5e4e3">1.1.25 - IBM DB2</h1>
     
 	<h2 id="ibm-db2">IBM DB2</h2>
 <p>The <a href="https://github.com/ibmdb/python-ibmdbsa/tree/master/ibm_db_sa">IBM_DB_SA</a> library provides a
@@ -1972,7 +1540,7 @@ Python / SQLAlchemy interface to IBM Data Servers.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-f17cc328f4de3c63d23d98ef24bf36fb">2.2.26 - IBM Netezza Performance Server</h1>
+	<h1 id="pg-f17cc328f4de3c63d23d98ef24bf36fb">1.1.26 - IBM Netezza Performance Server</h1>
     
 	<h2 id="ibm-netezza-performance-server">IBM Netezza Performance Server</h2>
 <p>The <a href="https://pypi.org/project/nzalchemy/">nzalchemy</a> library provides a
@@ -1994,7 +1562,7 @@ Python / SQLAlchemy interface to IBM Netezza Performance Server (aka Netezza).</
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-86e4a2f7fdee7d5af8942f47dede6115">2.2.27 - Microsoft SQL Server</h1>
+	<h1 id="pg-86e4a2f7fdee7d5af8942f47dede6115">1.1.27 - Microsoft SQL Server</h1>
     
 	<h2 id="sql-server">SQL Server</h2>
 <p>The recommended connector library for SQL Server is <a href="https://github.com/pymssql/pymssql">pymssql</a>.</p>
@@ -2015,7 +1583,7 @@ Python / SQLAlchemy interface to IBM Netezza Performance Server (aka Netezza).</
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-173acb377051b7c023be545372f824a7">2.2.28 - MySQL</h1>
+	<h1 id="pg-173acb377051b7c023be545372f824a7">1.1.28 - MySQL</h1>
     
 	<h2 id="mysql">MySQL</h2>
 <p>The recommended connector library for MySQL is <a href="https://pypi.org/project/mysqlclient/">mysqlclient</a>.</p>
@@ -2045,7 +1613,7 @@ Port: <code>3306</code> by default</li>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-c4b1811499db1d4b1b5c7424968322b5">2.2.29 - Oracle</h1>
+	<h1 id="pg-c4b1811499db1d4b1b5c7424968322b5">1.1.29 - Oracle</h1>
     
 	<h2 id="oracle">Oracle</h2>
 <p>The recommended connector library is
@@ -2067,7 +1635,7 @@ Port: <code>3306</code> by default</li>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-c57ee0b8f64b4f1f9bc0b23f206f7bf7">2.2.30 - Postgres</h1>
+	<h1 id="pg-c57ee0b8f64b4f1f9bc0b23f206f7bf7">1.1.30 - Postgres</h1>
     
 	<h2 id="postgres">Postgres</h2>
 <p>Note that, if you&rsquo;re using docker-compose, the Postgres connector library <a href="https://www.psycopg.org/docs/">psycopg2</a>
@@ -2111,7 +1679,7 @@ and the
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-7a45235c2e51bfde7165e9a85f6368d1">2.2.31 - Presto</h1>
+	<h1 id="pg-7a45235c2e51bfde7165e9a85f6368d1">1.1.31 - Presto</h1>
     
 	<h2 id="presto">Presto</h2>
 <p>The <a href="https://pypi.org/project/PyHive/">pyhive</a> library is the recommended way to connect to Presto through SQLAlchemy.</p>
@@ -2121,7 +1689,7 @@ and the
 <pre tabindex="0"><code>presto://{username}:{password}@{hostname}:{port}/{database}
 </code></pre><p>Here is an example connection string with values:</p>
 <pre tabindex="0"><code>presto://datascientist:securepassword@presto.example.com:8080/hive
-</code></pre><p>By default Feris assumes the most recent version of Presto is being used when querying the
+</code></pre><p>By default StreamZero assumes the most recent version of Presto is being used when querying the
 datasource. If you’re using an older version of Presto, you can configure it in the extra parameter:</p>
 <pre tabindex="0"><code>{
     &#34;version&#34;: &#34;0.123&#34;
@@ -2141,7 +1709,7 @@ datasource. If you’re using an older version of Presto, you can configure it i
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-29119b26f226dc4349f5a3b7238904db">2.2.32 - Rockset</h1>
+	<h1 id="pg-29119b26f226dc4349f5a3b7238904db">1.1.32 - Rockset</h1>
     
 	<h2 id="rockset">Rockset</h2>
 <p>The connection string for Rockset is:</p>
@@ -2162,11 +1730,11 @@ datasource. If you’re using an older version of Presto, you can configure it i
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-467f2ab658952c0b9ecd8abc43c1efc4">2.2.33 - Snowflake</h1>
+	<h1 id="pg-467f2ab658952c0b9ecd8abc43c1efc4">1.1.33 - Snowflake</h1>
     
 	<h2 id="snowflake">Snowflake</h2>
 <p>The recommended connector library for Snowflake is
-<a href="https://pypi.org/project/snowflake-sqlalchemy/1.2.4/">snowflake-sqlalchemy</a>&lt;=1.2.4. (This version is required until Feris migrates to sqlalchemy&gt;=1.4.0)</p>
+<a href="https://pypi.org/project/snowflake-sqlalchemy/1.2.4/">snowflake-sqlalchemy</a>&lt;=1.2.4.</p>
 <p>The connection string for Snowflake looks like this:</p>
 <pre tabindex="0"><code>snowflake://{user}:{password}@{account}.{region}/{database}?role={role}&amp;warehouse={warehouse}
 </code></pre><p>The schema is not necessary in the connection string, as it is defined per table/query. The role and
@@ -2177,7 +1745,7 @@ databases/schemas/tables/views/warehouses, as the Snowflake SQLAlchemy engine do
 user/role rights during engine creation by default. However, when pressing the “Test Connection”
 button in the Create or Edit Database dialog, user/role credentials are validated by passing
 “validate_default_parameters”: True to the connect() method during engine creation. If the user/role
-is not authorized to access the database, an error is recorded in the Feris logs.</p>
+is not authorized to access the database, an error is recorded in the StreamZero logs.</p>
 
 </div>
 
@@ -2193,7 +1761,7 @@ is not authorized to access the database, an error is recorded in the Feris logs
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-0e2497078e99139dde28481fc00b5f28">2.2.34 - Teradata</h1>
+	<h1 id="pg-0e2497078e99139dde28481fc00b5f28">1.1.34 - Teradata</h1>
     
 	<h2 id="teradata">Teradata</h2>
 <p>The recommended connector library is
@@ -2227,7 +1795,7 @@ because it&rsquo;s more regularly updated.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-d26a65f8c161b809f18b324b94400cce">2.2.35 - Trino</h1>
+	<h1 id="pg-d26a65f8c161b809f18b324b94400cce">1.1.35 - Trino</h1>
     
 	<h2 id="trino">Trino</h2>
 <p>Supported trino version 352 and higher</p>
@@ -2253,7 +1821,7 @@ because it&rsquo;s more regularly updated.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-ea5fd90695c8bc554c2454a13295de95">2.2.36 - Vertica</h1>
+	<h1 id="pg-ea5fd90695c8bc554c2454a13295de95">1.1.36 - Vertica</h1>
     
 	<h2 id="vertica">Vertica</h2>
 <p>The recommended connector library is
@@ -2293,13 +1861,13 @@ because it&rsquo;s more regularly updated.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-7abc37e7a1ffce6adb2c0f7853e44aae">2.2.37 - YugabyteDB</h1>
+	<h1 id="pg-7abc37e7a1ffce6adb2c0f7853e44aae">1.1.37 - YugabyteDB</h1>
     
 	<h2 id="yugabytedb">YugabyteDB</h2>
 <p><a href="https://www.yugabyte.com/">YugabyteDB</a> is a distributed SQL database built on top of PostgreSQL.</p>
 <p>Note that, if you&rsquo;re using docker-compose, the
 Postgres connector library <a href="https://www.psycopg.org/docs/">psycopg2</a>
-comes out of the box with Feris.</p>
+comes out of the box with StreamZero.</p>
 <p>The connection string looks like:</p>
 <pre tabindex="0"><code>postgresql://{username}:{password}@{host}:{port}/{database}
 </code></pre>
@@ -2325,64 +1893,33 @@ comes out of the box with Feris.</p>
 
 <div class="td-content" style="page-break-before: always">
     
-	<h1 id="pg-04b7f72a66df416b93cd6c397532a46b">3 - Notifications and Messaging</h1>
-    <div class="lead">An overview of setting up notification channels and the specifics of each channel type.</div>
-	<p>The Developer Guide provides a step by step guide to building services and code snippets for specific scenarios.</p>
-
-</div>
-
-
-
-    
-      
-  
-  
-  
-  
-
-  
-  
-
-  
-    
-    
-	
-    
-
-<div class="td-content" style="">
-    
-	<h1 id="pg-5401baa9cffe22cd34de854d693d17b7">3.1 - Notifications and Messaging</h1>
-    <div class="lead">How to integrate a notifications with the Ferris Platform.</div>
-	<p>Ferris provides you access to over 40 notification services such as Slack, Email and Telegram.</p>
-<p>FerrisDX uses the Apprise Python Libs as an engine for notifiation dispatch. The power of Apprise gives you access to over 40 notification services.  A complete list is provided in a table and the end of the document.</p>
+	<h1 id="pg-04b7f72a66df416b93cd6c397532a46b">2 - Notifications and Messaging</h1>
+    <div class="lead">How to integrate a notifications with the StreamZero Platform.</div>
+	<p>StreamZero provides you access to over 40 notification services such as Slack, Email and Telegram.</p>
+<p>StreamZero FX uses the Apprise Python Libs as an engine for notifiation dispatch. The power of Apprise gives you access to over 40 notification services.  A complete list is provided in a table and the end of the document.</p>
 <p>In order to send notifications from your package you need is to create and emit a pre-defined event type.</p>
 <h2 id="how-to-send-notifications-from-your-package">How to send notifications from your package</h2>
 <p>In order to send notifications from your package you need to send a &lsquo;ferris.notifications.apprise.notification&rsquo; event from your package</p>
 <p>You can do it like so.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> sys<span style="color:#f92672">,</span> json
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ferris_cli.v2 <span style="color:#f92672">import</span> ApplicationConfigurator
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ferris_ef <span style="color:#f92672">import</span> get_secret, get_param
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">from</span> fx_ef <span style="color:#f92672">import</span> context
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Please note that the value for the url_template is the name used within the config </span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># For a specifc URL template in configurations.</span>
@@ -2395,14 +1932,13 @@ comes out of the box with Feris.</p>
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>event_type <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ferris.notifications.apprise.notification&#34;</span>
-</span></span><span style="display:flex;"><span>
-</span></span><span style="display:flex;"><span>Events()<span style="color:#f92672">.</span>send(event_type, data)
+</span></span><span style="display:flex;"><span>context<span style="color:#f92672">.</span>events<span style="color:#f92672">.</span>send(event_type, data)
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="how-does-it-work">How does it Work?</h2>
 <p>There are 2 approaches to implementing the notifications support.</p>
 <ul>
-<li>Implementation within a Ferris Service</li>
+<li>Implementation within a StreamZero Service</li>
 <li>Implementation in an Exit Gateway</li>
 </ul>
 <p>The 2nd option is used in platforms which are behind a firewall and therefore require the gateway to be outside the firewall for accessing external services. In these cases the adapter runs as a separate container.</p>
@@ -2427,45 +1963,45 @@ comes out of the box with Feris.</p>
 <p>Once the Apprise Notifications Package is installed along with the configurations you must link the package to be triggered by the &lsquo;ferris.notifications.apprise.notification&rsquo; event.</p>
 </li>
 </ul>
-<h2 id="the-ferris-apprise-package">The Ferris Apprise Package</h2>
-<p>The following is code for an ferris executor package to send apprise based notifications.</p>
+<h2 id="the-hahahugoshortcode15s3hbhb-apprise-package">The StreamZero Apprise Package</h2>
+<p>The following is code for an StreamZero executor package to send apprise based notifications.</p>
 <p>To send a notification from within your python application, just do the following:</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 8
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f"> 9
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">10
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">11
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">12
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">13
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">14
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">15
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">16
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">17
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">18
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">19
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">20
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#f92672">import</span> apprise
-</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> ferris_ef <span style="color:#f92672">import</span> get_secret, get_param
+</span></span><span style="display:flex;"><span><span style="color:#f92672">from</span> fx_ef <span style="color:#f92672">import</span> context
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Getting the incoming parameters</span>
-</span></span><span style="display:flex;"><span>url_template_name <span style="color:#f92672">=</span> get_param(<span style="color:#e6db74">&#39;url_template&#39;</span>)
+</span></span><span style="display:flex;"><span>url_template_name <span style="color:#f92672">=</span> context<span style="color:#f92672">.</span>params<span style="color:#f92672">.</span>get(<span style="color:#e6db74">&#39;url_template&#39;</span>)
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Create an Apprise instance</span>
 </span></span><span style="display:flex;"><span>apobj <span style="color:#f92672">=</span> apprise<span style="color:#f92672">.</span>Apprise()
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># Setting up the Apprise object with URLs</span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e"># The URL is retreived from the uploaded secrets.json</span>
-</span></span><span style="display:flex;"><span>apobj<span style="color:#f92672">.</span>add(get_secret(url_template_name))
+</span></span><span style="display:flex;"><span>apobj<span style="color:#f92672">.</span>add(context<span style="color:#f92672">.</span>secrets<span style="color:#f92672">.</span>get(url_template_name))
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">try</span>: 
 </span></span><span style="display:flex;"><span>  apobj<span style="color:#f92672">.</span>notify(
@@ -2477,19 +2013,19 @@ comes out of the box with Feris.</p>
 </span></span></code></pre></td></tr></table>
 </div>
 </div><h2 id="configuration">Configuration</h2>
-<p>The following is a sample configuration which is uploaded as a secrets.json file for the Ferris Apprise Package.</p>
+<p>The following is a sample configuration which is uploaded as a secrets.json file for the StreamZero Apprise Package.</p>
 <p>The configuration consists of a set of named URL templates. With each url_template being based on the Apprise URL schema as shown in the sections further in document.</p>
 <p>While you are free to name URL templates as you wish it is preferred to prefix them with an indication of the underlying service being used to send notifications.</p>
 <div class="highlight"><div style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;">
 <table style="border-spacing:0;padding:0;margin:0;border:0;"><tr><td style="vertical-align:top;padding:0;margin:0;border:0;">
-<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
-</span><span style="white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
+<pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">1
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">2
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">3
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">4
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">5
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">6
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">7
+</span><span style="white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f">8
 </span></code></pre></td>
 <td style="vertical-align:top;padding:0;margin:0;border:0;;width:100%">
 <pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-json" data-lang="json"><span style="display:flex;"><span>{
@@ -3031,7 +2567,15 @@ comes out of the box with Feris.</p>
 
 
     
-	
+      
+  
+  
+  
+  
+
+  
+  
+
   
 
     
@@ -3043,153 +2587,278 @@ comes out of the box with Feris.</p>
           </main>
         </div>
       </div>
-      
-
-
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/ferris-demo', text: 'Book a Ferris Demo', color: '#ffa630', textColor: '#ffffff', branding: true }); }</script>
-
-
-<footer class="bg-dark py-5 row d-print-none">
-  <div class="container-fluid mx-sm-5">
-    <div class="container">
-      <div class="row">
-        
-          
-            
-  
-    <div class="col-4 text-left order-sm-2">
-        <a class="text-white" target="_blank" rel="noopener" href="https://gridmine.com/about" aria-label="User mailing list">
-          <i class="fa fa-envelope"></i>
-        </a>
-    </div>
-  
-    <div class="col-4 text-left order-sm-2">
-        <a class="text-white" target="_blank" rel="noopener" href="https://www.linkedin.com/company/gridmine/" aria-label="Linkedin">
-          <i class="fab fa-linkedin"></i>
-        </a>
-    </div>
-  
-    <div class="col-4 text-left order-sm-2">
-        <a class="text-white" target="_blank" rel="noopener" href="https://github.com/gridmine" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-    </div>
-  
-
-          
-        
-        
-      </div>
-      <div class="row mt-3">
-        <div class="col-4 text-left order-sm-2">
-          
-            
-              
-  
-    <p>
-      <a class="text-white" target="" rel="noopener" href="/about" aria-label="About Us">
-        About Us
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="" rel="noopener" href="/contact" aria-label="Contact Us">
-        Contact Us
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="" rel="noopener" href="/jobs" aria-label="Jobs">
-        Jobs
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="" rel="noopener" href="/partners" aria-label="Partners">
-        Partners
-      </a>
-    </p>
-  
-
-            
-          
-        </div>
-        <div class="col-4 text-left order-sm-2">
-          
-            
-              
-  
-    <p>
-      <a class="text-white" target="_blank" rel="noopener" href="https://www.linkedin.com/company/gridmine/" aria-label="Linkedin">
-        Linkedin
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="_blank" rel="noopener" href="https://twitter.com/gridmine" aria-label="Twitter">
-        Twitter
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug" aria-label="YouTube">
-        YouTube
-      </a>
-    </p>
-  
-
-            
-          
-        </div>
-        <div class="col-4 text-left order-sm-2">
-          
-            
-              
-  
-    <p>
-      <a class="text-white" target="_blank" rel="noopener" href="https://github.com/gridmine/" aria-label="GitHub Source Code">
-        GitHub Source Code
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="_blank" rel="noopener" href="/docs/terms_conditions" aria-label="General Terms and Conditions (GTC)">
-        General Terms and Conditions (GTC)
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="_blank" rel="noopener" href="/docs/privacy_policy" aria-label="Data protection policy">
-        Data protection policy
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="" rel="noopener" href="/impressum" aria-label="Impressum">
-        Impressum
-      </a>
-    </p>
-  
-
-            
-          
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-12 text-center py-2 order-sm-2">
-          
-            <small class="text-white">&copy; 2023 FERRIS LABS AG All Rights Reserved</small>
-          
-          
-        </div>
-      </div>
-    </div>
+      <section class="row td-cover-block" style="background-color: #1b1a21;">
+  <div class="container">
+      <footer class="footer-component with-intercom">
+          <div class="section-container footer-inner size-medium">
+              <div class="content">
+                  <div class="page-container padding-small-x">
+                      <div class="margin-component bottom-small-x">
+                          <nav class="footer-links" role="navigation">
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Product
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/fx/">StreamZero FX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/k8x">StreamZero K8X</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/sx/">StreamZero SX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Solutions
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/solutions/">Why GridMine?</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/integrations/">Integrations</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/partners/">Partners</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Learn
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Developer
+                                                  Guide</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/integrations/">Integrations
+                                                  Guide</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/docs/security/">Security</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/blog/">Blog</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Support
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/support/">Support Plans</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/services/">Professional Services</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Documentation</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Company
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/about/">About Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/jobs/"><span class="footer-pill-wrapper">Careers <span
+                                                  class="footer-pill">We're hiring</span></span></a>
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/contact/">Contact Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <div class="margin-component bottom-small-x">
+                          <div class="centering-wrapper social-links">
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://twitter.com/gridmine/" title="Twitter" target="_blank">
+                                  <img src="/icons/footer/twitter-icon.png" alt="Twitter">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.linkedin.com/company/gridmine/" title="LinkedIn" target="_blank">
+                                  <img src="/icons/footer/linkedin-icon.png" alt="LinkedIn">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug/" title="YouTube"
+                                target="_blank">
+                                  <img src="/icons/footer/youtube-icon.png" alt="YouTube">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://github.com/gridmine/" title="GitHub" target="_blank">
+                                  <img src="/icons/footer/github-icon.png" alt="GitHub">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.medium.com/gridmine/" title="Medium" target="_blank">
+                                  <img src="/icons/footer/medium-icon.png" alt="Medium">
+                              </a>
+                              <xa rel="noopener noreferrer" class="link-component social-link" href="#"
+                                data-toggle="modal" data-target="#subscribeModal"
+                                title="Subscribe to our Newsletter">
+                                  <img src="/icons/footer/mail-icon.png" alt="Newsletter">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="centering-wrapper legal-links">
+                          <div class="typography-text p2-normal align-center">
+                              <span class="copyright">2023 © GridMine GmbH</span>
+                              <span> | </span>
+                              <br class="br-component mobile">
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Privacy Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Data Protection
+                                  Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/terms_conditions/">Legal Terms and
+                                  Conditions</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
   </div>
-</footer>
+</section>
 
-
+<script type="text/javascript" src="/js/carousel.js"></script>
+<link rel="stylesheet" href="/css/carousel.css">
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -3217,7 +2886,7 @@ comes out of the box with Feris.</p>
 
 
 
-<script src="/js/main.min.3f3f4f1e22307ccbb13271a98be2e4dbb8386b7e67c3d606db44d3d0649f485e.js" integrity="sha256-Pz9PHiIwfMuxMnGpi&#43;Lk27g4a35nw9YG20TT0GSfSF4=" crossorigin="anonymous"></script>
+<script src="/js/main.min.7d5b92c4889cf0554b0ea5e2309b0b81b196aa7c9a235632938a25d9fc4d8a7c.js" integrity="sha256-fVuSxIic8FVLDqXiMJsLgbGWqnyaI1Yyk4ol2fxNinw=" crossorigin="anonymous"></script>
 
 
 

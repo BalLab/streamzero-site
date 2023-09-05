@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – dataquality</title>
+    <title>GridMine – dataquality</title>
     <link>/tags/dataquality/</link>
-    <description>Recent content in dataquality on Ferris Labs</description>
+    <description>Recent content in dataquality on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/tags/dataquality/index.xml" rel="self" type="application/rss+xml" />
     
@@ -47,7 +48,7 @@ Using the domain expertise to create the rules is time consuming and often not f
 
 
 &lt;p&gt; 
-            &lt;img src=&#34;/images/uc_008_2021.png&#34; style=&#34;border:2px solid #fff;
+            &lt;img src=&#34;/streamzero/images/solutions/uc_008_2021.jpeg&#34; style=&#34;border:2px solid #fff;
             box-shadow: 10px 10px 5px #ccc;
             -moz-box-shadow: 10px 10px 5px #ccc;
             -webkit-box-shadow: 10px 10px 5px #ccc;
@@ -70,7 +71,7 @@ Using the domain expertise to create the rules is time consuming and often not f
 &lt;/ul&gt;
 &lt;p&gt;Assets &amp;amp; Artefacts:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;Ferris error correction toolbox&lt;/li&gt;
+&lt;li&gt;StreamZero error correction toolbox&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;The deliverables included:&lt;/p&gt;
 &lt;ul&gt;

@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – BCBS</title>
+    <title>GridMine – BCBS</title>
     <link>/tags/bcbs/</link>
-    <description>Recent content in BCBS on Ferris Labs</description>
+    <description>Recent content in BCBS on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/tags/bcbs/index.xml" rel="self" type="application/rss+xml" />
     
@@ -35,7 +36,7 @@
 &lt;/ul&gt;
 &lt;h3 id=&#34;solution&#34;&gt;Solution&lt;/h3&gt;
 &lt;p&gt;During the use case implementation 16 different cash-flow generating order systems were integrated using different schemas of how they handle transactions.
-Ferris Data Platform was able to resolve the complexities of the event handling to absorb all different situations and rules that need to be applied depending on the different states that the system can take.
+StreamZero Data Platform was able to resolve the complexities of the event handling to absorb all different situations and rules that need to be applied depending on the different states that the system can take.
 Data sourcing patterns evolved quickly from single file batch to data streaming using Kafka and Flink. A global end-user enablement was achieved with a multi network environment for regional user and both logical and physical data segregation. Irreversible client data protection using SHA 256 hash algorithm allowed for globally integrated algorithms in spite of highly confidential raw input data.
 We were able to implement dynamic throttling and acceleration of cash flows depending on current market situations and liquidity levels.&lt;/p&gt;
 &lt;p&gt;The solution included:&lt;/p&gt;

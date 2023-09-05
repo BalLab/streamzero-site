@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – retail</title>
+    <title>GridMine – retail</title>
     <link>/tags/retail/</link>
-    <description>Recent content in retail on Ferris Labs</description>
+    <description>Recent content in retail on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/tags/retail/index.xml" rel="self" type="application/rss+xml" />
     
