@@ -17,7 +17,7 @@ This is us - humans - using {{< param replacables.brand_name  >}} on a day to da
 
 {{< blocks/screenshot color="white" image="/streamzero/images/security/list_users_page.png">}} 
 
-*Example: List of StreamZero Users*
+*Example: List of Users*
 
 Besides displaying the list of all current users, the Users page offers a number of capabilities:
 

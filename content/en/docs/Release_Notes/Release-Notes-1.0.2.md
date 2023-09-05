@@ -9,7 +9,6 @@ description: >-
 
 ---
 
-![ferris_banner](/images/ferris_banner.png)
 
 
 
