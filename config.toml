@@ -91,7 +91,10 @@ weight = 1
 
 # Comment out if you don't want the "print entire section" link enabled.
 [outputs]
-section = ["HTML", "print", "RSS"]
+#section = ["HTML", "print", "RSS"]
+section = ["HTML", "RSS"]
+
+
 
 [params]
 copyright = "GridMine GmbH"
@@ -403,5 +406,7 @@ enable = false
   youtube_url = "https://github.com/gridmine/"
   website_url = "https://github.com/gridmine/"
   brand_name = "StreamZero"
+  brand_name_lower = "streamzero"
+
 
 
