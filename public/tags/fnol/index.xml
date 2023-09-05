@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – FNOL</title>
+    <title>GridMine – FNOL</title>
     <link>/tags/fnol/</link>
-    <description>Recent content in FNOL on Ferris Labs</description>
+    <description>Recent content in FNOL on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/tags/fnol/index.xml" rel="self" type="application/rss+xml" />
     
@@ -47,7 +48,7 @@
 
 
 &lt;p&gt; 
-            &lt;img src=&#34;/images/uc_012_2021.png&#34; style=&#34;border:2px solid #fff;
+            &lt;img src=&#34;/streamzero/images/solutions/uc_012_2021.png&#34; style=&#34;border:2px solid #fff;
             box-shadow: 10px 10px 5px #ccc;
             -moz-box-shadow: 10px 10px 5px #ccc;
             -webkit-box-shadow: 10px 10px 5px #ccc;

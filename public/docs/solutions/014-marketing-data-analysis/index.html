@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-<meta name="generator" content="Hugo 0.94.2" /><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
+<meta name="generator" content="Hugo 0.117.0"><META NAME="ROBOTS" CONTENT="INDEX, FOLLOW">
 
 
 <link rel="shortcut icon" href="/favicons/favicon.ico" >
@@ -17,7 +17,7 @@
 <link rel="icon" type="image/png" href="/favicons/android-144x144.png" sizes="144x144">
 <link rel="icon" type="image/png" href="/favicons/android-192x192.png" sizes="192x192">
 
-<title>Automating Marketing Data Analysis | Ferris Labs</title>
+<title>Automating Marketing Data Analysis | GridMine</title>
 
 
   
@@ -30,12 +30,11 @@ Problem statement Relationship Managers spend too much valuable time researching
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/solutions/014-marketing-data-analysis/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2022-03-18T14:11:50+01:00" /><meta property="og:site_name" content="Ferris Labs" />
-
+<meta property="article:modified_time" content="2023-09-04T22:38:50+02:00" />
 <meta itemprop="name" content="Automating Marketing Data Analysis">
 <meta itemprop="description" content="Marketing Data Analysis Executive summary Implemented the first service- and on-demand based big data and data science infrastructure for the bank. Data pipelines are built and maintained leveraging two key infrastructure components: a custom-built aggregation tool and the marketing content &amp; event platform. The aggregation tool builds the data lake for all analytics activities and enables the marketing platform to organically grow customer and campaign projects.
 Problem statement Relationship Managers spend too much valuable time researching talking points and themes that fit their different client profiles.">
-<meta itemprop="dateModified" content="2022-03-18T14:11:50+01:00" />
+<meta itemprop="dateModified" content="2023-09-04T22:38:50+02:00" />
 <meta itemprop="wordCount" content="384">
 <meta itemprop="keywords" content="marketdataanalysis,bigdata,bigdatainfrastructure,datascience,datascienceinfrastructure,financialservices,financial services,insurance,relationships," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Automating Marketing Data Analysis"/>
@@ -45,8 +44,8 @@ Problem statement Relationship Managers spend too much valuable time researching
 
 
 
-<link rel="preload" href="/scss/main.min.73bd3da85b34d8277717ae3d0694ab84bf7cc2483ec0b74b623d1e06b19678a6.css" as="style">
-<link href="/scss/main.min.73bd3da85b34d8277717ae3d0694ab84bf7cc2483ec0b74b623d1e06b19678a6.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.scss" as="style">
+<link href="/scss/main.scss" rel="stylesheet" integrity="">
 
 
 <script
@@ -78,12 +77,15 @@ if (!doNotTrack) {
   <body class="td-page">
     <header>
       
-<nav class="js-navbar-scroll navbar navbar-expand navbar-dark flex-column flex-md-row td-navbar">
+<nav class="js-navbar-scroll navbar navbar-expand-lg navbar-dark  td-navbar">
 	<a class="navbar-brand" href="/">
-		<span class="navbar-logo"><svg id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2500 750" style="enable-background:new 0 0 2500 750"><style>.st0{fill:#fff}</style><g><g><g><g><path class="st0" d="M827 228.9v53.3h84.6v27.5H827v67.2h-32.5V201.6h127.9v27.3H827z"/><path class="st0" d="M1091.5 349.6v27.3H960.1V201.6H1088v27.3h-95.3v45.5h84.6v26.8h-84.6v48.3H1091.5V349.6z"/><path class="st0" d="M1248.7 376.9l-35.8-51.3c-1.5.2-3.8.2-6.8.2h-39.5v51h-32.5V201.6h72.1c15.2.0 28.4 2.5 39.7 7.5s19.9 12.2 25.9 21.5 9 20.4 9 33.3c0 13.2-3.2 24.5-9.6 34s-15.6 16.6-27.7 21.3l40.3 57.6L1248.7 376.9zm-11.8-138.8c-7.3-6-18.1-9-32.3-9h-38V299h38c14.2.0 24.9-3 32.3-9.1 7.3-6.1 11-14.7 11-25.9S1244.3 244.1 1236.9 238.1z"/><path class="st0" d="M1437.9 376.9l-35.8-51.3c-1.5.2-3.8.2-6.8.2h-39.5v51h-32.5V201.6h72.1c15.2.0 28.4 2.5 39.7 7.5s19.9 12.2 25.9 21.5 9 20.4 9 33.3c0 13.2-3.2 24.5-9.6 34s-15.6 16.6-27.7 21.3l40.3 57.6L1437.9 376.9zM1426.1 238.1c-7.3-6-18.1-9-32.3-9h-38V299h38c14.2.0 24.9-3 32.3-9.1 7.3-6.1 11-14.7 11-25.9S1433.5 244.1 1426.1 238.1z"/><path class="st0" d="M1512.5 201.6h32.5v175.3h-32.5V201.6z"/><path class="st0" d="M1613.7 373.6c-12.6-3.8-22.6-8.9-29.9-15.3l11.3-25.3c7.2 5.7 16 10.3 26.4 13.9 10.4 3.6 20.9 5.4 31.4 5.4 13 0 22.7-2.1 29.2-6.3 6.4-4.2 9.6-9.7 9.6-16.5.0-5-1.8-9.1-5.4-12.4-3.6-3.2-8.1-5.8-13.6-7.6s-13-3.9-22.5-6.3c-13.3-3.2-24.2-6.3-32.4-9.5s-15.3-8.1-21.3-14.9c-6-6.8-8.9-15.9-8.9-27.4.0-9.7 2.6-18.5 7.9-26.4 5.3-7.9 13.2-14.2 23.8-18.9 10.6-4.7 23.6-7 38.9-7 10.7.0 21.2 1.3 31.5 4s19.3 6.5 26.8 11.5l-10.3 25.3c-7.7-4.5-15.7-7.9-24-10.3-8.3-2.3-16.4-3.5-24.3-3.5-12.8.0-22.4 2.2-28.7 6.5s-9.4 10.1-9.4 17.3c0 5 1.8 9.1 5.4 12.3s8.1 5.7 13.6 7.5 13 3.9 22.5 6.3c13 3 23.7 6.1 32 9.4 8.3 3.2 15.5 8.2 21.4 14.9s8.9 15.7 8.9 27c0 9.7-2.6 18.4-7.9 26.3-5.3 7.8-13.2 14.1-23.9 18.8s-23.7 7-39 7C1639.3 379.4 1626.3 377.5 1613.7 373.6z"/><path class="st0" d="M1840.3 201.6h25v153.5h94.8v21.8h-119.9L1840.3 201.6z"/><path class="st0" d="M2107.6 333.1h-93.1l-19.3 43.8h-25.8l79.3-175.3h24.8l79.6 175.3h-26.3L2107.6 333.1zM2098.8 313.1l-37.8-85.9-37.8 85.9H2098.8z"/><path class="st0" d="M2327.3 301.3c5.8 7.4 8.8 16.8 8.8 28.2.0 15.2-5.7 26.9-17.1 35-11.4 8.2-28.1 12.3-49.9 12.3h-83.6V201.6h78.6c20 0 35.5 4 46.4 12s16.4 19.1 16.4 33.3c0 9.2-2.1 17.1-6.4 23.8-4.2 6.7-10 11.8-17.1 15.3C2313.5 288.8 2321.5 293.9 2327.3 301.3zm-116.9-79.4V278h51.3c12.9.0 22.7-2.4 29.7-7.1 6.9-4.8 10.4-11.7 10.4-20.9.0-9.2-3.5-16.1-10.4-20.9s-16.8-7.1-29.7-7.1L2210.4 221.9zM23e2 349.6c7.2-4.7 10.8-12 10.8-22 0-19.5-14.3-29.3-42.8-29.3h-57.6v58.3h57.6C2282.2 356.6 2292.9 354.3 23e2 349.6z"/><path class="st0" d="M2394 372.8c-12.3-4.1-21.9-9.4-28.9-15.9l9.3-19.5c6.7 6 15.2 10.9 25.6 14.6s21.1 5.6 32.2 5.6c14.5.0 25.4-2.5 32.5-7.4 7.2-4.9 10.8-11.5 10.8-19.7.0-6-2-10.9-5.9-14.6-3.9-3.7-8.8-6.6-14.5-8.6s-13.9-4.2-24.4-6.8c-13.2-3.2-23.8-6.3-31.9-9.5s-15-8-20.8-14.6-8.6-15.5-8.6-26.7c0-9.3 2.5-17.8 7.4-25.3s12.4-13.5 22.4-18 22.4-6.8 37.3-6.8c10.3.0 20.5 1.3 30.5 4s18.6 6.5 25.8 11.5l-8.3 20c-7.3-4.7-15.2-8.2-23.5-10.6s-16.5-3.6-24.5-3.6c-14.2.0-24.8 2.6-31.9 7.8-7.1 5.2-10.6 11.8-10.6 20 0 6 2 10.9 6 14.6 4 3.8 9 6.7 14.9 8.8s14 4.3 24.1 6.6c13.2 3.2 23.8 6.3 31.8 9.5s14.9 8 20.6 14.5 8.6 15.3 8.6 26.3c0 9.2-2.5 17.6-7.5 25.2-5 7.6-12.6 13.6-22.8 18-10.2 4.4-22.7 6.6-37.5 6.6C2419 378.9 2406.3 376.9 2394 372.8z"/></g><g><path class="st0" d="M1142.5 532.1h-46.8l-10.1 22.4h-9.2l38.4-84.1h8.8l38.4 84.1h-9.3L1142.5 532.1zM1139.2 524.9l-20.2-45.1-20.2 45.1H1139.2z"/><path class="st0" d="M1181.8 470.6h8.9V547h47v7.7h-55.9V470.6z"/><path class="st0" d="M1258.4 470.6h8.9V547h47v7.7h-55.9V470.6z"/><path class="st0" d="M1372.5 470.6h34.2c8.9.0 16.7 1.8 23.5 5.3s12.1 8.5 15.8 14.9c3.8 6.4 5.6 13.6 5.6 21.8.0 8.2-1.9 15.4-5.6 21.8-3.8 6.4-9 11.3-15.8 14.9s-14.6 5.3-23.5 5.3h-34.2V470.6zm33.7 76.3c7.4.0 13.8-1.5 19.3-4.4s9.8-7 12.8-12.1c3-5.2 4.6-11.1 4.6-17.8.0-6.7-1.5-12.7-4.6-17.8s-7.3-9.2-12.8-12.1-11.9-4.4-19.3-4.4h-24.8V547h24.8z"/><path class="st0" d="M1529 532.1h-46.8l-10.1 22.4h-9.2l38.4-84.1h8.8l38.4 84.1h-9.3L1529 532.1zM1525.8 524.9l-20.2-45.1-20.2 45.1H1525.8z"/><path class="st0" d="M1580.5 478.3H1551v-7.7h67.9v7.7h-29.5v76.4h-8.9V478.3z"/><path class="st0" d="M1687.4 532.1h-46.8l-10.1 22.4h-9.2l38.4-84.1h8.8l38.4 84.1h-9.3L1687.4 532.1zM1684.2 524.9l-20.2-45.1-20.2 45.1H1684.2z"/><path class="st0" d="M1834.4 470.6v84.1h-7.3l-54-68.2v68.2h-8.9v-84.1h7.3l54.1 68.2v-68.2L1834.4 470.6z"/><path class="st0" d="M1927.1 546.9v7.7h-59.4v-84.1h57.6v7.7h-48.7v29.9h43.4v7.6h-43.4V547L1927.1 546.9z"/><path class="st0" d="M2013.3 546.9v7.7h-59.4v-84.1h57.6v7.7h-48.7v29.9h43.4v7.6h-43.4V547L2013.3 546.9z"/><path class="st0" d="M2040.2 470.6h34.2c8.9.0 16.7 1.8 23.5 5.3 6.8 3.6 12.1 8.5 15.8 14.9 3.8 6.4 5.6 13.6 5.6 21.8.0 8.2-1.9 15.4-5.6 21.8-3.8 6.4-9 11.3-15.8 14.9s-14.6 5.3-23.5 5.3h-34.2V470.6zm33.7 76.3c7.4.0 13.8-1.5 19.3-4.4s9.8-7 12.8-12.1c3-5.2 4.6-11.1 4.6-17.8.0-6.7-1.5-12.7-4.6-17.8s-7.3-9.2-12.8-12.1-11.9-4.4-19.3-4.4H2049V547H2073.9z"/><path class="st0" d="M2150.4 552.3c-5.7-2-10.1-4.6-13.2-7.9l3.5-6.8c3 3 7.1 5.5 12.1 7.4s10.2 2.8 15.6 2.8c7.5.0 13.1-1.4 16.9-4.1s5.6-6.3 5.6-10.7c0-3.4-1-6-3.1-8s-4.5-3.5-7.5-4.6-7.1-2.3-12.4-3.5c-6.3-1.6-11.4-3.1-15.1-4.6-3.8-1.5-7-3.7-9.7-6.8-2.7-3-4-7.2-4-12.3.0-4.2 1.1-8.1 3.4-11.6 2.2-3.5 5.7-6.3 10.3-8.3 4.6-2.1 10.4-3.1 17.3-3.1 4.8.0 9.5.7 14.1 2s8.6 3.1 11.9 5.5l-3 7.1c-3.5-2.3-7.3-4.1-11.3-5.2-4-1.2-7.9-1.7-11.8-1.7-7.4.0-12.9 1.4-16.6 4.3-3.7 2.8-5.6 6.5-5.6 11 0 3.4 1 6.1 3.1 8.1s4.6 3.6 7.7 4.7c3.1 1.1 7.2 2.3 12.4 3.5 6.2 1.5 11.1 3 14.9 4.5s7 3.7 9.6 6.7 4 7.1 4 12.2c0 4.2-1.1 8.1-3.4 11.6s-5.8 6.2-10.5 8.3c-4.7 2-10.5 3.1-17.4 3.1C2162.1 555.2 2156.2 554.2 2150.4 552.3z"/></g></g></g><g><polygon class="st0" points="9.7,309.9 254,450.8 254.1,591.6 292.3,613.5 292.1,428.7 38.2,282.3 38.2,209.9 186,124.2 323,203.2 361.1,181.1 224.1,102 324.3,44 461.2,123 499.3,101 324.3,0 0,187.8 0.1,304.5"/><polygon class="st0" points="425.4,398.4 547.2,327.9 547.1,283.8 387.3,376.4 387.6,669.5 324.8,705.9 176.8,620.6 176.6,462.5 138.5,440.4 138.6,598.7 38.3,540.8 38.2,382.6 0.1,360.6 0.2,562.9 324.8,750 425.8,691.6 425.7,680.5"/><polygon class="st0" points="649,187.3 547.8,129.1 538.3,134.6 294.4,276 172.5,205.8 134.4,227.8 294.4,320.1 548,173.2 610.8,209.4 611,380.4 474.2,459.6 474.1,503.6 611.1,424.4 611.2,540.3 474.4,619.5 474.4,663.5 649.3,562.2"/></g></g></svg></span>
+		<span class="navbar-logo"><svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6675 639" width="200" height="29"><style>.a{fill:#e21339}</style><path class="a" d="m234 638.6q-66.8.0-119.6-22.9-52-22.9-81.9-66.9-29.9-44-31.7-106.5h125.9q.9 27.3 14.1 49.3t36.9 35.2q23.8 12.3 56.3 12.3 27.3.0 47.6-8.8 21.1-9.7 32.5-26.4 12.3-16.7 12.3-39.6.0-27.3-14-44.9-13.2-18.4-36.1-29.9-22.9-12.3-52.8-22-29.1-10.5-61.6-21.1Q90.6 321.8 52.8 283q-37.9-39.6-37.9-104.7.0-55.4 26.4-95 26.4-39.6 73.9-60.7 47.6-21.2 108.3-21.2 62.5.0 110 22 47.5 21.2 74.8 61.6 27.3 40.5 29 95.1H309.7q-.9-20.3-11.4-37.9-10.6-18.4-29.9-29-19.4-11.4-46.7-11.4-22.9-.9-41.3 7-18.5 7.9-30 23.8-10.5 14.9-10.5 37.8.0 22 10.5 37 10.6 14.9 30 26.4 19.3 10.5 45.7 20.2 26.4 8.8 57.2 18.5 46.7 15.8 84.5 37.8 38.7 21.1 61.6 55.5 22.9 34.3 22.9 90.6.0 48.4-25.5 89.8-24.7 41.3-73.1 66.8-48.4 25.6-119.7 25.6zM929.2 628H811.3V107.9H630.9V12h478.7v95.9H929.2zm498 0h-118.8V12H1539q73.9.0 122.3 25.5 49.3 25.6 73.1 68.7 23.7 42.2 23.7 94.1.0 49.3-23.7 92.4-22.9 42.3-72.2 68.7-48.4 25.5-125 25.5h-110zm336.2.0h-135.5l-126.7-271h128.4zm-336.1-516.6v189.2h103.8q54.6.0 80.1-26.4 25.5-26.4 25.5-69.5t-25.5-67.8q-25.5-25.5-80.1-25.5zM2383.8 628h-405.6V12h405.6v95.9H2097v161h260.4v92.4H2097V532h286.8zm306.2.0h-124l224.4-616H2925l225.3 616h-125.9l-167.2-480.4zm351.2-140h-375.8l30.8-92.4h314.2zm422.3 140h-118.8V12h141.7l191.8 383.6L3867.4 12h141.7v616h-118.8V213.5L3724 540h-94.2l-166.3-327.4zm1153.7.0h-393.4v-58.1l303.6-493.7h-299.2V12h385.4v58.1l-304.4 493.7h308zm601.8.0h-381V12h381v60.7h-307.1v214.7h280.7v59.8h-280.7v220H5219zm306.2.0h-73.9V12h198.9q72.2.0 117.9 24.7 45.8 23.7 67.8 64.2t22 91.5q0 49.3-22.9 90.7-22 41.3-68.6 66-46.7 24.6-119.7 24.6h-121.5zm338.8.0h-87.1l-135.5-275.4h82.7zM5525.2 74.5v241.1h119.7q70.4.0 103-34.3 33.4-34.4 33.4-88 0-54.6-32.6-86.3-31.6-32.5-104.7-32.5zm844.8 564q-90.7.0-159.3-39.6-67.8-40.4-106.5-111.7-37.8-72.2-37.8-167.2.0-94.2 37.8-165.5 38.7-72.1 106.5-112.6 68.6-40.5 159.3-40.5 91.5.0 159.3 40.5 68.6 40.5 106.4 112.6 37.9 71.3 37.9 165.5.0 95-37.9 167.2-37.8 71.3-106.4 111.7-67.8 39.6-159.3 39.6zm0-65.1q67.7.0 118.8-29.9 51.9-30.8 80.1-87.1 29-57.2 29-136.4t-29-135.5q-28.2-57.2-80.1-87.2-51.1-29.9-118.8-29.9-67.8.0-119.7 29.9-51 30-80.1 87.2-28.1 56.3-28.1 135.5t28.1 136.4q29.1 56.3 80.1 87.1 51.9 29.9 119.7 29.9z"/></svg></span>
 	</a>
-	<div class="td-navbar-nav-scroll ml-md-auto" id="main_navbar">
-		<ul class="navbar-nav mt-2 mt-lg-0">
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
 			
 			
 				
@@ -93,56 +95,25 @@ if (!doNotTrack) {
 				
 				
 				
-					<li class="nav-item mr-2 mb-2 mb-lg-0">
-						<a class="nav-link" href="/product/" ><span>PRODUCT</span></a>
-					</li>
-				
-			
-				
-				
-				
-				
-				
-				
-				
-					<li class="nav-item mr-2 mb-2 mb-lg-0">
-						<a class="nav-link" href="/integrations/" ><span>INTEGRATIONS</span></a>
-					</li>
-				
-			
-				
-				
-				
-				
-				
-				
-				
-					<li class="nav-item mr-2 mb-2 mb-lg-0">
-						<a class="nav-link" href="/solutions/" ><span>CASE STUDIES</span></a>
-					</li>
-				
-			
-				
-				
-				
-				
-				
-				
-				
-					<li class="nav-item mr-2 mb-2 mb-lg-0">
-						<a class="nav-link" href="/features/" ><span>FEATURES</span></a>
-					</li>
-				
-			
-				
-				
-				
-				
-				
-				
-				
-					<li class="nav-item mr-2 mb-2 mb-lg-0">
-						<a class="nav-link" href="/about/" ><span>ABOUT</span></a>
+					<li class="nav-item mr-2 mb-2 mb-lg-0 dropdown">
+						<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown">
+							PRODUCTS
+						</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							
+								<li>
+									<a class="nav-link" href="/products/fx/" >STREAMZERO FX</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/k8x/" >STREAMZERO K8X</a>
+								</li>
+							
+								<li>
+									<a class="nav-link" href="/products/sx/" >STREAMZERO SX</a>
+								</li>
+							
+						</ul>
 					</li>
 				
 			
@@ -156,7 +127,7 @@ if (!doNotTrack) {
 				
 				
 					<li class="nav-item mr-2 mb-2 mb-lg-0">
-						<a class="nav-link active" href="/docs/" ><span class="active">DOCS</span></a>
+						<a class="nav-link active" href="/docs/" ><span class="active">DOCUMENTATION</span></a>
 					</li>
 				
 			
@@ -188,76 +159,98 @@ if (!doNotTrack) {
   <nav class="collapse td-sidebar-nav" id="td-section-nav">
     <ul class="td-sidebar-nav__section pr-md-3 ul-0">
       <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-docs-li">
-  <a href="/docs/" title="DOCUMENTATION" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">DOCS</span></a>
+  <a href="/docs/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section tree-root" id="m-docs"><span class="">DOCUMENTATION</span></a>
   <ul class="ul-1">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsoverview-li">
-  <a href="/docs/overview/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsoverview"><span class="">Overview</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsfx-li">
+  <a href="/docs/fx/" title="StreamZero  FX" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsfx"><span class="">StreamZero FX</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsoverviewferris_executor_benefits_features-li">
-  <a href="/docs/overview/ferris_executor_benefits_features/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsoverviewferris_executor_benefits_features"><span class="">Features &amp; Benefits</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsoverviewarchitecture-overview-li">
-  <a href="/docs/overview/architecture-overview/" title="Architecture Overview" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsoverviewarchitecture-overview"><span class="">Architecture</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxarchitecture-overview-li">
+  <a href="/docs/fx/architecture-overview/" title="Architecture Overview" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxarchitecture-overview"><span class="">Architecture</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsfxdeveloper_guide-li">
+  <a href="/docs/fx/developer_guide/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsfxdeveloper_guide"><span class="">Developer Guide</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guidecreating_and_configuring_your_first_fx_service-li">
+  <a href="/docs/fx/developer_guide/creating_and_configuring_your_first_fx_service/" title="Creating and Configuring Your First FX Service" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guidecreating_and_configuring_your_first_fx_service"><span class="">Your First FX Service</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guideferris_executor_helper_simplifying_fx_service_development-li">
+  <a href="/docs/fx/developer_guide/ferris_executor_helper_simplifying_fx_service_development/" title="FX Core Lib: Simplifying FX Service Development" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guideferris_executor_helper_simplifying_fx_service_development"><span class="">The FX Platform Lib</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guidedeploy_a_service-li">
+  <a href="/docs/fx/developer_guide/deploy_a_service/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guidedeploy_a_service"><span class="">Deploy a Service</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guideproject_and_code_structure-li">
+  <a href="/docs/fx/developer_guide/project_and_code_structure/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guideproject_and_code_structure"><span class="">Project and Code Structure</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guidesecrets-li">
+  <a href="/docs/fx/developer_guide/secrets/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guidesecrets"><span class="">Secrets</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guidestate_management-li">
+  <a href="/docs/fx/developer_guide/state_management/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guidestate_management"><span class="">State Management</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guideform_generator-li">
+  <a href="/docs/fx/developer_guide/form_generator/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guideform_generator"><span class="">Form Generator</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guidedatabase_integration-li">
+  <a href="/docs/fx/developer_guide/database_integration/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guidedatabase_integration"><span class="">Database Integration</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guidesource_adapters-li">
+  <a href="/docs/fx/developer_guide/source_adapters/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guidesource_adapters"><span class="">Event Source Adapters</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guideplatform_extensions-li">
+  <a href="/docs/fx/developer_guide/platform_extensions/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guideplatform_extensions"><span class="">Extending the Platform</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guidegit_integration-li">
+  <a href="/docs/fx/developer_guide/git_integration/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guidegit_integration"><span class="">Git Integration</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guideleveraging_event_manipulation-li">
+  <a href="/docs/fx/developer_guide/leveraging_event_manipulation/" title="Event Manipulation Strategies" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guideleveraging_event_manipulation"><span class="">Leveraging Event Manipulation</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxdeveloper_guidelogging_and_monitoring-li">
+  <a href="/docs/fx/developer_guide/logging_and_monitoring/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxdeveloper_guidelogging_and_monitoring"><span class="">Logging and Monitoring</span></a>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsdeveloper_guide-li">
-  <a href="/docs/developer_guide/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsdeveloper_guide"><span class="">Developer Guide</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsfxuser_guide-li">
+  <a href="/docs/fx/user_guide/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsfxuser_guide"><span class="">User Guide</span></a>
+  <ul class="ul-3 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxuser_guidelanding_page-li">
+  <a href="/docs/fx/user_guide/landing_page/" title="Landing Page (Dashboard)" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxuser_guidelanding_page"><span class="">Landing page (Dashboard)</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxuser_guideproject_creation_and_users_within_project-li">
+  <a href="/docs/fx/user_guide/project_creation_and_users_within_project/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxuser_guideproject_creation_and_users_within_project"><span class="">Projects</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxuser_guidetaxonomy_tagging-li">
+  <a href="/docs/fx/user_guide/taxonomy_tagging/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxuser_guidetaxonomy_tagging"><span class="">Taxonomy/Tagging</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxuser_guidecronjob-li">
+  <a href="/docs/fx/user_guide/cronjob/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxuser_guidecronjob"><span class="">CronJob</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxuser_guideevents-li">
+  <a href="/docs/fx/user_guide/events/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxuser_guideevents"><span class="">Events</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsfxuser_guideexecutions_packages-li">
+  <a href="/docs/fx/user_guide/executions_packages/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsfxuser_guideexecutions_packages"><span class="">Executions - Packages</span></a>
+</li>
+  </ul>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsk8x-li">
+  <a href="/docs/k8x/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsk8x"><span class="">StreamZero K8X</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guideproject_and_source_code_management-li">
-  <a href="/docs/developer_guide/project_and_source_code_management/" title="Creating Projects and Linking with GIT" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guideproject_and_source_code_management"><span class="">Project and Source Code Management</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guideproject_and_code_structure-li">
-  <a href="/docs/developer_guide/project_and_code_structure/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guideproject_and_code_structure"><span class="">Project and Code Structure</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guidecreate-and-deploy-service-li">
-  <a href="/docs/developer_guide/create-and-deploy-service/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guidecreate-and-deploy-service"><span class="">Create a Service</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guidemanifest_file-li">
-  <a href="/docs/developer_guide/manifest_file/" title="The Manifest File of an FX Service" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guidemanifest_file"><span class="">The Manifest File</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guidedeploy_a_service-li">
-  <a href="/docs/developer_guide/deploy_a_service/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guidedeploy_a_service"><span class="">Deploy a Service</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guideparameters_configuration_state_secrets-li">
-  <a href="/docs/developer_guide/parameters_configuration_state_secrets/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guideparameters_configuration_state_secrets"><span class="">Parameters and Configurations</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guidesecrets-li">
-  <a href="/docs/developer_guide/secrets/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guidesecrets"><span class="">Secrets</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guidea-guide-to-config-namespaces-li">
-  <a href="/docs/developer_guide/a-guide-to-config-namespaces/" title="A Guide to Config Namespaces" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guidea-guide-to-config-namespaces"><span class="">Config Namespaces</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guideinstall_database_drivers-li">
-  <a href="/docs/developer_guide/install_database_drivers/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guideinstall_database_drivers"><span class="">Database Integration</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guidesource_adapters-li">
-  <a href="/docs/developer_guide/source_adapters/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guidesource_adapters"><span class="">Event Source Adapters</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guideplatform_extensions-li">
-  <a href="/docs/developer_guide/platform_extensions/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guideplatform_extensions"><span class="">Extending the Platform</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guidegit_integration-li">
-  <a href="/docs/developer_guide/git_integration/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guidegit_integration"><span class="">Git Integration</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guideleveraging_event_manipulation-li">
-  <a href="/docs/developer_guide/leveraging_event_manipulation/" title="Event Manipulation Strategies" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guideleveraging_event_manipulation"><span class="">Leveraging Event Manipulation</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guidelogging_and_monitoring-li">
-  <a href="/docs/developer_guide/logging_and_monitoring/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guidelogging_and_monitoring"><span class="">Logging and Monitoring</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guidestate_management-li">
-  <a href="/docs/developer_guide/state_management/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guidestate_management"><span class="">State Management</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsdeveloper_guideui_generator-li">
-  <a href="/docs/developer_guide/ui_generator/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsdeveloper_guideui_generator"><span class="">UI Generator</span></a>
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsk8xdeveloper_guide-li">
+  <a href="/docs/k8x/developer_guide/" title="K8X Developer Guide" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsk8xdeveloper_guide"><span class="">Developer Guide</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsk8xuser_guide-li">
+  <a href="/docs/k8x/user_guide/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsk8xuser_guide"><span class="">User Guide</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsk8xarchitecture-li">
+  <a href="/docs/k8x/architecture/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsk8xarchitecture"><span class="">Architecture</span></a>
+</li>
+  </ul>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docssx-li">
+  <a href="/docs/sx/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docssx"><span class="">StreamZero SX</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssxdeveloperguidesx-li">
+  <a href="/docs/sx/developerguidesx/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docssxdeveloperguidesx"><span class="">Developer Guide</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssxintegrations_guide-li">
+  <a href="/docs/sx/integrations_guide/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssxintegrations_guide"><span class="">Integrations Guide</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssxuser_guide-li">
+  <a href="/docs/sx/user_guide/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssxuser_guide"><span class="">User Guide</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssxsolutions-li">
+  <a href="/docs/sx/solutions/" title="Solutions snippets / explain problem solved / link to relevant use case" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssxsolutions"><span class="">Solutions</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssxcontainers_purpose-li">
+  <a href="/docs/sx/containers_purpose/" title="Containers &#43; Purpose" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssxcontainers_purpose"><span class="">Containers &amp; Purpose</span></a>
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docssxarchitecture-li">
+  <a href="/docs/sx/architecture/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssxarchitecture"><span class="">Architecture</span></a>
 </li>
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsintegrations-li">
   <a href="/docs/integrations/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsintegrations"><span class="">Integrations Guide</span></a>
   <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationspaas_and_saas-li">
-  <a href="/docs/integrations/paas_and_saas/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsintegrationspaas_and_saas"><span class="">PaaS SaaS Guide</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsintegrationsdatabase_guide-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsintegrationsdatabase_guide-li">
   <a href="/docs/integrations/database_guide/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsintegrationsdatabase_guide"><span class="">Database Guide</span></a>
   <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsintegrationsdatabase_guideconfiguration_overview-li">
-  <a href="/docs/integrations/database_guide/configuration_overview/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsintegrationsdatabase_guideconfiguration_overview"><span class="">Configuring Databases</span></a>
-  <ul class="ul-4 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsdatabase_guideconfiguration_overviewdocker-add-drivers-li">
-  <a href="/docs/integrations/database_guide/configuration_overview/docker-add-drivers/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationsdatabase_guideconfiguration_overviewdocker-add-drivers"><span class="">Adding New Drivers in Docker</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsdatabase_guideconfiguration_overviewextra-settings-li">
-  <a href="/docs/integrations/database_guide/configuration_overview/extra-settings/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationsdatabase_guideconfiguration_overviewextra-settings"><span class="">Extra Database Settings</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsdatabase_guideconfiguration_overviewinstalling-database-drivers-li">
-  <a href="/docs/integrations/database_guide/configuration_overview/installing-database-drivers/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationsdatabase_guideconfiguration_overviewinstalling-database-drivers"><span class="">Installing Database Drivers</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsdatabase_guideconfiguration_overviewdb-connection-ui-li">
-  <a href="/docs/integrations/database_guide/configuration_overview/db-connection-ui/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationsdatabase_guideconfiguration_overviewdb-connection-ui"><span class="">Using Database Connection UI</span></a>
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsintegrationsdatabase_guidedatabases-li">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsintegrationsdatabase_guidedatabases-li">
   <a href="/docs/integrations/database_guide/databases/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsintegrationsdatabase_guidedatabases"><span class="">Supported Databases</span></a>
   <ul class="ul-4 foldable">
     <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsdatabase_guidedatabasesascend-li">
@@ -338,13 +331,8 @@ if (!doNotTrack) {
   </ul>
 </li>
   </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child collapse" id="m-docsintegrationsnotifications_and_messaging-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsnotifications_and_messaging-li">
   <a href="/docs/integrations/notifications_and_messaging/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsintegrationsnotifications_and_messaging"><span class="">Notifications and Messaging</span></a>
-  <ul class="ul-3 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsintegrationsnotifications_and_messagingnotifications_and_messaging-li">
-  <a href="/docs/integrations/notifications_and_messaging/notifications_and_messaging/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsintegrationsnotifications_and_messagingnotifications_and_messaging"><span class="">Notifications and Messaging</span></a>
-</li>
-  </ul>
 </li>
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docssecurity-li">
@@ -367,7 +355,7 @@ if (!doNotTrack) {
   <a href="/docs/solutions/010-balance-sheet-quality-control/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssolutions010-balance-sheet-quality-control"><span class=""></span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docssolutions011-corporate-clients-quality-assessment-li">
   <a href="/docs/solutions/011-corporate-clients-quality-assessment/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssolutions011-corporate-clients-quality-assessment"><span class=""></span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-docssolutions014-marketing-data-analysis-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docssolutions014-marketing-data-analysis-li">
   <a href="/docs/solutions/014-marketing-data-analysis/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__page" id="m-docssolutions014-marketing-data-analysis"><span class="td-sidebar-nav-active-item">Automating Marketing Data Analysis</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docssolutions003-churn-analysis-and-alerting-finance-li">
   <a href="/docs/solutions/003-churn-analysis-and-alerting-finance/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssolutions003-churn-analysis-and-alerting-finance"><span class="">Churn Analysis and Alerting – Financial Services</span></a>
@@ -399,23 +387,6 @@ if (!doNotTrack) {
   <a href="/docs/solutions/007-sensor-based-monitoring-of-sensitive-goods/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssolutions007-sensor-based-monitoring-of-sensitive-goods"><span class="">Sensor-based Monitoring of Sensitive Goods</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-docssolutions006-voice-based-trade-compliance-li">
   <a href="/docs/solutions/006-voice-based-trade-compliance/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docssolutions006-voice-based-trade-compliance"><span class="">Voice-based Trade Compliance</span></a>
-</li>
-  </ul>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsuser-guide-li">
-  <a href="/docs/user-guide/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-docsuser-guide"><span class="">User Guide</span></a>
-  <ul class="ul-2 foldable">
-    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsuser-guidelanding_page-li">
-  <a href="/docs/user-guide/landing_page/" title="Landing Page (Dashboard)" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsuser-guidelanding_page"><span class="">Landing page (Dashboard)</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsuser-guideproject_creation_and_users_within_project-li">
-  <a href="/docs/user-guide/project_creation_and_users_within_project/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsuser-guideproject_creation_and_users_within_project"><span class="">Projects</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsuser-guideexecutions_packages-li">
-  <a href="/docs/user-guide/executions_packages/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsuser-guideexecutions_packages"><span class="">Executions - Packages</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsuser-guidecronjob-li">
-  <a href="/docs/user-guide/cronjob/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsuser-guidecronjob"><span class="">CronJob</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsuser-guideevents-li">
-  <a href="/docs/user-guide/events/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsuser-guideevents"><span class="">Events</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child collapse" id="m-docsuser-guidetaxonomy_tagging-li">
-  <a href="/docs/user-guide/taxonomy_tagging/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-docsuser-guidetaxonomy_tagging"><span class="">Taxonomy/Tagging</span></a>
 </li>
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-docsrelease_notes-li">
@@ -552,7 +523,7 @@ if (!doNotTrack) {
         
           <li><a class="taxonomy-term" href="/tags/compliance/" data-taxonomy-term="compliance"><span class="taxonomy-label">compliance</span><span class="taxonomy-count">3</span></a></li>
         
-          <li><a class="taxonomy-term" href="/tags/connect/" data-taxonomy-term="connect"><span class="taxonomy-label">connect</span><span class="taxonomy-count">2</span></a></li>
+          <li><a class="taxonomy-term" href="/tags/connect/" data-taxonomy-term="connect"><span class="taxonomy-label">connect</span><span class="taxonomy-count">5</span></a></li>
         
           <li><a class="taxonomy-term" href="/tags/consumergoods/" data-taxonomy-term="consumergoods"><span class="taxonomy-label">consumergoods</span><span class="taxonomy-count">1</span></a></li>
         
@@ -568,11 +539,7 @@ if (!doNotTrack) {
         
           <li><a class="taxonomy-term" href="/tags/datascienceinfrastructure/" data-taxonomy-term="datascienceinfrastructure"><span class="taxonomy-label">datascienceinfrastructure</span><span class="taxonomy-count">1</span></a></li>
         
-          <li><a class="taxonomy-term" href="/tags/docs/" data-taxonomy-term="docs"><span class="taxonomy-label">docs</span><span class="taxonomy-count">1</span></a></li>
-        
           <li><a class="taxonomy-term" href="/tags/entertainment/" data-taxonomy-term="entertainment"><span class="taxonomy-label">entertainment</span><span class="taxonomy-count">1</span></a></li>
-        
-          <li><a class="taxonomy-term" href="/tags/features/" data-taxonomy-term="features"><span class="taxonomy-label">features</span><span class="taxonomy-count">1</span></a></li>
         
           <li><a class="taxonomy-term" href="/tags/finance/" data-taxonomy-term="finance"><span class="taxonomy-label">finance</span><span class="taxonomy-count">1</span></a></li>
         
@@ -658,9 +625,9 @@ if (!doNotTrack) {
         
           <li><a class="taxonomy-term" href="/tags/prospecting/" data-taxonomy-term="prospecting"><span class="taxonomy-label">prospecting</span><span class="taxonomy-count">2</span></a></li>
         
-          <li><a class="taxonomy-term" href="/tags/quickstart/" data-taxonomy-term="quickstart"><span class="taxonomy-label">quickstart</span><span class="taxonomy-count">4</span></a></li>
+          <li><a class="taxonomy-term" href="/tags/quickstart/" data-taxonomy-term="quickstart"><span class="taxonomy-label">quickstart</span><span class="taxonomy-count">7</span></a></li>
         
-          <li><a class="taxonomy-term" href="/tags/register/" data-taxonomy-term="register"><span class="taxonomy-label">register</span><span class="taxonomy-count">2</span></a></li>
+          <li><a class="taxonomy-term" href="/tags/register/" data-taxonomy-term="register"><span class="taxonomy-label">register</span><span class="taxonomy-count">5</span></a></li>
         
           <li><a class="taxonomy-term" href="/tags/relationships/" data-taxonomy-term="relationships"><span class="taxonomy-label">relationships</span><span class="taxonomy-count">1</span></a></li>
         
@@ -726,11 +693,7 @@ if (!doNotTrack) {
       
       <ul class="taxonomy-terms">
         
-          <li><a class="taxonomy-term" href="/categories/knowledge-base/" data-taxonomy-term="knowledge-base"><span class="taxonomy-label">Knowledge Base</span><span class="taxonomy-count">2</span></a></li>
-        
-          <li><a class="taxonomy-term" href="/categories/overview/" data-taxonomy-term="overview"><span class="taxonomy-label">Overview</span><span class="taxonomy-count">1</span></a></li>
-        
-          <li><a class="taxonomy-term" href="/categories/placeholders/" data-taxonomy-term="placeholders"><span class="taxonomy-label">Placeholders</span><span class="taxonomy-count">1</span></a></li>
+          <li><a class="taxonomy-term" href="/categories/knowledge-base/" data-taxonomy-term="knowledge-base"><span class="taxonomy-label">Knowledge Base</span><span class="taxonomy-count">5</span></a></li>
         
           <li><a class="taxonomy-term" href="/categories/release-notes/" data-taxonomy-term="release-notes"><span class="taxonomy-label">Release Notes</span><span class="taxonomy-count">5</span></a></li>
         
@@ -765,7 +728,7 @@ if (!doNotTrack) {
 
 
 <li class="breadcrumb-item" >
-	<a href="/docs/">DOCS</a>
+	<a href="/docs/">DOCUMENTATION</a>
 </li>
 
 
@@ -888,7 +851,7 @@ All relationship intense industries, i.e. insurance</p>
 </ul>
 <h3 id="testimonials">Testimonials</h3>
 <blockquote>
-<p>&ldquo;Using Ferris we were able to digest a massive amount of text and extract personalized investment themes which allows our RMs to increase their face time with the clients and surprise them with the meaningful content.&rdquo;
+<p>&ldquo;Using StreamZero we were able to digest a massive amount of text and extract personalized investment themes which allows our RMs to increase their face time with the clients and surprise them with the meaningful content.&rdquo;
 — Mr. R. Giger, Head of Marketing and Campaigns, Swiss Private Bank</p>
 </blockquote>
 <h3 id="tags--keywords">Tags / Keywords</h3>
@@ -959,7 +922,7 @@ All relationship intense industries, i.e. insurance</p>
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified March 18, 2022: <a href="https://github.com/gridmine/site-draft/commit/1d91de79d6e2ac03702a61ba1f8c9172472a3ae2">Added new Sections page and case studies in docs section (1d91de7)</a>
+  Last modified September 4, 2023: <a href="https://github.com/gridmine/site-draft/commit/c3370e335c91b7991038989097451e845323e334">mobile fix (c3370e3)</a>
 </div>
 
 </div>
@@ -968,153 +931,278 @@ All relationship intense industries, i.e. insurance</p>
           </main>
         </div>
       </div>
-      
-
-
-<link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
-<script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
-<script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/ferris-demo', text: 'Book a Ferris Demo', color: '#ffa630', textColor: '#ffffff', branding: true }); }</script>
-
-
-<footer class="bg-dark py-5 row d-print-none">
-  <div class="container-fluid mx-sm-5">
-    <div class="container">
-      <div class="row">
-        
-          
-            
-  
-    <div class="col-4 text-left order-sm-2">
-        <a class="text-white" target="_blank" rel="noopener" href="https://gridmine.com/about" aria-label="User mailing list">
-          <i class="fa fa-envelope"></i>
-        </a>
-    </div>
-  
-    <div class="col-4 text-left order-sm-2">
-        <a class="text-white" target="_blank" rel="noopener" href="https://www.linkedin.com/company/gridmine/" aria-label="Linkedin">
-          <i class="fab fa-linkedin"></i>
-        </a>
-    </div>
-  
-    <div class="col-4 text-left order-sm-2">
-        <a class="text-white" target="_blank" rel="noopener" href="https://github.com/gridmine" aria-label="GitHub">
-          <i class="fab fa-github"></i>
-        </a>
-    </div>
-  
-
-          
-        
-        
-      </div>
-      <div class="row mt-3">
-        <div class="col-4 text-left order-sm-2">
-          
-            
-              
-  
-    <p>
-      <a class="text-white" target="" rel="noopener" href="/about" aria-label="About Us">
-        About Us
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="" rel="noopener" href="/contact" aria-label="Contact Us">
-        Contact Us
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="" rel="noopener" href="/jobs" aria-label="Jobs">
-        Jobs
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="" rel="noopener" href="/partners" aria-label="Partners">
-        Partners
-      </a>
-    </p>
-  
-
-            
-          
-        </div>
-        <div class="col-4 text-left order-sm-2">
-          
-            
-              
-  
-    <p>
-      <a class="text-white" target="_blank" rel="noopener" href="https://www.linkedin.com/company/gridmine/" aria-label="Linkedin">
-        Linkedin
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="_blank" rel="noopener" href="https://twitter.com/gridmine" aria-label="Twitter">
-        Twitter
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="_blank" rel="noopener" href="https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug" aria-label="YouTube">
-        YouTube
-      </a>
-    </p>
-  
-
-            
-          
-        </div>
-        <div class="col-4 text-left order-sm-2">
-          
-            
-              
-  
-    <p>
-      <a class="text-white" target="_blank" rel="noopener" href="https://github.com/gridmine/" aria-label="GitHub Source Code">
-        GitHub Source Code
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="_blank" rel="noopener" href="/docs/terms_conditions" aria-label="General Terms and Conditions (GTC)">
-        General Terms and Conditions (GTC)
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="_blank" rel="noopener" href="/docs/privacy_policy" aria-label="Data protection policy">
-        Data protection policy
-      </a>
-    </p>
-  
-    <p>
-      <a class="text-white" target="" rel="noopener" href="/impressum" aria-label="Impressum">
-        Impressum
-      </a>
-    </p>
-  
-
-            
-          
-        </div>
-      </div>
-      <div class="row mt-3">
-        <div class="col-12 text-center py-2 order-sm-2">
-          
-            <small class="text-white">&copy; 2023 FERRIS LABS AG All Rights Reserved</small>
-          
-          
-        </div>
-      </div>
-    </div>
+      <section class="row td-cover-block" style="background-color: #1b1a21;">
+  <div class="container">
+      <footer class="footer-component with-intercom">
+          <div class="section-container footer-inner size-medium">
+              <div class="content">
+                  <div class="page-container padding-small-x">
+                      <div class="margin-component bottom-small-x">
+                          <nav class="footer-links" role="navigation">
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Product
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/fx/">StreamZero FX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/k8x">StreamZero K8X</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/products/sx/">StreamZero SX</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Solutions
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/solutions/">Why GridMine?</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/integrations/">Integrations</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/partners/">Partners</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Learn
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Developer
+                                                  Guide</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/integrations/">Integrations
+                                                  Guide</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/docs/security/">Security</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/blog/">Blog</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Support
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/support/">Support Plans</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/services/">Professional Services</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  rel="noopener noreferrer"
+                                                  class="link-component footer-link" href="/docs/">Documentation</a>
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                              <ul class="list-component footer-column ul">
+                                  <li class="list-item-component footer-item footer-item-header">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-caps footer-link footer-header inverted">
+                                                  Company
+                                              </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/about/">About Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><xa
+                                                  class="link-component footer-link"
+                                                  href="/jobs/"><span class="footer-pill-wrapper">Careers <span
+                                                  class="footer-pill">We're hiring</span></span></a>
+                                                </div>
+                                          </div>
+                                      </div>
+                                  </li>
+                                  <li class="list-item-component footer-item">
+                                      <div class="margin-component inner bottom-zero">
+                                          <div class="list-content-wrapper">
+                                              <div class="typography-text p2-normal inverted"><a
+                                                  class="link-component footer-link"
+                                                  href="/contact/">Contact Us</a></div>
+                                          </div>
+                                      </div>
+                                  </li>
+                              </ul>
+                          </nav>
+                      </div>
+                      <div class="margin-component bottom-small-x">
+                          <div class="centering-wrapper social-links">
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://twitter.com/gridmine/" title="Twitter" target="_blank">
+                                  <img src="/icons/footer/twitter-icon.png" alt="Twitter">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.linkedin.com/company/gridmine/" title="LinkedIn" target="_blank">
+                                  <img src="/icons/footer/linkedin-icon.png" alt="LinkedIn">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.youtube.com/channel/UC5miURXVxGLo17EyWPBWCug/" title="YouTube"
+                                target="_blank">
+                                  <img src="/icons/footer/youtube-icon.png" alt="YouTube">
+                              </a>
+                              
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://github.com/gridmine/" title="GitHub" target="_blank">
+                                  <img src="/icons/footer/github-icon.png" alt="GitHub">
+                              </a>
+                              <a rel="noopener noreferrer" class="link-component social-link"
+                                href="https://www.medium.com/gridmine/" title="Medium" target="_blank">
+                                  <img src="/icons/footer/medium-icon.png" alt="Medium">
+                              </a>
+                              <xa rel="noopener noreferrer" class="link-component social-link" href="#"
+                                data-toggle="modal" data-target="#subscribeModal"
+                                title="Subscribe to our Newsletter">
+                                  <img src="/icons/footer/mail-icon.png" alt="Newsletter">
+                              </a>
+                          </div>
+                      </div>
+                      <div class="centering-wrapper legal-links">
+                          <div class="typography-text p2-normal align-center">
+                              <span class="copyright">2023 © GridMine GmbH</span>
+                              <span> | </span>
+                              <br class="br-component mobile">
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Privacy Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/privacy_policy/">Data Protection
+                                  Policy</a>
+                              <span> | </span>
+                              <a class="link-component legal-link" href="/docs/terms_conditions/">Legal Terms and
+                                  Conditions</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </footer>
   </div>
-</footer>
+</section>
 
-
+<script type="text/javascript" src="/js/carousel.js"></script>
+<link rel="stylesheet" href="/css/carousel.css">
 
     </div>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
@@ -1142,7 +1230,7 @@ All relationship intense industries, i.e. insurance</p>
 
 
 
-<script src="/js/main.min.3f3f4f1e22307ccbb13271a98be2e4dbb8386b7e67c3d606db44d3d0649f485e.js" integrity="sha256-Pz9PHiIwfMuxMnGpi&#43;Lk27g4a35nw9YG20TT0GSfSF4=" crossorigin="anonymous"></script>
+<script src="/js/main.min.7d5b92c4889cf0554b0ea5e2309b0b81b196aa7c9a235632938a25d9fc4d8a7c.js" integrity="sha256-fVuSxIic8FVLDqXiMJsLgbGWqnyaI1Yyk4ol2fxNinw=" crossorigin="anonymous"></script>
 
 
 

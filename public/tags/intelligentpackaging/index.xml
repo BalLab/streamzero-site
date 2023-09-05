@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – intelligentpackaging</title>
+    <title>GridMine – intelligentpackaging</title>
     <link>/tags/intelligentpackaging/</link>
-    <description>Recent content in intelligentpackaging on Ferris Labs</description>
+    <description>Recent content in intelligentpackaging on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/tags/intelligentpackaging/index.xml" rel="self" type="application/rss+xml" />
     

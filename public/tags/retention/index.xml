@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – retention</title>
+    <title>GridMine – retention</title>
     <link>/tags/retention/</link>
-    <description>Recent content in retention on Ferris Labs</description>
+    <description>Recent content in retention on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/tags/retention/index.xml" rel="self" type="application/rss+xml" />
     

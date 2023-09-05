@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – sensitivegoods</title>
+    <title>GridMine – sensitivegoods</title>
     <link>/tags/sensitivegoods/</link>
-    <description>Recent content in sensitivegoods on Ferris Labs</description>
+    <description>Recent content in sensitivegoods on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/tags/sensitivegoods/index.xml" rel="self" type="application/rss+xml" />
     

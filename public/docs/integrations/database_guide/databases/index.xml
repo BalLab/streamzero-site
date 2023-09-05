@@ -1,9 +1,10 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ferris Labs – Supported Databases</title>
+    <title>GridMine – Supported Databases</title>
     <link>/docs/integrations/database_guide/databases/</link>
-    <description>Recent content in Supported Databases on Ferris Labs</description>
+    <description>Recent content in Supported Databases on GridMine</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
 	  <atom:link href="/docs/integrations/database_guide/databases/index.xml" rel="self" type="application/rss+xml" />
     
@@ -260,10 +261,10 @@ Python / SQLAlchemy interface to Apache Solr.&lt;/p&gt;
         
         
         &lt;h2 id=&#34;clickhouse&#34;&gt;Clickhouse&lt;/h2&gt;
-&lt;p&gt;To use Clickhouse with Feris, you will need to add the following Python libraries:&lt;/p&gt;
+&lt;p&gt;To use Clickhouse with StreamZero you will need to add the following Python libraries:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;clickhouse-driver==0.2.0
 clickhouse-sqlalchemy==0.1.6
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If running Feris using Docker Compose, add the following to your &lt;code&gt;./docker/requirements-local.txt&lt;/code&gt; file:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;If running StreamZero using Docker Compose, add the following to your &lt;code&gt;./docker/requirements-local.txt&lt;/code&gt; file:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;clickhouse-driver&amp;gt;=0.2.0
 clickhouse-sqlalchemy&amp;gt;=0.1.6
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The recommended connector library for Clickhouse is
@@ -332,7 +333,7 @@ text to your requirements file:&lt;/p&gt;
 &lt;p&gt;To connect to Databricks, first install &lt;a href=&#34;https://pypi.org/project/databricks-dbapi/&#34;&gt;databricks-dbapi&lt;/a&gt; with the optional SQLAlchemy dependencies:&lt;/p&gt;
 &lt;div class=&#34;highlight&#34;&gt;&lt;div style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;
 &lt;table style=&#34;border-spacing:0;padding:0;margin:0;border:0;&#34;&gt;&lt;tr&gt;&lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;&#34;&gt;
-&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
+&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code&gt;&lt;span style=&#34;white-space:pre;-webkit-user-select:none;user-select:none;margin-right:0.4em;padding:0 0.4em 0 0.4em;color:#7f7f7f&#34;&gt;1
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
 &lt;td style=&#34;vertical-align:top;padding:0;margin:0;border:0;;width:100%&#34;&gt;
 &lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;pip install databricks-dbapi&lt;span style=&#34;color:#f92672&#34;&gt;[&lt;/span&gt;sqlalchemy&lt;span style=&#34;color:#f92672&#34;&gt;]&lt;/span&gt;
@@ -348,7 +349,7 @@ text to your requirements file:&lt;/p&gt;
 &lt;/ul&gt;
 &lt;p&gt;These can be found under &amp;ldquo;Configuration&amp;rdquo; -&amp;gt; &amp;ldquo;Advanced Options&amp;rdquo; -&amp;gt; &amp;ldquo;JDBC/ODBC&amp;rdquo;.&lt;/p&gt;
 &lt;p&gt;You also need an access token from &amp;ldquo;Settings&amp;rdquo; -&amp;gt; &amp;ldquo;User Settings&amp;rdquo; -&amp;gt; &amp;ldquo;Access Tokens&amp;rdquo;.&lt;/p&gt;
-&lt;p&gt;Once you have all this information, add a database of type &amp;ldquo;Databricks (Hive)&amp;rdquo; in Feris, and use the following SQLAlchemy URI:&lt;/p&gt;
+&lt;p&gt;Once you have all this information, add a database of type &amp;ldquo;Databricks (Hive)&amp;rdquo; in StreamZero, and use the following SQLAlchemy URI:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;databricks+pyhive://token:{access token}@{server hostname}:{port}/{database name}
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;You also need to add the following configuration to &amp;ldquo;Other&amp;rdquo; -&amp;gt; &amp;ldquo;Engine Parameters&amp;rdquo;, with your HTTP path:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{&amp;#34;connect_args&amp;#34;: {&amp;#34;http_path&amp;#34;: &amp;#34;sql/protocolv1/o/****&amp;#34;}}
@@ -386,7 +387,7 @@ text to your requirements file:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The expected connection string for Arrow Flight (Dremio 4.9.1+. Default port is 32010) is formatted as follows:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;dremio+flight://{username}:{password}@{host}:{port}/dremio
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;This &lt;a href=&#34;https://www.dremio.com/tutorials/dremio-apache-Feris/&#34;&gt;blog post by Dremio&lt;/a&gt; has some
-additional helpful instructions on connecting Feris to Dremio.&lt;/p&gt;
+additional helpful instructions on connecting StreamZero to Dremio.&lt;/p&gt;
 
       </description>
     </item>
@@ -421,7 +422,7 @@ set Feris’s row limit on config&lt;/p&gt;
 }
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Then register your table with the alias name logstasg_all&lt;/p&gt;
 &lt;p&gt;&lt;strong&gt;Time zone&lt;/strong&gt;&lt;/p&gt;
-&lt;p&gt;By default, Feris uses UTC time zone for elasticsearch query. If you need to specify a time zone,
+&lt;p&gt;By default, StreamZero uses UTC time zone for elasticsearch query. If you need to specify a time zone,
 please edit your Database and enter the settings of your specified time zone in the Other &amp;gt; ENGINE PARAMETERS:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
     &amp;#34;connect_args&amp;#34;: {
@@ -432,7 +433,7 @@ please edit your Database and enter the settings of your specified time zone in 
 you need to use the &lt;code&gt;CAST&lt;/code&gt; function,but this function does not support our &lt;code&gt;time_zone&lt;/code&gt; setting. So it is recommended to upgrade to the version after elasticsearch7.8.
 After elasticsearch7.8, you can use the &lt;code&gt;DATETIME_PARSE&lt;/code&gt; function to solve this problem.
 The DATETIME_PARSE function is to support our &lt;code&gt;time_zone&lt;/code&gt; setting, and here you need to fill in your elasticsearch version number in the Other &amp;gt; VERSION setting.
-the Feris will use the &lt;code&gt;DATETIME_PARSE&lt;/code&gt; function for conversion.&lt;/p&gt;
+the StreamZero will use the &lt;code&gt;DATETIME_PARSE&lt;/code&gt; function for conversion.&lt;/p&gt;
 
       </description>
     </item>
@@ -466,10 +467,10 @@ the Feris will use the &lt;code&gt;DATETIME_PARSE&lt;/code&gt; function for conv
         
         &lt;h2 id=&#34;firebird&#34;&gt;Firebird&lt;/h2&gt;
 &lt;p&gt;The recommended connector library for Firebird is &lt;a href=&#34;https://pypi.org/project/sqlalchemy-firebird/&#34;&gt;sqlalchemy-firebird&lt;/a&gt;.
-Feris has been tested on &lt;code&gt;sqlalchemy-firebird&amp;gt;=0.7.0, &amp;lt;0.8&lt;/code&gt;.&lt;/p&gt;
+StreamZero has been tested on &lt;code&gt;sqlalchemy-firebird&amp;gt;=0.7.0, &amp;lt;0.8&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The recommended connection string is:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firebird+fdb://{username}:{password}@{host}:{port}//{path_to_db_file}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s a connection string example of Feris connecting to a local Firebird database:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s a connection string example of StreamZero connecting to a local Firebird database:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firebird+fdb://SYSDBA:masterkey@192.168.86.38:3050//Library/Frameworks/Firebird.framework/Versions/A/Resources/examples/empbuild/employee.fdb
 &lt;/code&gt;&lt;/pre&gt;
       </description>
@@ -486,12 +487,12 @@ Feris has been tested on &lt;code&gt;sqlalchemy-firebird&amp;gt;=0.7.0, &amp;lt;
         
         &lt;h2 id=&#34;firebolt&#34;&gt;Firebolt&lt;/h2&gt;
 &lt;p&gt;The recommended connector library for Firebolt is &lt;a href=&#34;https://pypi.org/project/firebolt-sqlalchemy/&#34;&gt;firebolt-sqlalchemy&lt;/a&gt;.
-Feris has been tested on &lt;code&gt;firebolt-sqlalchemy&amp;gt;=0.0.1&lt;/code&gt;.&lt;/p&gt;
+StreamZero has been tested on &lt;code&gt;firebolt-sqlalchemy&amp;gt;=0.0.1&lt;/code&gt;.&lt;/p&gt;
 &lt;p&gt;The recommended connection string is:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firebolt://{username}:{password}@{database}
 or
 firebolt://{username}:{password}@{database}/{engine_name}
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s a connection string example of Feris connecting to a Firebolt database:&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here&amp;rsquo;s a connection string example of StreamZero connecting to a Firebolt database:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;firebolt://email@domain:password@sample_database
 or
 firebolt://email@domain:password@sample_database/sample_engine
@@ -513,15 +514,15 @@ firebolt://email@domain:password@sample_database/sample_engine
 &lt;a href=&#34;https://github.com/mxmzdlv/pybigquery&#34;&gt;pybigquery&lt;/a&gt;.&lt;/p&gt;
 &lt;h3 id=&#34;install-bigquery-driver&#34;&gt;Install BigQuery Driver&lt;/h3&gt;
 &lt;p&gt;Follow the steps &lt;a href=&#34;/docs/databases/docker-add-drivers&#34;&gt;here&lt;/a&gt; about how to
-install new database drivers when setting up Feris locally via docker-compose.&lt;/p&gt;
+install new database drivers when setting up StreamZero locally via docker-compose.&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;echo &amp;#34;pybigquery&amp;#34; &amp;gt;&amp;gt; ./docker/requirements-local.txt
 &lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;connecting-to-bigquery&#34;&gt;Connecting to BigQuery&lt;/h3&gt;
-&lt;p&gt;When adding a new BigQuery connection in Feris, you&amp;rsquo;ll need to add the GCP Service Account
+&lt;p&gt;When adding a new BigQuery connection in StreamZero, you&amp;rsquo;ll need to add the GCP Service Account
 credentials file (as a JSON).&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Create your Service Account via the Google Cloud Platform control panel, provide it access to the
 appropriate BigQuery datasets, and download the JSON configuration file for the service account.&lt;/li&gt;
-&lt;li&gt;In Feris, you can either upload that JSON or add the JSON blob in the following format (this should be the content of your credential JSON file):&lt;/li&gt;
+&lt;li&gt;In StreamZero you can either upload that JSON or add the JSON blob in the following format (this should be the content of your credential JSON file):&lt;/li&gt;
 &lt;/ol&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
         &amp;#34;type&amp;#34;: &amp;#34;service_account&amp;#34;,
@@ -563,7 +564,7 @@ the following format:&lt;/p&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;You should then be able to connect to your BigQuery datasets.&lt;/p&gt;
-&lt;p&gt;To be able to upload CSV or Excel files to BigQuery in Feris, you&amp;rsquo;ll need to also add the
+&lt;p&gt;To be able to upload CSV or Excel files to BigQuery in StreamZero, you&amp;rsquo;ll need to also add the
 &lt;a href=&#34;https://github.com/pydata/pandas-gbq&#34;&gt;pandas_gbq&lt;/a&gt; library.&lt;/p&gt;
 
       </description>
@@ -784,7 +785,7 @@ and the
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;presto://{username}:{password}@{hostname}:{port}/{database}
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;Here is an example connection string with values:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;presto://datascientist:securepassword@presto.example.com:8080/hive
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;By default Feris assumes the most recent version of Presto is being used when querying the
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;By default StreamZero assumes the most recent version of Presto is being used when querying the
 datasource. If you’re using an older version of Presto, you can configure it in the extra parameter:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;{
     &amp;#34;version&amp;#34;: &amp;#34;0.123&amp;#34;
@@ -821,7 +822,7 @@ datasource. If you’re using an older version of Presto, you can configure it i
         
         &lt;h2 id=&#34;snowflake&#34;&gt;Snowflake&lt;/h2&gt;
 &lt;p&gt;The recommended connector library for Snowflake is
-&lt;a href=&#34;https://pypi.org/project/snowflake-sqlalchemy/1.2.4/&#34;&gt;snowflake-sqlalchemy&lt;/a&gt;&amp;lt;=1.2.4. (This version is required until Feris migrates to sqlalchemy&amp;gt;=1.4.0)&lt;/p&gt;
+&lt;a href=&#34;https://pypi.org/project/snowflake-sqlalchemy/1.2.4/&#34;&gt;snowflake-sqlalchemy&lt;/a&gt;&amp;lt;=1.2.4.&lt;/p&gt;
 &lt;p&gt;The connection string for Snowflake looks like this:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;snowflake://{user}:{password}@{account}.{region}/{database}?role={role}&amp;amp;warehouse={warehouse}
 &lt;/code&gt;&lt;/pre&gt;&lt;p&gt;The schema is not necessary in the connection string, as it is defined per table/query. The role and
@@ -832,7 +833,7 @@ databases/schemas/tables/views/warehouses, as the Snowflake SQLAlchemy engine do
 user/role rights during engine creation by default. However, when pressing the “Test Connection”
 button in the Create or Edit Database dialog, user/role credentials are validated by passing
 “validate_default_parameters”: True to the connect() method during engine creation. If the user/role
-is not authorized to access the database, an error is recorded in the Feris logs.&lt;/p&gt;
+is not authorized to access the database, an error is recorded in the StreamZero logs.&lt;/p&gt;
 
       </description>
     </item>
@@ -938,7 +939,7 @@ because it&amp;rsquo;s more regularly updated.&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://www.yugabyte.com/&#34;&gt;YugabyteDB&lt;/a&gt; is a distributed SQL database built on top of PostgreSQL.&lt;/p&gt;
 &lt;p&gt;Note that, if you&amp;rsquo;re using docker-compose, the
 Postgres connector library &lt;a href=&#34;https://www.psycopg.org/docs/&#34;&gt;psycopg2&lt;/a&gt;
-comes out of the box with Feris.&lt;/p&gt;
+comes out of the box with StreamZero.&lt;/p&gt;
 &lt;p&gt;The connection string looks like:&lt;/p&gt;
 &lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;postgresql://{username}:{password}@{host}:{port}/{database}
 &lt;/code&gt;&lt;/pre&gt;
