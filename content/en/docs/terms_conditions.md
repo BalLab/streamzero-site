@@ -5,7 +5,7 @@ tags: [terms and conditions]
 categories: []
 weight: 108
 description: >-
- GridMine GmbH Terms and Conditions.
+ {{< param replacables.company_name  >}}Terms and Conditions.
 ---
 
 Last updated: February 12, 2021
