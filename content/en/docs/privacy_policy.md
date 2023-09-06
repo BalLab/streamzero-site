@@ -5,7 +5,7 @@ tags: [privacy]
 categories: []
 weight: 107
 description: >-
- GridMine GmbH Privacy Policy.
+ {{< param replacables.company_name  >}} Privacy Policy.
 
 
 ---
@@ -28,7 +28,7 @@ For the purposes of this Privacy Policy:
 
 - **Account** means a unique account created for You to access our Service or parts of our Service.
 
-- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to GridMine GmbH, Baarerstrasse 5, 6300 Zug.
+- **Company** (referred to as either "the Company", "We", "Us" or "Our" in this Agreement) refers to {{< param replacables.company_name  >}}, Baarerstrasse 5, 6300 Zug.
 
   For the purpose of the GDPR, the Company is the Data Controller.
 
@@ -289,4 +289,4 @@ If you have any questions about this Privacy Policy, You can contact us:
 - By phone number: +41(0)41 561 0105
 - By mail: Baarerstrasse 5, 6300 Zug, Switzerland
 
-Privacy Policy for GridMine GmbH
+Privacy Policy for {{< param replacables.company_name  >}}
