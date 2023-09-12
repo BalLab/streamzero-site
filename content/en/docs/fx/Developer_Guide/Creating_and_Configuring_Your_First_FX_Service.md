@@ -63,7 +63,7 @@ Inside the service directory, create an `app.py` file. This file will serve as t
 
 ```python
 # app.py
-from ferris_ef import context
+from fx_ef import context
 
 # Your service code starts here
 ```
@@ -98,32 +98,6 @@ Adding a `manifest.json` file to describe your FX service to the platform is an 
 
 Inside your service directory, create a `manifest.json` file. This JSON file will contain metadata about your service, allowing the FX platform to understand and interact with it.
 
-```json
-{
-  "name": "My FX Service",
-  "version": "1.0.0",
-  "description": "A brief description of my FX service.",
-  "author": "Your Name",
-  "entry": "app.py",
-  "configuration": "ef_env.json",
-  "executionState": "ef_package_state.json",
-  "modules": [
-    "app.py"
-  ]
-}
-```
-
-- `"name"`: Provide a name for your FX service.
-- `"version"`: Specify the version of your FX service (e.g., "1.0.0").
-- `"description"`: Add a brief description of what your service does.
-- `"author"`: Add your name or the author's name.
-- `"entry"`: Point to the entry point of your service (usually `app.py`).
-- `"configuration"`: Reference the `ef_env.json` file that holds service parameters, secrets, and configurations.
-- `"executionState"`: Reference the `ef_package_state.json` file that holds the execution state of the service.
-- `"modules"`: List the modules that your service relies on. In this case, it's just `"app.py"`.
-
-**Step 10: Manifest Structure**
-
 The `manifest.json` file provides vital information about your FX service, making it easier for the platform to understand and manage your service's behavior and dependencies.
 
 By including this file and its necessary attributes, your service can be properly registered, tracked, and executed within the FX platform. This manifest file essentially acts as a contract between your service and the platform, enabling seamless integration.
@@ -143,7 +117,8 @@ The `manifest.json` file plays a crucial role in describing your application to 
   "trigger_events": ["ferris.apps.minio.file_uploaded"],
   "schedule": "54 * * * *",
   "allow_manual_triggering": true,
-  "active": true
+  "active": true,
+  "output_events": ["test_type_101", "test_type_112"]
 }
 ```
 
@@ -159,14 +134,17 @@ The `manifest.json` file plays a crucial role in describing your application to 
 | `schedule`             | Optional. A cron-like definition for scheduling service executions.                                           |
 | `allow_manual_triggering` | Indicates whether the service can be triggered manually.                                                      |
 | `active`               | Indicates whether the service is active or inactive.                                                          |
+| `output_events`               | Array of event types this service emits.                                                          |
 
 This `manifest.json` file provides essential metadata about your service, making it easier for both the platform and other users to understand its purpose, behavior, and triggers. By customizing these parameters, you tailor the service's behavior to your specific requirements.
+
+> The output_events attribute has no impact on the service at run time. But it helps display on the UI the downstream services that are connected to this service and thereby helps other developers who wish to connect to this service.
 
 Feel free to integrate this explanation into your documentation. Adapt the content to match your documentation's style and format. This section aims to provide users with a comprehensive understanding of the `manifest.json` file and its significance in defining FX services.
 
 
 
-**Step 11: Expand ef_env.json**
+**Step 10: Expand ef_env.json**
 
 The `ef_env.json` file plays a crucial role in simulating your service's environment during development. While on the FX platform, parameters, configs, and secrets are managed differently, in the local environment, you can define these elements within this JSON file for simulation purposes.
 
@@ -193,14 +171,14 @@ The `ef_env.json` file plays a crucial role in simulating your service's environ
 
 - `"configs"`: For configuration values, you can specify them in this dictionary. However, on the FX platform, configuration values are usually managed through an external `config.json` file. This is done to keep sensitive configuration data separate from your codebase.
 
-**Important Note**: Keep in mind that the `ef_env.json` file is only for simulation purposes. On the FX platform, parameters are passed through trigger event payloads, configurations come from the `config.json` file, and secrets are managed through the platform's UI.
+> Keep in mind that the `ef_env.json` file is only for simulation purposes. On the FX platform, parameters are passed through trigger event payloads, configurations come from the `config.json` file, and secrets are managed through the platform's UI.
 
 By expanding your `ef_env.json` file with the appropriate parameters, secrets, and sample configuration values, you'll be able to effectively simulate your service's behavior in a local environment. This allows you to test and refine your service logic before deploying it on the FX platform, where parameters, secrets, and configurations are handled differently.
 
 
 **Step 12: Exploring the `fx_ef` Library**
 
-In the following section, we'll delve into the capabilities of the `ferris_ef` library. This library serves as a bridge between your FX service and the platform, allowing you to seamlessly implement various platform features within your service's logic.
+In the following section, we'll delve into the capabilities of the `fx_ef` library. This library serves as a bridge between your FX service and the platform, allowing you to seamlessly implement various platform features within your service's logic.
 
 The `fx_ef` library encapsulates essential functionalities that enable your service to interact with the FX platform, handling triggers, events, and more. By leveraging these features, you can create robust and responsive FX services that seamlessly integrate with the platform's ecosystem.
 

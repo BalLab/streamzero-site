@@ -20724,4 +20724,7 @@ footer {
 .text-red {
   color: #E11439; }
 
+.text-grey {
+  color: #999; }
+
 /*# sourceMappingURL=main.css.map */
