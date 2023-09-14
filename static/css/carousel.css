@@ -13,5 +13,13 @@
 /* .carousel .next {left: auto; right: 0;} */
 
 .carousel button {
-    border: none;
+    border: 20px;
 }
+
+.carousel-control-prev {
+
+    color: black;
+
+}
+
+
