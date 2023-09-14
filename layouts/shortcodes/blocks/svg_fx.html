@@ -109,7 +109,7 @@
                                     <font face="DM Sans" data-font-src="https://fonts.googleapis.com/css?family=DM+Sans"
                                         style="font-size: 22px;">Consumes CloudEvents, enriches them with meta data that
                                         maps events to services and publishes them for consumption by the Executors. It
-                                        keeps a track of the Executions and maintains service flow.</font><br />
+                                        keeps a track of the Executions and maintains service flow. The FX Hub is intelligent - it constructs flows on the fly without ANY flow annotations in code.</font><br />
                                 </div>
                             </div>
                         </div>
@@ -138,7 +138,7 @@
                                         data-font-src="https://fonts.googleapis.com/css?family=DM+Sans">Clusters of
                                         Executors run services based on the mapping of EventTypes to Services. Services
                                         emit events which may be consumed by other services to create service flows.
-                                        Executors pull service code from GIT.</font>
+                                        Executors pull service code from GIT. Executors have access to a full range of python libraries - integrating with a multitude of systems.</font>
                                 </div>
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                                 <div>
                                     <font data-font-src="https://fonts.googleapis.com/css?family=DM+Sans" face="DM Sans"
                                         style="font-size: 22px;">Events Sources may be event streams (such as Kafka, AWS
-                                        SQS, Azure Event Grid, Google Pub Sub, Minio Notifications, Debezium) or
+                                        SQS, Azure Event Grid, Google Pub Sub, Minio Notifications, Debezium, MQTT Brokers, Email) or
                                         incoming Web Hooks.</font>
                                 </div>
                             </div>
