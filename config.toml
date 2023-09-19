@@ -70,8 +70,8 @@ id = "G-RZ6L6XFT3Q"
 
 [languages]
 [languages.en]
-title = "GridMine"
-description = "GridMine web site"
+title = "StreamZero"
+description = "The Platform for Event Driven Services"
 languageName =""
 # Weight used for sorting.
 weight = 1
