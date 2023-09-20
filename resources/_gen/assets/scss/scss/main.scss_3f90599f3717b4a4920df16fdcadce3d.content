@@ -20727,4 +20727,8 @@ footer {
 .text-grey {
   color: #999; }
 
+.display-5 > span {
+  background-color: yellow;
+  line-height: 2; }
+
 /*# sourceMappingURL=main.css.map */
