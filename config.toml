@@ -273,6 +273,14 @@ enable = false
     [menu.main.params]
       class = 'highlight-menu-item'
 
+[[menu.main]]
+  identifier = 'blog'
+  name = 'BLOG'
+  url = '/articles/'
+  weight = 2
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
 
 #[[menu.main]]
 #  identifier = 'integrations'
@@ -411,6 +419,11 @@ enable = false
   company_website = "streamzero.com"
   company_address = "Baarerstrasse 5, 6300 Zug, Switzerland"
   company_phone = "+41(0)41 561 0105"
+
+
+
+
+
 
 
 
