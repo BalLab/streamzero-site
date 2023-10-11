@@ -1,0 +1,31 @@
+features:
+- name: Kubectl Unleashed
+  id: 01
+  description: Imperative commands are a powerful tool for day-to-day Kubernetes Operations, but their range is not well known. We collected a set of 300+ commands to get you started. 
+  learn_more_href: /blog/1/01/01/kubectl-imperative-commands-samples/
+  icon: amazon_athena.png
+  tags:
+    - kubernetes
+    - devops
+    - infrastructure
+
+- name: The Power of Event-Driven Architectures
+  id: 02
+  description: In this manifesto we examine the power of event driven systems. While real-time processing is an undeniable strength of event-driven architectures, their capabilities extend far beyond. 
+  learn_more_href: /blog/1/01/01/the-power-of-event-driven-systems/
+  icon: amazon_athena.png
+  tags:
+    - event-driven
+    - streamzero
+    - integration
+
+- name: DeepLearning VM in Google Cloud
+  id: 03
+  description: Creating a DeepLearning VM in Google Cloud with Terraform. In this article we show you how we setup on-demand Deep Learning VMs in Google Cloud with Terraform.
+  learn_more_href: /blog/1/01/01/kubectl-imperative-commands-samples/
+  icon: amazon_athena.png
+  tags:
+    - deeplearning
+    - devops
+    - google-cloud
+    - terraform
