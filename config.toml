@@ -145,6 +145,7 @@ offlineSearch = false
 # Enable syntax highlighting and copy buttons on code blocks with Prism
 prism_syntax_highlighting = false
 
+
 # User interface configuration
 [params.ui]
 #  Set to true to disable breadcrumb navigation.
