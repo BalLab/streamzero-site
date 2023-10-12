@@ -34,7 +34,7 @@ features:
 - name: Kafka Diagnostics in Kubernetes
   id: 03
   description:  When diagnosing issues with Kafka running in a Kubernetes cluster, it can be useful to run diagnostic tools directly within the cluster. We demonstrate an approach using kcat as a temporary pod.
-  learn_more_href: /blog/1/01/01/kubectl-imperative-commands-samples/
+  learn_more_href: /blog/1/01/01/using-kcat-with-kubectl-for-kafka-diagnostics-in-kubernetes/
   icon: amazon_athena.png
   tags:
     - kafka
