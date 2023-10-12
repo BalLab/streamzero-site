@@ -25,6 +25,11 @@ Before you start working on your FX service, it's a good practice to create a vi
 virtualenv my_fx_project-env
 ```
 
+
+
+
+
+
 Activate the virtual environment:
 
 ```bash
