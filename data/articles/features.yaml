@@ -42,3 +42,12 @@ features:
     - kubectl
     - devops
 
+- name: 100 Kubernetes Diagnostics Commands with Kubectl
+  id: 03
+  description:  Here is a list of 100 kubectl commands that can be useful for diagnosing issues in a Kubernetes cluster. These were prepared as a study aid for my CKAD exams with the help of ChatGPT.
+  learn_more_href: /blog/1/01/01/100-kubernetes-diagnostics-commands-with-kubectl/
+  icon: amazon_athena.png
+  tags:
+    - kubernetes
+    - kubectl
+    - devops
