@@ -54,8 +54,8 @@ features:
 
 - name: Message Delivery in Kafka with Multiple Partitions
   id: 05
-  description:  In this post we take a look at how we can ensure ‘nearly even’ distribution of messages across consumers which are part of a consumer group. A challenge which we often face with event driven microservices.
-  learn_more_href: /blog/1/01/01/100-kubernetes-diagnostics-commands-with-kubectl/
+  description:  In this post we take a look at how we can ensure 'nearly even' distribution of messages across consumers which are part of a consumer group. A challenge which we often face with event driven microservices.
+  learn_more_href: /blog/1/01/01/understanding-message-delivery-in-kafka-with-multiple-partitions/
   icon: amazon_athena.png
   tags:
     - kafka
