@@ -18,31 +18,31 @@ One of Apache Kafka’s core concepts is the topic, a category or feed name to w
 
 However, the presence of multiple partitions raises questions about how messages are delivered and consumed. This article will explore how Kafka manages message distribution across partitions and how consumers are assigned messages.
 
-# Kafka Partitions and Message Ordering
+## Kafka Partitions and Message Ordering
 
 A Kafka topic can be split into multiple partitions, each of which is an ordered, immutable sequence of records. Partitions are distributed across different brokers in the Kafka cluster to ensure load balancing. The key benefits of partitions are scalability and parallelism, as multiple consumers can read from multiple partitions simultaneously.
 
-# Message Ordering
+## Message Ordering
 
 Within a partition, messages are guaranteed to be in the order they were written. However, if a topic has multiple partitions, there is no guarantee of ordering across the entire topic-only within each partition.
 
-# Producer Configuration for Message Distribution
+## Producer Configuration for Message Distribution
 
 When a producer sends a message to a Kafka topic, it can specify a key for the message. The producer uses a partitioner to decide which partition to send the message to. By default, Kafka provides a partitioner that hashes the message key and maps it to a specific partition. If no key is specified, the producer round-robins the messages across all partitions.
 
-# Partitioner Configuration
+## Partitioner Configuration
 
 Producers can use custom partitioners if specific distribution logic is required. For example, a custom partitioner could ensure that messages with certain attributes always go to the same partition.
 
-# Consumer Message Assignment
+## Consumer Message Assignment
 
 Kafka consumers read messages from the partitions of a topic. Consumers can be grouped together into a consumer group for a topic, and each consumer in the group reads from exclusive partitions of the topic.
 
-# Consumer Groups and Partition Assignment
+## Consumer Groups and Partition Assignment
 
 When multiple consumers are part of a single consumer group, Kafka ensures that each partition is only consumed by one consumer from that group. **If there are more consumers than partitions, some consumers will be idle. If there are more partitions than consumers, consumers will be assigned multiple partitions.**
 
-# Partition Assignment Strategies
+## Partition Assignment Strategies
 
 Kafka provides several assignment strategies that can be leveraged according to the specific needs of the application:
 
@@ -51,11 +51,11 @@ Kafka provides several assignment strategies that can be leveraged according to 
 - **Sticky Assignor** (`org.apache.kafka.clients.consumer.StickyAssignor`): The Sticky Assignor aims to achieve a balanced distribution while also minimizing the movement of partitions between consumers during rebalances. This strategy tries to preserve the existing assignment as much as possible, which can be useful to maintain locality and cache warmth, leading to more efficient processing.
 - **Cooperative Sticky Assignor** (`org.apache.kafka.clients.consumer.CooperativeStickyAssignor`): This strategy extends the Sticky Assignor logic by allowing for cooperative rebalancing. Unlike the eager rebalancing strategy where consumers have to stop processing messages during a rebalance, the Cooperative Sticky Assignor allows consumers to continue processing messages for partitions that they retain throughout the rebalance. This can lead to less disruption and more even distribution as the assignment shifts incrementally.
 
-# Rebalancing and Consumer Coordination
+## Rebalancing and Consumer Coordination
 
 Kafka uses a group coordinator and a consumer coordinator to manage the members of a consumer group and their partition assignments. When a consumer joins or leaves a group, or when the partitions of a topic change, a rebalance is triggered. During a rebalance, consumers temporarily stop reading messages and wait until the new partition assignment is received.
 
-# Configuration Settings for Distribution Management
+## Configuration Settings for Distribution Management
 
 Kafka provides several configuration settings that control message distribution and consumption:
 
@@ -64,7 +64,7 @@ Kafka provides several configuration settings that control message distribution 
 - `session.timeout.ms`: The timeout used to detect consumer failures. If a consumer doesn't send a heartbeat within this interval, a rebalance will be triggered.
 - `heartbeat.interval.ms`: Specifies the expected time between heartbeats to the consumer coordinator.
 
-# Rebalancing and Consumer Coordination
+## Rebalancing and Consumer Coordination
 
 To enable a nearly even distribution of messages across consumers in a consumer group, Kafka offers several mechanisms and configurations that can be fine-tuned. One of the most important is the partition assignment strategy.
 
