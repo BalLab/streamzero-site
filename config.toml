@@ -146,6 +146,11 @@ offlineSearch = false
 prism_syntax_highlighting = false
 
 
+company_baseurl = "https://streamzero.com"
+company_docsurl = "https://docs.streamzero.com"
+
+
+
 # User interface configuration
 [params.ui]
 #  Set to true to disable breadcrumb navigation.
@@ -242,7 +247,7 @@ enable = false
 [[menu.main]]
   identifier = 'products'
   name = 'PRODUCTS'
-  url = '/products/'
+  url = 'https://streamzero.com/products/'
   weight = 1
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -250,7 +255,7 @@ enable = false
 [[menu.main]]
     identifier = "products_fx"
     name = "STREAMZERO FX"
-    url = "/products/fx/"
+    url = "https://streamzero.com/products/fx/"
     parent = "products"
     weight = 1
     [menu.main.params]
@@ -259,7 +264,7 @@ enable = false
 [[menu.main]]
     identifier = "products_sx"
     name = "STREAMZERO SX"
-    url = "/products/sx/"
+    url = "https://streamzero.com/products/sx/"
     parent = "products"
     weight = 1
     [menu.main.params]
@@ -268,7 +273,7 @@ enable = false
 [[menu.main]]
     identifier = "products_k8x"
     name = "STREAMZERO K8X"
-    url = "/products/k8x/"
+    url = "https://streamzero.com/products/k8x/"
     parent = "products"
     weight = 1
     [menu.main.params]
@@ -277,8 +282,16 @@ enable = false
 [[menu.main]]
   identifier = 'blog'
   name = 'BLOG'
-  url = '/articles/'
+  url = 'https://streamzero.com/articles/'
   weight = 2
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
+  identifier = 'documentations'
+  name = 'DOCUMENTATION'
+  url = 'https://docs.streamzero.com/docs/'
+  weight = 3
   [menu.main.params]
     class = 'highlight-menu-item'
 
