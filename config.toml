@@ -146,6 +146,11 @@ offlineSearch = false
 prism_syntax_highlighting = false
 
 
+company_baseurl = "https://streamzero.com"
+company_docsurl = "https://docs.streamzero.com"
+
+
+
 # User interface configuration
 [params.ui]
 #  Set to true to disable breadcrumb navigation.
