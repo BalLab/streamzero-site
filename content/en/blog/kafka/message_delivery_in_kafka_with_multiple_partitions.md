@@ -8,8 +8,6 @@ description: >-
      Understanding Message Delivery in Kafka with Multiple Partitions
 ---
 
-# Understanding Message Delivery in Kafka with Multiple Partitions
-
 This is part of an ongoing series on Apache Kafka examining various aspects related to developing applications on Apache Kafka.
 
 In this post we take a look at how we can ensure ‘nearly even’ distribution of messages across consumers which are part of a consumer group. A challenge which we often face with event driven microservices.
