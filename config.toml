@@ -280,9 +280,18 @@ enable = false
       class = 'highlight-menu-item'
 
 [[menu.main]]
+  identifier = 'resources'
+  name = 'RESOURCES'
+  url = 'https://docs.streamzero.com/docs/'
+  weight = 2
+  [menu.main.params]
+    class = 'highlight-menu-item'
+
+[[menu.main]]
   identifier = 'blog'
   name = 'BLOG'
   url = 'https://streamzero.com/articles/'
+  parent = "resources"
   weight = 2
   [menu.main.params]
     class = 'highlight-menu-item'
@@ -291,6 +300,7 @@ enable = false
   identifier = 'documentations'
   name = 'DOCUMENTATION'
   url = 'https://docs.streamzero.com/docs/'
+  parent = "resources"
   weight = 3
   [menu.main.params]
     class = 'highlight-menu-item'
