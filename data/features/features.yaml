@@ -44,8 +44,10 @@ features:
           description: In-built secrets storage to save your applications secrets. Support for secrets at service, project and platform level.
         - name: Environment Isolation
           description: Each Service runs in it's own environment - with it's own dedicated context.
+        - name: Selective Payload Encryption
+          description: Payload attributes can be encrypted such that only selected services can decrypt.
 
-    - name: Project and Team Features
+    - name: Project Workspaces
       description: 
       features: 
         - name: Service Collections / Projects
