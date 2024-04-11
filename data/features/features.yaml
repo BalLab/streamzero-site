@@ -51,9 +51,11 @@ features:
       description: 
       features: 
         - name: Service Collections / Projects
-          description: Groups services into distinct Projects. Each with it's own distinct team and roles
+          description: Groups services into distinct Projects. Each with it's own distinct team and roles. Allowing you to run multiple use cases with distinct teams on the same platform. 
         - name: Micro-UIs for Business Users
           description: Attach forms to services to trigger executions - so business users can trigger on demand executions. Forms are generated from JSON definitions. Create forms in minutes.
+        - name: Project Specific Dashboards
+          description: Each project has it's own sets of dashoards for monitoring - enabling each team to monitor their own services.
 
 
     - name: Developer Experience
@@ -72,5 +74,5 @@ features:
         - name: Specification First or Code First Documentation
           description: Services and platform documentation are created on the fly by platform based on running services. But you can also build specification first with OpenAPI and AsyncAPI support for code generation.
 
-          
+
                 
