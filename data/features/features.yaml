@@ -54,3 +54,23 @@ features:
           description: Groups services into distinct Projects. Each with it's own distinct team and roles
         - name: Micro-UIs for Business Users
           description: Attach forms to services to trigger executions - so business users can trigger on demand executions. Forms are generated from JSON definitions. Create forms in minutes.
+
+
+    - name: Developer Experience
+      description: 
+      features: 
+        - name: Use Normal IDE
+          description: Use your normal IDE to create Services code.
+        - name: Single Library Access to Platform Features
+          description: All platform features are available from a single powerful library - a low learning curve.
+        - name: No Code Orchestration and Configuration
+          description: Orchestration and configuration are managed external to code and by each service. No complex DAG design.
+        - name: Push to Deploy
+          description: Fully GitOps based. Push code to Git and Sync at a click of a button to deploy.
+        - name: Advanced Features Made Simple
+          description: Complex features such as execution retries, state management and payload encryption are a single line of code away.
+        - name: Specification First or Code First Documentation
+          description: Services and platform documentation are created on the fly by platform based on running services. But you can also build specification first with OpenAPI and AsyncAPI support for code generation.
+
+          
+                
