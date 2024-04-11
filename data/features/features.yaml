@@ -10,6 +10,9 @@ features:
           description: Events are transported through Kafka and profit from the resilience of Kafka - Enabling event and execution throughputs of Millions of executions per day day in and day out. If the underlying infrastructure can support it.
         - name: Easily Scalable Executors
           description: Executors run in easily scalable clusters which are further subdivided by priority lanes.
+        - name: Serverless Executions
+          description: Allows services to run as launch-on-event containers, enabling dynamic scaling and cost-efficient execution without the need for dedicated server management.
+
 
     - name: Data Ingestion
       description: Easily manage ingestion from Files, Database or Streams
@@ -24,12 +27,18 @@ features:
     - name: Operations and Monitoring
       description: Low-Ops, you heard it here first. Our integrated platform manages deployments, collects operations data and enables a low effort operations.
       features: 
+        - name: GitOps-Driven Deployment and Configuration
+          description: Employs a GitOps approach for deployment and configuration, leveraging Git repositories as the source of truth for system states, facilitating automated, traceable, and efficient change management.
         - name: Stream Aggregated Logs, Events and Notifications
           description: All logs are streamed to Kafka just as we do with events. Purpose built adapters take care of feeding them into storage such as Elasticsearch, Splunk, Clickhouse, HDFS or AWS S3.
         - name: Monitoring Dashboards
           description: Use the Management dashboard to view the health of your system. Identify slow running executions and fix them easily. Get notified on failure. View precise execution time of each step within a service. Identify new code running on platform and who esecuted them.
         - name: Trouble Ticketing Integrations
           description: Auto-generate trouble tickets on failure. Integrate with your ticketing system of choice - after all it is just a service away.
+        - name: Long-Term Log Storage Integration
+          description: Facilitates integration with platforms like Splunk and Elasticsearch for long-term log storage, allowing for advanced analysis and insights from historical data.
+
+
 
     - name: Comprehensive Security
       description: Low-Ops, you heard it here first. Our integrated platform manages deployments, collects operations data and enables a low effort operations.
@@ -47,16 +56,17 @@ features:
         - name: Selective Payload Encryption
           description: Payload attributes can be encrypted such that only selected services can decrypt.
 
-    - name: Project Workspaces
+    - name: Collaboration and Ecosystem support
       description: 
       features: 
         - name: Service Collections / Projects
-          description: Groups services into distinct Projects. Each with it's own distinct team and roles. Allowing you to run multiple use cases with distinct teams on the same platform. 
+          description: Groups services into distinct Projects. Each with it's own distinct team and roles. Allowing you to run multiple use cases with distinct teams or suppliers on a unified platform. 
         - name: Micro-UIs for Business Users
           description: Attach forms to services to trigger executions - so business users can trigger on demand executions. Forms are generated from JSON definitions. Create forms in minutes.
         - name: Project Specific Dashboards
           description: Each project has it's own sets of dashoards for monitoring - enabling each team to monitor their own services.
-
+        - name: API Gateway
+          description: Offers a unified entry point for all API calls, simplifying API management and monitoring.
 
     - name: Developer Experience
       description: 
