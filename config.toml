@@ -71,7 +71,7 @@ id = "G-FYC2ZFE3LZ"
 [languages]
 [languages.en]
 title = "StreamZero"
-description = "The Platform for Event Driven Services"
+description = "The Unified Enterprise Automation Platform"
 languageName =""
 # Weight used for sorting.
 weight = 1
@@ -256,6 +256,15 @@ enable = false
     identifier = "products_fx"
     name = "STREAMZERO FX"
     url = "https://streamzero.com/products/fx/"
+    parent = "products"
+    weight = 1
+    [menu.main.params]
+      class = 'highlight-menu-item'
+
+[[menu.main]]
+    identifier = "products_aiflow"
+    name = "STREAMZERO AiFLOW"
+    url = "https://streamzero.com/products/aiflow/"
     parent = "products"
     weight = 1
     [menu.main.params]
