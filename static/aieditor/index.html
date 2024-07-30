@@ -110,6 +110,34 @@
         #hourglass {
     font-size: 24px;
 }
+
+
+.context-menu {
+    display: none;
+    position: absolute;
+    z-index: 10000;
+    background-color: white;
+    border: 1px solid #ccc;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    overflow: hidden;
+    font-size: 14px;
+}
+
+.context-menu ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.context-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.context-menu li:hover {
+    background-color: #f1f1f1;
+}
        
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
@@ -126,7 +154,8 @@
             <i class="fas fa-quote-right" onclick="formatText('blockquote')"></i>
             <i class="fas fa-code" onclick="formatText('code')"></i>
             <i class="fas fa-download" onclick="downloadMarkdown()"></i>
-            <button onclick="showApiKeyPopup()">Enter OpenAI API Key</button>
+            <i class="fas fa-key" onclick="showApiKeyPopup()" title="Enter OpenAI API Key"></i>
+            <i class="fas fa-sync-alt" onclick="resetOpenAISession()" title="Reset OpenAI Session"></i>
         </div>
         <div class="toolbar-prompt">
             <textarea id="prompt" placeholder="Enter your prompt here..." rows="1"></textarea>
@@ -135,6 +164,13 @@
         </div>
     </div>
 
+    <div id="context-menu" class="context-menu">
+        <ul>
+            <li onclick="elaborateText()">Elaborate</li>
+            <li onclick="shortenText()">Shorten</li>
+            <li onclick="askAI()">Ask AI</li>
+        </ul>
+    </div>
 
 
     <div id="editor-container">
@@ -159,10 +195,15 @@
         const overlay = document.getElementById('overlay');
         const apiKeyPopup = document.getElementById('api-key-popup');
         const hourglass = document.getElementById('hourglass');
+        const contextMenu = document.getElementById('context-menu');
         let apiKey = '';
         let messages = [];
+        let cursorPosition = 0;
     
         editor.addEventListener('input', updatePreview);
+        editor.addEventListener('contextmenu', showContextMenu);
+        document.addEventListener('click', hideContextMenu);
+    
         document.getElementById('prompt').addEventListener('keydown', (event) => {
             if (event.key === 'Enter' && !event.shiftKey) {
                 event.preventDefault();
@@ -187,6 +228,61 @@
         function saveApiKey() {
             apiKey = document.getElementById('api-key').value;
             closeApiKeyPopup();
+        }
+    
+        function showContextMenu(event) {
+            event.preventDefault();
+            contextMenu.style.display = 'block';
+            contextMenu.style.left = `${event.pageX}px`;
+            contextMenu.style.top = `${event.pageY}px`;
+            cursorPosition = editor.selectionStart;
+        }
+    
+        function hideContextMenu() {
+            contextMenu.style.display = 'none';
+        }
+    
+        function elaborateText() {
+            const selectedText = editor.value.substring(editor.selectionStart, editor.selectionEnd);
+            if (selectedText) {
+                const prompt = `Please elaborate on the following text:\n\n"${selectedText}"`;
+                sendContextPrompt(prompt, cursorPosition);
+            }
+        }
+    
+        function shortenText() {
+            const selectedText = editor.value.substring(editor.selectionStart, editor.selectionEnd);
+            if (selectedText) {
+                const prompt = `Please shorten the following text:\n\n"${selectedText}"`;
+                sendContextPrompt(prompt, cursorPosition);
+            }
+        }
+    
+        function askAI() {
+            const instruction = prompt("Please enter your instruction for the AI:");
+            if (instruction) {
+                const selectedText = editor.value.substring(editor.selectionStart, editor.selectionEnd);
+                const prompt = `${instruction}\n\n"${selectedText}"`;
+                sendContextPrompt(prompt, cursorPosition);
+            }
+        }
+    
+        async function sendContextPrompt(prompt, position) {
+            errorMessage.textContent = '';  // Clear any previous error messages
+            messages.push({ role: "user", content: prompt });
+    
+            // Show hourglass
+            hourglass.style.display = 'inline-block';
+    
+            const responseText = await callOpenAI(messages, position);
+    
+            // Hide hourglass
+            hourglass.style.display = 'none';
+    
+            if (responseText) {
+                messages.push({ role: "assistant", content: responseText });
+                updatePreview();
+            }
         }
     
         async function sendPrompt() {
@@ -334,6 +430,11 @@
     
             replaceSelectedText(editor, formattedText);
             updatePreview();
+        }
+
+        function resetOpenAISession() {
+            messages = [];
+            alert("OpenAI session has been reset.");
         }
     
         window.onload = function() {
